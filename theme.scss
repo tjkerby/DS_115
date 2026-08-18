@@ -1,0 +1,463 @@
+/* ============================================================
+   DS 115: Exploring Data Science
+   Reveal.js theme
+   ============================================================ */
+
+/*-- scss:defaults --*/
+
+/* Course palette */
+$course-navy: #002E5D;
+$course-navy-2: #123C69;
+$course-royal: #0057A7;
+$course-royal-soft: #EAF3FC;
+$course-tan: #C8B88A;
+$course-tan-light: #F4EEDC;
+$course-ink: #1A1A1A;
+$course-muted: #58606A;
+$course-paper: #FBFAF7;
+$course-white: #FFFFFF;
+$course-soft-gray: #F4F5F7;
+$course-border: #D8DEE8;
+
+/* Typography */
+$font-family-sans-serif: "Aptos", "Segoe UI", system-ui, sans-serif !default;
+$font-family-monospace: "Cascadia Code", "SFMono-Regular", Consolas, monospace !default;
+
+$presentation-heading-color: $course-navy !default;
+$presentation-heading-font-weight: 750 !default;
+$presentation-title-slide-text-align: left !default;
+$presentation-slide-text-align: left !default;
+$presentation-font-size-root: 34px !default;
+
+/* Mermaid: use the same visual language as the course deck. */
+$mermaid-bg-color: transparent;
+$mermaid-edge-color: $course-royal;
+$mermaid-fg-color: $course-ink;
+$mermaid-node-bg-color: $course-royal-soft;
+$mermaid-node-fg-color: $course-navy;
+$mermaid-label-bg-color: $course-paper;
+$mermaid-label-fg-color: $course-navy;
+$mermaid-font-family: $font-family-sans-serif;
+$mermaid-fg-color--lighter: $course-muted !default;
+$mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
+
+
+/*-- scss:rules --*/
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+.reveal {
+  color: $course-ink;
+  font-family: $font-family-sans-serif;
+  background: $course-paper;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide {
+  background: transparent;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0.35em 0.5em;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: $font-family-sans-serif;
+  font-weight: $presentation-heading-font-weight;
+  letter-spacing: -0.035em;
+}
+
+.reveal h1 {
+  color: $course-navy;
+}
+
+.reveal h2 {
+  color: $course-navy;
+  border-left: 0.28em solid $course-tan;
+  padding-left: 0.45em;
+  margin-bottom: 0.75em;
+}
+
+.reveal h3 {
+  color: $course-navy-2;
+}
+
+.reveal p,
+.reveal li {
+  line-height: 1.25;
+}
+
+.reveal strong {
+  color: $course-navy;
+}
+
+.reveal a {
+  color: $course-royal;
+}
+
+.reveal ul {
+  margin-left: 1.1em;
+}
+
+.reveal li::marker {
+  color: $course-royal;
+}
+
+/* ============================================================
+   Slide backgrounds
+   ============================================================ */
+
+.reveal .backgrounds .slide-background {
+  background-color: $course-paper;
+}
+
+.reveal .backgrounds .slide-background.title-slide {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 46, 93, 0.98) 0%,
+      rgba(0, 87, 167, 0.92) 62%,
+      rgba(200, 184, 138, 0.52) 100%
+    ),
+    $course-navy;
+}
+
+.reveal .backgrounds .slide-background.section-card {
+  background: linear-gradient(135deg, $course-navy 0%, $course-royal 100%);
+}
+
+.reveal .backgrounds .slide-background.question-slide {
+  background-color: $course-tan-light;
+}
+
+.reveal .backgrounds .slide-background.demo-slide {
+  background-color: $course-royal-soft;
+}
+
+.reveal .backgrounds .slide-background.takeaway-slide {
+  background: linear-gradient(135deg, $course-navy 0%, #001F40 100%);
+}
+
+/* ============================================================
+   Title, section, takeaway
+   ============================================================ */
+
+.reveal .title-slide {
+  color: $course-white;
+}
+
+.reveal .title-slide h1 {
+  color: $course-white;
+  max-width: 950px;
+  font-size: 1.9em;
+  line-height: 1.03;
+}
+
+.reveal .title-slide .subtitle {
+  color: $course-tan-light;
+  font-weight: 500;
+}
+
+.reveal .title-slide .author,
+.reveal .title-slide .date,
+.reveal .title-slide .quarto-title-authors {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.reveal .slide.section-card,
+.reveal .slide.takeaway-slide {
+  color: $course-white;
+}
+
+.reveal .slide.section-card h1,
+.reveal .slide.section-card h2,
+.reveal .slide.section-card h3,
+.reveal .slide.takeaway-slide h1,
+.reveal .slide.takeaway-slide h2,
+.reveal .slide.takeaway-slide h3 {
+  color: $course-white;
+  border-left: none;
+  padding-left: 0;
+}
+
+.reveal .slide.section-card h2 {
+  font-size: 1.65em;
+}
+
+.reveal .slide.section-card strong,
+.reveal .slide.takeaway-slide strong {
+  color: $course-tan-light;
+}
+
+.reveal .slide.takeaway-slide li::marker {
+  color: $course-tan-light;
+}
+
+/* ============================================================
+   Footer and controls
+   ============================================================ */
+
+.reveal .footer {
+  color: rgba(0, 46, 93, 0.55);
+  font-size: 0.45em;
+}
+
+.reveal.has-dark-background .footer {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.reveal .controls {
+  color: $course-royal;
+}
+
+.reveal .progress {
+  color: $course-royal;
+}
+
+/* ============================================================
+   Mermaid
+   ============================================================ */
+
+.reveal .mermaid {
+  font-family: $font-family-sans-serif;
+  max-width: 100%;
+}
+
+.reveal .mermaid svg {
+  max-width: 100%;
+  max-height: 520px;
+}
+
+.reveal .mermaid .nodeLabel,
+.reveal .mermaid .edgeLabel,
+.reveal .mermaid .label {
+  font-family: $font-family-sans-serif !important;
+}
+
+/* ============================================================
+   Reusable content blocks
+   ============================================================ */
+
+.reveal .key-idea,
+.reveal .discussion-box,
+.reveal .demo-box,
+.reveal .check-box {
+  padding: 0.8em 1em;
+  border-radius: 0.6rem;
+  margin-top: 1em;
+  box-shadow: 0 2px 10px rgba(0, 46, 93, 0.08);
+}
+
+.reveal .key-idea {
+  border-left: 0.35rem solid $course-tan;
+  background: #FFF8E8;
+}
+
+.reveal .discussion-box {
+  border-left: 0.35rem solid $course-navy;
+  background: $course-white;
+}
+
+.reveal .demo-box {
+  border-left: 0.35rem solid $course-royal;
+  background: $course-white;
+}
+
+.reveal .check-box {
+  border-left: 0.35rem solid $course-royal;
+  background: #EEF6FF;
+}
+
+.reveal .key-idea strong,
+.reveal .discussion-box strong,
+.reveal .demo-box strong,
+.reveal .check-box strong {
+  color: $course-navy;
+}
+
+/* ============================================================
+   Question / statement / takeaway utilities
+   ============================================================ */
+
+.reveal .prompt {
+  font-size: 1.45em;
+  line-height: 1.2;
+  font-weight: 650;
+  color: $course-navy;
+  max-width: 1100px;
+  margin-top: 1.2em;
+}
+
+.reveal .statement {
+  font-size: 1.55em;
+  line-height: 1.18;
+  font-weight: 700;
+  color: $course-navy;
+  max-width: 1100px;
+}
+
+.reveal .eyebrow {
+  color: $course-royal;
+  font-size: 0.55em;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4em;
+}
+
+.reveal .big-idea {
+  font-size: 1.35em;
+  line-height: 1.18;
+  color: $course-navy;
+  font-weight: 700;
+  max-width: 1000px;
+}
+
+.reveal .slide.section-card .big-idea,
+.reveal .slide.takeaway-slide .big-idea {
+  color: $course-white;
+}
+
+/* ============================================================
+   Comparison / cards
+   ============================================================ */
+
+.reveal .compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  margin-top: 0.8em;
+}
+
+.reveal .compare > div {
+  background: $course-white;
+  border: 1px solid $course-border;
+  border-radius: 0.65rem;
+  padding: 0.8em 1em;
+}
+
+.reveal .three-up {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1em;
+  margin-top: 0.8em;
+  align-items: stretch;
+}
+
+.reveal .ds-card h3 {
+  font-size: 0.9em;
+  margin: 0 0 0.45em 0;
+  color: $course-navy;
+}
+
+.reveal .ds-card p {
+  font-size: 0.72em;
+  line-height: 1.28;
+  color: $course-ink;
+}
+
+.reveal .ds-card {
+  display: flex;
+  flex-direction: column;
+  background: $course-white;
+  border-top: 0.22rem solid $course-royal;
+  border-radius: 0.55rem;
+  padding: 0.75em 0.9em;
+  box-shadow: 0 2px 8px rgba(0, 46, 93, 0.06);
+}
+
+.reveal .three-up > div {
+  background: $course-white;
+  border-top: 0.22rem solid $course-royal;
+  border-radius: 0.55rem;
+  padding: 0.7em 0.8em;
+  box-shadow: 0 2px 8px rgba(0, 46, 93, 0.06);
+}
+
+.reveal .three-up h3 {
+  margin-top: 0;
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+
+.reveal .muted {
+  color: $course-muted;
+  font-size: 0.85em;
+}
+
+.reveal .supporting {
+  color: $course-muted;
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+.reveal .small {
+  font-size: 0.75em;
+}
+
+.reveal .center {
+  text-align: center;
+}
+
+.reveal .right {
+  text-align: right;
+}
+
+.reveal .giant {
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 800;
+  color: $course-navy;
+}
+
+/* ============================================================
+   Quotes and tables
+   ============================================================ */
+
+.reveal blockquote {
+  width: 85%;
+  margin: 1.2em auto;
+  padding: 0.4em 0 0.4em 0.8em;
+  border-left: 0.18em solid $course-tan;
+  box-shadow: none;
+  background: transparent;
+  color: $course-navy;
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+.reveal table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+}
+
+.reveal table th {
+  background: $course-navy;
+  color: $course-white;
+  font-weight: 700;
+}
+
+.reveal table td,
+.reveal table th {
+  padding: 0.45em 0.6em;
+  border: 1px solid $course-border;
+}
+
+.reveal table tr:nth-child(even) {
+  background: $course-soft-gray;
+}

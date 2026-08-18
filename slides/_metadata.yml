@@ -1,0 +1,36 @@
+# Defaults for all DS 115 slide decks
+
+format:
+  revealjs:
+    theme:
+      - simple
+      - ../theme.scss
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    transition-speed: default
+
+    width: 1600
+    height: 900
+    margin: 0.06
+    min-scale: 0.2
+    max-scale: 2.0
+
+    auto-stretch: false
+    center: false
+    center-title-slide: true
+
+    controls: true
+    progress: true
+
+    code-copy: true
+    chalkboard: true
+
+    footer: "DS 115 - Exploring Data Science"
+
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: auto

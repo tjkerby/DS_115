@@ -1,0 +1,363 @@
+---
+title: "DS 115: Exploring Data Science"
+subtitle: "Day 1 | What is Data Science, and why is it so broad?"
+author: "Department of Statistics | Brigham Young University"
+date: ""
+---
+
+## Welcome to Data Science {.question-slide}
+
+::: {.prompt}
+When you hear the phrase **"Data Science,"** what comes to mind?
+:::
+
+::: {.supporting}
+Think for a moment. Then compare your answer with someone near you.
+:::
+
+::: {.notes}
+Open with the same question used in the previous version of the course. Do not correct answers. We want to surface the students' existing mental models.
+:::
+
+## A working definition
+
+::: {.statement}
+**Data science is using data to understand, explain, predict, and make decisions about the world.**
+:::
+
+::: {.key-idea}
+Data science uses ideas from many disciplines. There is no single skill, method, or type of problem that defines the entire field.
+:::
+
+::: {.notes}
+The previous Day 1 presentation used a more formal definition emphasizing scientific methods, algorithms, and programming. Keep that definition available if useful, but use this simpler definition as the through-line for the class.
+:::
+
+## Data science is a process {.demo-slide}
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 12
+flowchart LR
+  A[Ask a meaningful question] --> B[Get and prepare data]
+  B --> C[Explore and visualize]
+  C --> D[Model or reason from data]
+  D --> E[Communicate what we learned]
+  E --> F[Make or inform a decision]
+  F --> A
+````
+
+::: {.supporting}
+The process loops. Real data science rarely looks perfectly linear.
+:::
+
+::: {.notes}
+The old Day 1 materials already used a cycle of asking questions, acquiring and preparing data, exploring and visualizing, modeling, and communicating findings. Extend it to decisions and iteration. Point out that the loop can go backward at any point.
+:::
+
+## But what happens inside that process?
+
+::: {.statement}
+"Data science" is a label for a **family of activities**.
+:::
+
+::: {.supporting}
+People can specialize in very different parts of the work.
+:::
+
+---
+
+## Getting data ready
+
+::: {.three-up}
+
+::: {.ds-card}
+### Data engineering
+Build systems that move and transform data so it can be used reliably.
+:::
+
+::: {.ds-card}
+### Data management
+Store, organize, query, and maintain data so people can find and use it.
+:::
+
+::: {.ds-card}
+### Data cleaning
+Deal with missing, inconsistent, duplicated, or otherwise messy data.
+:::
+
+::: {.notes}
+The goal is not to memorize vocabulary. Ask: What might go wrong before anyone ever gets to a model? Give a simple example such as customer records stored in five systems with different IDs.
+:::
+
+:::
+  
+## Making data visible
+
+::: {.three-up}
+
+::: {}
+### Exploration
+Look at data to discover what is happening and what questions are worth asking.
+:::
+
+::: {}
+### Visualization
+Use visual representations to reveal patterns, comparisons, trends, and anomalies.
+:::
+
+::: {}
+### Dashboards
+Turn recurring questions into tools that people can monitor and use repeatedly.
+:::
+
+:::
+
+::: {.notes}
+Distinguish exploratory visualization from a recurring dashboard. You can say: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters.
+:::
+
+## Learning from data
+
+::: {.three-up}
+
+::: {}
+### Statistical modeling
+Represent relationships while accounting for uncertainty.
+:::
+
+::: {}
+### Machine learning
+Learn useful patterns from examples to support prediction or other tasks.
+:::
+
+::: {}
+### Experimentation
+Design comparisons that help us learn what causes what, not just what is associated.
+:::
+
+:::
+
+::: {.notes}
+Avoid teaching the technical details. The purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn.
+:::
+
+## Turning analysis into action
+
+:::: {.compare}
+
+::: {}
+### Interpretation
+What does the analysis actually mean?
+
+What should we believe, and how confident should we be?
+:::
+
+::: {}
+### Communication
+How do we help another person understand what matters?
+
+What should they do with the result?
+:::
+
+::::
+
+::: {.key-idea}
+A technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next.
+:::
+
+::: {.notes}
+Emphasize that communication and judgment are part of the work, not an afterthought.
+:::
+
+## Data science needs context {.demo-slide}
+
+::: {.three-up}
+
+::: {}
+### Health
+Which patients need additional attention?
+:::
+
+::: {}
+### Technology
+What should a product recommend next?
+:::
+
+::: {}
+### Science
+What does the data tell us about a physical system?
+:::
+
+:::
+
+::: {.supporting}
+The same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains.
+:::
+
+::: {.notes}
+The point is not to catalog industries. It is to show that domain knowledge changes the questions, the data, and the consequences of decisions.
+:::
+
+## The same tools can serve very different goals
+
+````{mermaid}
+flowchart TB
+  DS[Data Science]
+
+  DS --> Q[Different questions]
+  DS --> D[Different data]
+  DS --> M[Different methods]
+  DS --> C[Different contexts]
+  DS --> O[Different outcomes]
+
+  Q --> Q1[Understand]
+  Q --> Q2[Predict]
+  Q --> Q3[Decide]
+
+  M --> M1[Statistics]
+  M --> M2[Computing]
+  M --> M3[Visualization]
+  M --> M4[Machine Learning]
+
+  C --> C1[Health]
+  C --> C2[Business]
+  C --> C3[Science]
+  C --> C4[Government]
+````
+
+::: {.notes}
+This is the first visual map of the field. Do not imply that these are exhaustive or mutually exclusive categories. The message is simply that Data Science branches in many directions.
+:::
+
+## Here's the important idea {.takeaway-slide}
+
+::: {.big-idea}
+Data Science is a **broad field**.
+
+Different people can work on very different problems, using very different combinations of expertise.
+:::
+
+---
+
+## Imagine someone says… {.question-slide}
+
+::: {.r-fit-text}
+**"I'm interested in studying medicine."**
+:::
+
+::: {.prompt}
+What would your next question be?
+:::
+
+::: {.notes}
+Pause. Let students answer. Likely answers include specialty, type of medicine, or what aspect interests them.
+:::
+
+## "What part?"
+
+Medicine is a broad field with many specialties.
+
+You might say:
+
+**Pediatrics.**  **Surgery.**  **Virology.**  **Epidemiology.**
+
+::: {.supporting}
+Knowing that someone studies medicine tells you something important, but not enough to know what they actually study or do.
+:::
+
+## Data Science works the same way {.takeaway-slide}
+
+::: {.big-idea}
+"I'm interested in **Data Science.**"
+
+**What part?**
+:::
+
+::: {.notes}
+This is the conceptual centerpiece of Day 1. The goal is to make the students feel why broadness is not a problem. It is a defining feature of the field.
+:::
+
+## Where might you fit?
+
+::: {.three-up}
+
+::: {}
+### Build
+Build computational systems and tools.
+:::
+
+::: {}
+### Understand
+Use data to explain patterns and uncertainty.
+:::
+
+::: {}
+### Predict
+Build models that anticipate what may happen next.
+:::
+
+:::
+
+::: {.three-up}
+
+::: {}
+### Discover
+Find patterns in complex or unfamiliar data.
+:::
+
+::: {}
+### Communicate
+Make evidence understandable and useful.
+:::
+
+::: {}
+### Apply
+Use data to solve problems in a domain you care about.
+:::
+
+:::
+
+::: {.notes}
+Tell students this is not a major-selection quiz. Ask them to choose two areas that sound interesting right now. They are making an initial hypothesis about themselves, not making a commitment.
+:::
+
+## One course, seven questions {.section-card}
+
+::: {.big-idea}
+**1. What is Data Science?**
+
+**2. What does it look like in practice?**
+
+**3. What does it look like in the workplace?**
+
+**4. How can I study it at BYU?**
+
+**5. How can I build my BYU experience?**
+
+**6. Where can it take me?**
+
+**7. What do I want to explore next?**
+:::
+
+::: {.notes}
+Briefly preview the course arc. Day 1 builds the map. Day 2 will let students experience the work. Day 3 tests the breadth claim using real job descriptions and launches the informational-interview assignment. Day 4 moves from the field to BYU's academic pathways.
+:::
+
+## Exit ticket {.question-slide}
+
+::: {.prompt}
+**1. What part of Data Science currently sounds most interesting to you?**
+:::
+
+::: {.prompt}
+**2. What is one thing about Data Science you want to understand better?**
+:::
+
+::: {.supporting}
+You do not need to choose a major today.
+:::
+
+::: {.notes}
+Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later.
+:::
