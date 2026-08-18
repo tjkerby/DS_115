@@ -72,17 +72,20 @@ People can specialize in very different parts of the work.
 ::: {.three-up}
 
 ::: {.ds-card}
-### Data engineering
+**Data engineering**
+
 Build systems that move and transform data so it can be used reliably.
 :::
 
 ::: {.ds-card}
-### Data management
+**Data management**
+
 Store, organize, query, and maintain data so people can find and use it.
 :::
 
 ::: {.ds-card}
-### Data cleaning
+**Data cleaning**
+
 Deal with missing, inconsistent, duplicated, or otherwise messy data.
 :::
 
@@ -96,18 +99,21 @@ The goal is not to memorize vocabulary. Ask: What might go wrong before anyone e
 
 ::: {.three-up}
 
-::: {}
-### Exploration
+::: {.ds-card}
+**Exploration**
+
 Look at data to discover what is happening and what questions are worth asking.
 :::
 
-::: {}
-### Visualization
+::: {.ds-card}
+**Visualization**
+
 Use visual representations to reveal patterns, comparisons, trends, and anomalies.
 :::
 
-::: {}
-### Dashboards
+::: {.ds-card}
+**Dashboards**
+
 Turn recurring questions into tools that people can monitor and use repeatedly.
 :::
 
@@ -121,18 +127,21 @@ Distinguish exploratory visualization from a recurring dashboard. You can say: e
 
 ::: {.three-up}
 
-::: {}
-### Statistical modeling
+::: {.ds-card}
+**Statistical modeling**
+
 Represent relationships while accounting for uncertainty.
 :::
 
-::: {}
-### Machine learning
+::: {.ds-card}
+**Machine learning**
+
 Learn useful patterns from examples to support prediction or other tasks.
 :::
 
-::: {}
-### Experimentation
+::: {.ds-card}
+**Experimentation**
+
 Design comparisons that help us learn what causes what, not just what is associated.
 :::
 
@@ -146,15 +155,17 @@ Avoid teaching the technical details. The purpose is to show that modeling is a 
 
 :::: {.compare}
 
-::: {}
-### Interpretation
+::: {.ds-card}
+**Interpretation**
+
 What does the analysis actually mean?
 
 What should we believe, and how confident should we be?
 :::
 
-::: {}
-### Communication
+::: {.ds-card}
+**Communication**
+
 How do we help another person understand what matters?
 
 What should they do with the result?
@@ -174,18 +185,21 @@ Emphasize that communication and judgment are part of the work, not an afterthou
 
 ::: {.three-up}
 
-::: {}
-### Health
+::: {.ds-card}
+**Health**
+
 Which patients need additional attention?
 :::
 
-::: {}
-### Technology
+::: {.ds-card}
+**Technology**
+
 What should a product recommend next?
 :::
 
-::: {}
-### Science
+::: {.ds-card}
+**Science**
+
 What does the data tell us about a physical system?
 :::
 
@@ -282,18 +296,21 @@ This is the conceptual centerpiece of Day 1. The goal is to make the students fe
 
 ::: {.three-up}
 
-::: {}
-### Build
+::: {.ds-card}
+**Build**
+
 Build computational systems and tools.
 :::
 
-::: {}
-### Understand
+::: {.ds-card}
+**Understand**
+
 Use data to explain patterns and uncertainty.
 :::
 
-::: {}
-### Predict
+::: {.ds-card}
+**Predict**
+
 Build models that anticipate what may happen next.
 :::
 
@@ -301,18 +318,21 @@ Build models that anticipate what may happen next.
 
 ::: {.three-up}
 
-::: {}
-### Discover
+::: {.ds-card}
+**Discover**
+
 Find patterns in complex or unfamiliar data.
 :::
 
-::: {}
-### Communicate
+::: {.ds-card}
+**Communicate**
+
 Make evidence understandable and useful.
 :::
 
-::: {}
-### Apply
+::: {.ds-card}
+**Apply**
+
 Use data to solve problems in a domain you care about.
 :::
 

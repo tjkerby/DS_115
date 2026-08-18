@@ -1,0 +1,430 @@
+---
+title: "DS 115: Exploring Data Science"
+subtitle: "Day 1 | What is Data Science, and why is it so broad?"
+author: "Department of Statistics | Brigham Young University"
+date: ""
+---
+
+## Welcome to Data Science {.question-slide}
+
+::: {.prompt}
+When you hear the phrase **"Data Science,"** what comes to mind?
+:::
+
+::: {.supporting}
+Think for a moment. Then compare your answer with someone near you.
+:::
+
+::: {.notes}
+Open with the same question used in the previous version of the course. Do not correct answers. We want to surface the students' existing mental models.
+:::
+
+## A working definition
+
+::: {.statement}
+**Data science is using data to understand, explain, predict, and make decisions about the world.**
+:::
+
+::: {.key-idea}
+Data science uses ideas from many disciplines. There is no single skill, method, or type of problem that defines the entire field.
+:::
+
+::: {.notes}
+The previous Day 1 presentation used a more formal definition emphasizing scientific methods, algorithms, and programming. Keep that definition available if useful, but use this simpler definition as the through-line for the class.
+:::
+
+## Data science is a process {.demo-slide}
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 12
+flowchart LR
+  A[Ask] --> B[Prepare]
+  B --> C[Explore]
+  C --> D[Model]
+  D --> E[Communicate]
+  E --> F[Decide]
+  F --> A
+````
+
+::: {.statement}
+**Data science is iterative. You rarely know the right question, data, or method at the beginning.**
+:::
+
+::: {.notes}
+This is the first major mental model of the course, so keep it sparse. Narrate the details: Ask a meaningful question, get and prepare data, explore and visualize, model or reason from data, communicate what we learned, make or inform a decision. Point out that the loop can go backward at any point. The shortened node labels keep the diagram clean; the full descriptions are spoken, not read.
+:::
+
+## But what happens inside that process?
+
+::: {.statement}
+"Data science" is a label for a **family of activities**.
+:::
+
+::: {.supporting}
+People can specialize in very different parts of the work.
+:::
+
+---
+
+## Getting data ready
+
+::: {.prompt}
+**You have 20 million patient records. What has to happen before anyone can analyze them?**
+:::
+
+::: {.supporting}
+Think for a moment. What could go wrong?
+:::
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**Data engineering**
+
+Move and transform the data so it can be used reliably.
+::::
+
+:::: {.ds-card .fragment}
+**Data management**
+
+Store, organize, query, and maintain the data so people can find and use it.
+::::
+
+:::: {.ds-card .fragment}
+**Data cleaning**
+
+Deal with missing, inconsistent, duplicated, or otherwise messy data.
+::::
+
+:::::
+
+::: {.notes}
+Present the scenario first. Let students think and share. Then reveal the vocabulary. The goal is not to memorize terms but to make them memorable through a concrete problem. Give a simple example such as customer records stored in five systems with different IDs.
+:::
+
+## Making data visible
+
+::: {.prompt}
+**You have clean data. How do you begin to understand what it tells you?**
+:::
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**Exploration**
+
+Look at data to discover what is happening and what questions are worth asking.
+::::
+
+:::: {.ds-card .fragment}
+**Visualization**
+
+Use visual representations to reveal patterns, comparisons, trends, and anomalies.
+::::
+
+:::: {.ds-card .fragment}
+**Dashboards**
+
+Turn recurring questions into tools that people can monitor and use repeatedly.
+::::
+
+:::::
+
+::: {.notes}
+Again, start with the scenario question. Let students respond. Then reveal. Distinguish exploratory visualization from a recurring dashboard: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters.
+:::
+
+## Learning from data
+
+::: {.prompt}
+**You have explored the data. Now you want to learn something from it. What are your options?**
+:::
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**Statistical modeling**
+
+Represent relationships while accounting for uncertainty.
+
+::: {.supporting}
+What kind of question might this help you answer?
+:::
+::::
+
+:::: {.ds-card .fragment}
+**Machine learning**
+
+Learn useful patterns from examples to support prediction or other tasks.
+
+::: {.supporting}
+How is that similar to modeling? How might it be different?
+:::
+::::
+
+:::: {.ds-card .fragment}
+**Experimentation**
+
+Design comparisons that help us learn what causes what, not just what is associated.
+
+::: {.supporting}
+Notice that data science isn't just about building predictive models.
+:::
+::::
+
+:::::
+
+::: {.notes}
+Reveal one card at a time. After each card appears, ask the supporting question and let students respond before advancing. This turns three facts to memorize into three things to reason about. Avoid teaching the technical details — the purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn.
+:::
+
+## Turning analysis into action
+
+:::: {.compare}
+
+::: {.ds-card .fragment}
+**Interpretation**
+
+What does this result actually mean?
+:::
+
+::: {.ds-card .fragment}
+**Communication**
+
+Can someone else understand what matters?
+:::
+
+::::
+
+::: {.giant .fragment}
+Good data science doesn't end with an analysis.
+:::
+
+::: {.notes}
+Reveal the two cards first. Ask: "What happens if the analysis is correct but no one understands it?" Then reveal the giant statement. Emphasize that communication and judgment are part of the work, not an afterthought. A technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next.
+:::
+
+## Data science needs context {.demo-slide}
+
+::::: {.three-up}
+
+:::: {.ds-card}
+**Health**
+
+::: {.eyebrow}
+Question
+:::
+
+Which patients need additional attention?
+::::
+
+:::: {.ds-card}
+**Technology**
+
+::: {.eyebrow}
+Question
+:::
+
+What should a product recommend next?
+::::
+
+:::: {.ds-card}
+**Science**
+
+::: {.eyebrow}
+Question
+:::
+
+What does the data tell us about a physical system?
+::::
+
+:::::
+
+::: {.statement}
+**Same broad toolkit → very different problems.**
+:::
+
+::: {.notes}
+The point is not to catalog industries. The important insight is that the methods can stay similar while the questions, data, stakes, and domain knowledge change dramatically. The same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains.
+:::
+
+## There is no single "data scientist"
+
+::: {.three-up}
+
+::: {.ds-card}
+**The modeler**
+
+Studies uncertainty and relationships.
+:::
+
+::: {.ds-card}
+**The builder**
+
+Builds systems and tools that use data.
+:::
+
+::: {.ds-card}
+**The investigator**
+
+Uses data to understand a scientific or social question.
+:::
+
+:::
+
+::: {.supporting}
+All three can reasonably call what they do **data science**.
+:::
+
+::: {.notes}
+This replaces the old abstract Mermaid summary slide. The point is to show that data science is not one job but a family of very different roles. This sets up the medicine analogy: just as medicine has many specialties, data science has many orientations.
+:::
+
+## Here's the important idea {.takeaway-slide}
+
+::: {.big-idea}
+Data Science is a **broad field**.
+
+Different people can work on very different problems, using very different combinations of expertise.
+:::
+
+---
+
+## "I'm interested in studying medicine." {.question-slide .hide-title .center-vert}
+
+::: {.r-fit-text}
+**"I'm interested in studying medicine."**
+:::
+
+::: {.notes}
+Just show the quote. Ask the class: "What would your next question be?" Let students answer. Likely answers include specialty, type of medicine, or what aspect interests them. Do not rush to the next slide.
+:::
+
+## "What part?" {.hide-title}
+
+::: {.giant}
+What part?
+:::
+
+**Pediatrics.**  **Surgery.**  **Virology.**  **Epidemiology.**
+
+::: {.supporting}
+Knowing that someone studies medicine tells you something important, but not enough to know what they actually study or do.
+:::
+
+::: {.notes}
+Reveal "What part?" as the natural response. Then show the examples. Pause to let the analogy land before moving on.
+:::
+
+## "I'm interested in Data Science." {.takeaway-slide .hide-title .center-vert}
+
+::: {.r-fit-text}
+**"I'm interested in Data Science."**
+:::
+
+::: {.giant}
+What part?
+:::
+
+::: {.notes}
+This is the conceptual centerpiece of Day 1. Let the pause between showing the quote and revealing "What part?" be longer than feels comfortable. The goal is to make the students feel why broadness is not a problem — it is a defining feature of the field.
+:::
+
+## Where might you fit?
+
+::: {.prompt}
+Based on what you've seen, what kinds of problems sound interesting?
+:::
+
+::: {.supporting}
+Pick **two** areas that sound interesting right now. This is not a major-selection quiz — you're making an initial hypothesis about yourself.
+:::
+
+::: {.three-up}
+
+::: {.ds-card}
+**Build**
+
+Build computational systems and tools.
+:::
+
+::: {.ds-card}
+**Understand**
+
+Use data to explain patterns and uncertainty.
+:::
+
+::: {.ds-card}
+**Predict**
+
+Build models that anticipate what may happen next.
+:::
+
+:::
+
+::: {.three-up}
+
+::: {.ds-card}
+**Discover**
+
+Find patterns in complex or unfamiliar data.
+:::
+
+::: {.ds-card}
+**Communicate**
+
+Make evidence understandable and useful.
+:::
+
+::: {.ds-card}
+**Apply**
+
+Use data to solve problems in a domain you care about.
+:::
+
+:::
+
+::: {.notes}
+Ask students to choose two areas that sound interesting. They are making an initial hypothesis about themselves, not making a commitment. The framing "based on what you've seen" ties this back to the scenarios and roles from earlier slides.
+:::
+
+## Where this course is going {.section-card}
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 14
+flowchart LR
+  A[Understand<br/>the field] --> B[Experience it]
+  B --> C[Explore careers]
+  C --> D[Choose a<br/>pathway]
+  D --> E[Build your<br/>BYU experience]
+  E --> F[Explore<br/>the future]
+  F --> G[Decide what<br/>to explore next]
+````
+
+::: {.notes}
+This replaces the seven numbered questions with a visual course journey. Briefly preview the arc: Day 1 builds the map. Day 2 lets students experience the work. Day 3 tests the breadth claim using real job descriptions and launches the informational-interview assignment. Day 4 moves from the field to BYU's academic pathways. This visual could become a recurring element throughout the course, with the current day highlighted.
+:::
+
+## Exit ticket {.question-slide}
+
+::: {.prompt}
+**1. What part of Data Science currently sounds most interesting to you?**
+:::
+
+::: {.prompt}
+**2. What is one thing about Data Science you want to understand better?**
+:::
+
+::: {.prompt}
+**3. What would help you answer that second question?**
+:::
+
+::: {.supporting}
+**You do not need to choose a major today.**
+:::
+
+::: {.notes}
+Keep the first two questions essentially unchanged. The third question starts subtly teaching the mindset of exploration and evidence gathering. Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later.
+:::

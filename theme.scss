@@ -120,11 +120,14 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
    Slide backgrounds
    ============================================================ */
 
-.reveal .backgrounds .slide-background {
+/* During PDF export reveal.js moves each .slide-background out of
+   .backgrounds (which is hidden) and into the .pdf-page wrapper, so
+   selectors must not require .backgrounds as an ancestor. */
+.reveal .slide-background {
   background-color: $course-paper;
 }
 
-.reveal .backgrounds .slide-background.title-slide {
+.reveal .slide-background.title-slide {
   background:
     linear-gradient(
       90deg,
@@ -135,19 +138,19 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
     $course-navy;
 }
 
-.reveal .backgrounds .slide-background.section-card {
+.reveal .slide-background.section-card {
   background: linear-gradient(135deg, $course-navy 0%, $course-royal 100%);
 }
 
-.reveal .backgrounds .slide-background.question-slide {
+.reveal .slide-background.question-slide {
   background-color: $course-tan-light;
 }
 
-.reveal .backgrounds .slide-background.demo-slide {
+.reveal .slide-background.demo-slide {
   background-color: $course-royal-soft;
 }
 
-.reveal .backgrounds .slide-background.takeaway-slide {
+.reveal .slide-background.takeaway-slide {
   background: linear-gradient(135deg, $course-navy 0%, #001F40 100%);
 }
 
@@ -357,16 +360,23 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
   align-items: stretch;
 }
 
-.reveal .ds-card h3 {
+/* Use bold text (not ### headings) for .ds-card titles so Pandoc
+   renders a <div> instead of a <section>.  Nested <section> elements
+   are interpreted by reveal.js as vertical slides, which breaks
+   linear navigation. */
+.reveal .ds-card h3,
+.reveal .ds-card > p:first-child {
   font-size: 0.9em;
   margin: 0 0 0.45em 0;
   color: $course-navy;
+  font-weight: 750;
 }
 
-.reveal .ds-card p {
+.reveal .ds-card > p:not(:first-child) {
   font-size: 0.72em;
   line-height: 1.28;
   color: $course-ink;
+  margin: 0;
 }
 
 .reveal .ds-card {
@@ -423,6 +433,34 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
   line-height: 1;
   font-weight: 800;
   color: $course-navy;
+}
+
+/* Suppress the h2 heading on slides where the title text is
+   shown in the body (e.g. dramatic quote slides).  The heading
+   still exists in the DOM for reveal.js navigation/overview. */
+.reveal .slide.hide-title h2 {
+  display: none;
+}
+
+/* Vertically center slide content (e.g. dramatic quote slides).
+   Reveal.js manages <section> layout, so we need !important and
+   explicit height to make flexbox centering work. */
+.reveal .slides > section.center-vert {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 100% !important;
+}
+
+/* Mermaid diagrams on dark .section-card backgrounds: the default
+   royal-blue edges disappear into the navy gradient.  Instead of
+   overriding individual SVG elements (fragile across Mermaid versions),
+   place the diagram on a light panel so all default Mermaid colors
+   are visible. */
+.reveal .slide.section-card .mermaid {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 0.8rem;
+  padding: 1.5em 2em;
 }
 
 /* ============================================================

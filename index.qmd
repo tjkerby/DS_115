@@ -1,7 +1,8 @@
 ---
-title: "DS 115"
+title: "DS 115: Exploring Data Science"
 ---
 
-This is a Quarto website.
+## Slide decks
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+- [Day 1 — What is Data Science, and why is it so broad?](slides/day1.html)
+- [Day 1 (updated) — revised instructional design](slides/updated_day_1.html)

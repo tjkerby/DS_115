@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-04ae61c1b904e55d3ca3505775cd6d4d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-e573ffaf9081fb550ad0a73c86d54185.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -196,11 +196,11 @@ Department of Statistics | Brigham Young University
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  A[Ask a meaningful question] --&gt; B[Get and prepare data]
-  B --&gt; C[Explore and visualize]
-  C --&gt; D[Model or reason from data]
-  D --&gt; E[Communicate what we learned]
-  E --&gt; F[Make or inform a decision]
+  A[Ask] --&gt; B[Prepare]
+  B --&gt; C[Explore]
+  C --&gt; D[Model]
+  D --&gt; E[Communicate]
+  E --&gt; F[Decide]
   F --&gt; A
 </pre>
 </div>
@@ -208,11 +208,11 @@ Department of Statistics | Brigham Young University
 </div>
 </div>
 </div>
-<div class="supporting">
-<p>The process loops. Real data science rarely looks perfectly linear.</p>
+<div class="statement">
+<p><strong>Data science is iterative. You rarely know the right question, data, or method at the beginning.</strong></p>
 </div>
 <aside class="notes">
-<p>The old Day 1 materials already used a cycle of asking questions, acquiring and preparing data, exploring and visualizing, modeling, and communicating findings. Extend it to decisions and iteration. Point out that the loop can go backward at any point.</p>
+<p>This is the first major mental model of the course, so keep it sparse. Narrate the details: Ask a meaningful question, get and prepare data, explore and visualize, model or reason from data, communicate what we learned, make or inform a decision. Point out that the loop can go backward at any point. The shortened node labels keep the diagram clean; the full descriptions are spoken, not read.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -236,21 +236,28 @@ Department of Statistics | Brigham Young University
 </section>
 <section id="getting-data-ready" class="slide level2">
 <h2>Getting data ready</h2>
+<div class="prompt">
+<p><strong>You have 20 million patient records. What has to happen before anyone can analyze them?</strong></p>
+</div>
+<div class="supporting">
+<p>Think for a moment. What could go wrong?</p>
+</div>
 <div class="three-up">
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Data engineering</strong></p>
-<p>Build systems that move and transform data so it can be used reliably.</p>
+<p>Move and transform the data so it can be used reliably.</p>
 </div>
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Data management</strong></p>
-<p>Store, organize, query, and maintain data so people can find and use it.</p>
+<p>Store, organize, query, and maintain the data so people can find and use it.</p>
 </div>
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Data cleaning</strong></p>
 <p>Deal with missing, inconsistent, duplicated, or otherwise messy data.</p>
 </div>
+</div>
 <aside class="notes">
-<p>The goal is not to memorize vocabulary. Ask: What might go wrong before anyone ever gets to a model? Give a simple example such as customer records stored in five systems with different IDs.</p>
+<p>Present the scenario first. Let students think and share. Then reveal the vocabulary. The goal is not to memorize terms but to make them memorable through a concrete problem. Give a simple example such as customer records stored in five systems with different IDs.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -262,26 +269,28 @@ Department of Statistics | Brigham Young University
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</div>
 </section>
 <section id="making-data-visible" class="slide level2">
 <h2>Making data visible</h2>
+<div class="prompt">
+<p><strong>You have clean data. How do you begin to understand what it tells you?</strong></p>
+</div>
 <div class="three-up">
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Exploration</strong></p>
 <p>Look at data to discover what is happening and what questions are worth asking.</p>
 </div>
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Visualization</strong></p>
 <p>Use visual representations to reveal patterns, comparisons, trends, and anomalies.</p>
 </div>
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Dashboards</strong></p>
 <p>Turn recurring questions into tools that people can monitor and use repeatedly.</p>
 </div>
 </div>
 <aside class="notes">
-<p>Distinguish exploratory visualization from a recurring dashboard. You can say: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters.</p>
+<p>Again, start with the scenario question. Let students respond. Then reveal. Distinguish exploratory visualization from a recurring dashboard: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -296,22 +305,34 @@ Department of Statistics | Brigham Young University
 </section>
 <section id="learning-from-data" class="slide level2">
 <h2>Learning from data</h2>
+<div class="prompt">
+<p><strong>You have explored the data. Now you want to learn something from it. What are your options?</strong></p>
+</div>
 <div class="three-up">
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Statistical modeling</strong></p>
 <p>Represent relationships while accounting for uncertainty.</p>
+<div class="supporting">
+<p>What kind of question might this help you answer?</p>
 </div>
-<div class="ds-card">
+</div>
+<div class="ds-card fragment">
 <p><strong>Machine learning</strong></p>
 <p>Learn useful patterns from examples to support prediction or other tasks.</p>
+<div class="supporting">
+<p>How is that similar to modeling? How might it be different?</p>
 </div>
-<div class="ds-card">
+</div>
+<div class="ds-card fragment">
 <p><strong>Experimentation</strong></p>
 <p>Design comparisons that help us learn what causes what, not just what is associated.</p>
+<div class="supporting">
+<p>Notice that data science isn’t just about building predictive models.</p>
+</div>
 </div>
 </div>
 <aside class="notes">
-<p>Avoid teaching the technical details. The purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn.</p>
+<p>Reveal one card at a time. After each card appears, ask the supporting question and let students respond before advancing. This turns three facts to memorize into three things to reason about. Avoid teaching the technical details — the purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -327,22 +348,20 @@ Department of Statistics | Brigham Young University
 <section id="turning-analysis-into-action" class="slide level2">
 <h2>Turning analysis into action</h2>
 <div class="compare">
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Interpretation</strong></p>
-<p>What does the analysis actually mean?</p>
-<p>What should we believe, and how confident should we be?</p>
+<p>What does this result actually mean?</p>
 </div>
-<div class="ds-card">
+<div class="ds-card fragment">
 <p><strong>Communication</strong></p>
-<p>How do we help another person understand what matters?</p>
-<p>What should they do with the result?</p>
+<p>Can someone else understand what matters?</p>
 </div>
 </div>
-<div class="key-idea">
-<p>A technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next.</p>
+<div class="giant fragment">
+<p>Good data science doesn’t end with an analysis.</p>
 </div>
 <aside class="notes">
-<p>Emphasize that communication and judgment are part of the work, not an afterthought.</p>
+<p>Reveal the two cards first. Ask: “What happens if the analysis is correct but no one understands it?” Then reveal the giant statement. Emphasize that communication and judgment are part of the work, not an afterthought. A technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -360,22 +379,31 @@ Department of Statistics | Brigham Young University
 <div class="three-up">
 <div class="ds-card">
 <p><strong>Health</strong></p>
+<div class="eyebrow">
+<p>Question</p>
+</div>
 <p>Which patients need additional attention?</p>
 </div>
 <div class="ds-card">
 <p><strong>Technology</strong></p>
+<div class="eyebrow">
+<p>Question</p>
+</div>
 <p>What should a product recommend next?</p>
 </div>
 <div class="ds-card">
 <p><strong>Science</strong></p>
+<div class="eyebrow">
+<p>Question</p>
+</div>
 <p>What does the data tell us about a physical system?</p>
 </div>
 </div>
-<div class="supporting">
-<p>The same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains.</p>
+<div class="statement">
+<p><strong>Same broad toolkit → very different problems.</strong></p>
 </div>
 <aside class="notes">
-<p>The point is not to catalog industries. It is to show that domain knowledge changes the questions, the data, and the consequences of decisions.</p>
+<p>The point is not to catalog industries. The important insight is that the methods can stay similar while the questions, data, stakes, and domain knowledge change dramatically. The same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -388,43 +416,27 @@ Department of Statistics | Brigham Young University
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-same-tools-can-serve-very-different-goals" class="slide level2">
-<h2>The same tools can serve very different goals</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-  DS[Data Science]
-
-  DS --&gt; Q[Different questions]
-  DS --&gt; D[Different data]
-  DS --&gt; M[Different methods]
-  DS --&gt; C[Different contexts]
-  DS --&gt; O[Different outcomes]
-
-  Q --&gt; Q1[Understand]
-  Q --&gt; Q2[Predict]
-  Q --&gt; Q3[Decide]
-
-  M --&gt; M1[Statistics]
-  M --&gt; M2[Computing]
-  M --&gt; M3[Visualization]
-  M --&gt; M4[Machine Learning]
-
-  C --&gt; C1[Health]
-  C --&gt; C2[Business]
-  C --&gt; C3[Science]
-  C --&gt; C4[Government]
-</pre>
+<section id="there-is-no-single-data-scientist" class="slide level2">
+<h2>There is no single “data scientist”</h2>
+<div class="three-up">
+<div class="ds-card">
+<p><strong>The modeler</strong></p>
+<p>Studies uncertainty and relationships.</p>
 </div>
-<p></p></figure><p></p>
+<div class="ds-card">
+<p><strong>The builder</strong></p>
+<p>Builds systems and tools that use data.</p>
+</div>
+<div class="ds-card">
+<p><strong>The investigator</strong></p>
+<p>Uses data to understand a scientific or social question.</p>
 </div>
 </div>
+<div class="supporting">
+<p>All three can reasonably call what they do <strong>data science</strong>.</p>
 </div>
 <aside class="notes">
-<p>This is the first visual map of the field. Do not imply that these are exhaustive or mutually exclusive categories. The message is simply that Data Science branches in many directions.</p>
+<p>This replaces the old abstract Mermaid summary slide. The point is to show that data science is not one job but a family of very different roles. This sets up the medicine analogy: just as medicine has many specialties, data science has many orientations.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -444,16 +456,13 @@ Department of Statistics | Brigham Young University
 <p>Different people can work on very different problems, using very different combinations of expertise.</p>
 </div>
 </section>
-<section id="imagine-someone-says" class="slide level2 question-slide">
-<h2>Imagine someone says…</h2>
+<section id="im-interested-in-studying-medicine." class="slide level2 question-slide hide-title center-vert">
+<h2>“I’m interested in studying medicine.”</h2>
 <div class="r-fit-text">
 <p><strong>“I’m interested in studying medicine.”</strong></p>
 </div>
-<div class="prompt">
-<p>What would your next question be?</p>
-</div>
 <aside class="notes">
-<p>Pause. Let students answer. Likely answers include specialty, type of medicine, or what aspect interests them.</p>
+<p>Just show the quote. Ask the class: “What would your next question be?” Let students answer. Likely answers include specialty, type of medicine, or what aspect interests them. Do not rush to the next slide.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -466,23 +475,39 @@ Department of Statistics | Brigham Young University
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-part" class="slide level2">
+<section id="what-part" class="slide level2 hide-title">
 <h2>“What part?”</h2>
-<p>Medicine is a broad field with many specialties.</p>
-<p>You might say:</p>
+<div class="giant">
+<p>What part?</p>
+</div>
 <p><strong>Pediatrics.</strong> <strong>Surgery.</strong> <strong>Virology.</strong> <strong>Epidemiology.</strong></p>
 <div class="supporting">
 <p>Knowing that someone studies medicine tells you something important, but not enough to know what they actually study or do.</p>
 </div>
+<aside class="notes">
+<p>Reveal “What part?” as the natural response. Then show the examples. Pause to let the analogy land before moving on.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="data-science-works-the-same-way" class="slide level2 takeaway-slide">
-<h2>Data Science works the same way</h2>
-<div class="big-idea">
-<p>“I’m interested in <strong>Data Science.</strong>”</p>
-<p><strong>What part?</strong></p>
+<section id="im-interested-in-data-science." class="slide level2 takeaway-slide hide-title center-vert">
+<h2>“I’m interested in Data Science.”</h2>
+<div class="r-fit-text">
+<p><strong>“I’m interested in Data Science.”</strong></p>
+</div>
+<div class="giant">
+<p>What part?</p>
 </div>
 <aside class="notes">
-<p>This is the conceptual centerpiece of Day 1. The goal is to make the students feel why broadness is not a problem. It is a defining feature of the field.</p>
+<p>This is the conceptual centerpiece of Day 1. Let the pause between showing the quote and revealing “What part?” be longer than feels comfortable. The goal is to make the students feel why broadness is not a problem — it is a defining feature of the field.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -497,6 +522,12 @@ Department of Statistics | Brigham Young University
 </section>
 <section id="where-might-you-fit" class="slide level2">
 <h2>Where might you fit?</h2>
+<div class="prompt">
+<p>Based on what you’ve seen, what kinds of problems sound interesting?</p>
+</div>
+<div class="supporting">
+<p>Pick <strong>two</strong> areas that sound interesting right now. This is not a major-selection quiz — you’re making an initial hypothesis about yourself.</p>
+</div>
 <div class="three-up">
 <div class="ds-card">
 <p><strong>Build</strong></p>
@@ -526,7 +557,7 @@ Department of Statistics | Brigham Young University
 </div>
 </div>
 <aside class="notes">
-<p>Tell students this is not a major-selection quiz. Ask them to choose two areas that sound interesting right now. They are making an initial hypothesis about themselves, not making a commitment.</p>
+<p>Ask students to choose two areas that sound interesting. They are making an initial hypothesis about themselves, not making a commitment. The framing “based on what you’ve seen” ties this back to the scenarios and roles from earlier slides.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -539,19 +570,28 @@ Department of Statistics | Brigham Young University
           display:block!important;
       }</style></aside>
 </section>
-<section id="one-course-seven-questions" class="slide level2 section-card">
-<h2>One course, seven questions</h2>
-<div class="big-idea">
-<p><strong>1. What is Data Science?</strong></p>
-<p><strong>2. What does it look like in practice?</strong></p>
-<p><strong>3. What does it look like in the workplace?</strong></p>
-<p><strong>4. How can I study it at BYU?</strong></p>
-<p><strong>5. How can I build my BYU experience?</strong></p>
-<p><strong>6. Where can it take me?</strong></p>
-<p><strong>7. What do I want to explore next?</strong></p>
+<section id="where-this-course-is-going" class="slide level2 section-card">
+<h2>Where this course is going</h2>
+<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="14" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Understand&lt;br/&gt;the field] --&gt; B[Experience it]
+  B --&gt; C[Explore careers]
+  C --&gt; D[Choose a&lt;br/&gt;pathway]
+  D --&gt; E[Build your&lt;br/&gt;BYU experience]
+  E --&gt; F[Explore&lt;br/&gt;the future]
+  F --&gt; G[Decide what&lt;br/&gt;to explore next]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
 </div>
 <aside class="notes">
-<p>Briefly preview the course arc. Day 1 builds the map. Day 2 will let students experience the work. Day 3 tests the breadth claim using real job descriptions and launches the informational-interview assignment. Day 4 moves from the field to BYU’s academic pathways.</p>
+<p>This replaces the seven numbered questions with a visual course journey. Briefly preview the arc: Day 1 builds the map. Day 2 lets students experience the work. Day 3 tests the breadth claim using real job descriptions and launches the informational-interview assignment. Day 4 moves from the field to BYU’s academic pathways. This visual could become a recurring element throughout the course, with the current day highlighted.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -572,11 +612,14 @@ Department of Statistics | Brigham Young University
 <div class="prompt">
 <p><strong>2. What is one thing about Data Science you want to understand better?</strong></p>
 </div>
+<div class="prompt">
+<p><strong>3. What would help you answer that second question?</strong></p>
+</div>
 <div class="supporting">
-<p>You do not need to choose a major today.</p>
+<p><strong>You do not need to choose a major today.</strong></p>
 </div>
 <aside class="notes">
-<p>Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later.</p>
+<p>Keep the first two questions essentially unchanged. The third question starts subtly teaching the mindset of exploration and evidence gathering. Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
