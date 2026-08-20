@@ -6,3 +6,5 @@ title: "DS 115: Exploring Data Science"
 
 - [Day 1 — What is Data Science, and why is it so broad?](slides/day1.html)
 - [Day 1 (updated) — revised instructional design](slides/updated_day_1.html)
+- [Day 2 - From Observations to Answers](slides/day2.html)
+- [Day 3 — Same title, different jobs](slides/day3.html)

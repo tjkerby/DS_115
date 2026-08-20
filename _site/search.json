@@ -250,5 +250,362 @@
     "title": "DS 115: Exploring Data Science",
     "section": "Exit ticket",
     "text": "Exit ticket\n\n1. What part of Data Science currently sounds most interesting to you?\n\n\n2. What is one thing about Data Science you want to understand better?\n\n\nYou do not need to choose a major today.\n\n\nCollect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later."
+  },
+  {
+    "objectID": "README_DAY2_INTEGRATION.html",
+    "href": "README_DAY2_INTEGRATION.html",
+    "title": "DS 115 Day 2 integration",
+    "section": "",
+    "text": "Copy these files into the root of the DS 115 Quarto repository.\n\n\n\nAdds slides/day2.qmd.\nAdds slides/day2_assets/ with synthetic data, figures, generated Markdown snippets, and the Python regeneration script.\nAdds the Day 2 link to index.qmd.\nAdds requirements-day2.txt for optional asset regeneration.\n\n\n\n\nDay 2 inherits the existing settings from slides/_metadata.yml and the existing course design from theme.scss. No changes to _quarto.yml, slides/_metadata.yml, or theme.scss are required.\n\n\n\nThe slide deck is static at Quarto render time. Python is not required to build the website because the tables and figures are committed as generated assets.\nTo regenerate the Day 2 data and assets after editing the simulation:\npip install -r requirements-day2.txt\npython slides/day2_assets/day2_student_success_data.py\nThen render or preview the Quarto website as usual."
+  },
+  {
+    "objectID": "README_DAY2_INTEGRATION.html#what-changes",
+    "href": "README_DAY2_INTEGRATION.html#what-changes",
+    "title": "DS 115 Day 2 integration",
+    "section": "",
+    "text": "Adds slides/day2.qmd.\nAdds slides/day2_assets/ with synthetic data, figures, generated Markdown snippets, and the Python regeneration script.\nAdds the Day 2 link to index.qmd.\nAdds requirements-day2.txt for optional asset regeneration."
+  },
+  {
+    "objectID": "README_DAY2_INTEGRATION.html#what-does-not-change",
+    "href": "README_DAY2_INTEGRATION.html#what-does-not-change",
+    "title": "DS 115 Day 2 integration",
+    "section": "",
+    "text": "Day 2 inherits the existing settings from slides/_metadata.yml and the existing course design from theme.scss. No changes to _quarto.yml, slides/_metadata.yml, or theme.scss are required."
+  },
+  {
+    "objectID": "README_DAY2_INTEGRATION.html#publishing",
+    "href": "README_DAY2_INTEGRATION.html#publishing",
+    "title": "DS 115 Day 2 integration",
+    "section": "",
+    "text": "The slide deck is static at Quarto render time. Python is not required to build the website because the tables and figures are committed as generated assets.\nTo regenerate the Day 2 data and assets after editing the simulation:\npip install -r requirements-day2.txt\npython slides/day2_assets/day2_student_success_data.py\nThen render or preview the Quarto website as usual."
+  },
+  {
+    "objectID": "slides/day2.html#what-helps-a-college-student-succeed",
+    "href": "slides/day2.html#what-helps-a-college-student-succeed",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What helps a college student succeed?",
+    "text": "What helps a college student succeed?\n\nWhat would you want to know about a student if you were trying to understand academic success?\n\n\nThink of one student. What would you measure about them?\n\n\nLet students suggest variables before showing the dataset. Do not worry about whether every suggestion is practical. The point is that variables should arise from questions, not from spreadsheets."
+  },
+  {
+    "objectID": "slides/day2.html#what-would-you-measure",
+    "href": "slides/day2.html#what-would-you-measure",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What would you measure?",
+    "text": "What would you measure?\n\n\nHabits\nSleep, study time, attendance, exercise, phone use\n\n\nContext\nWork hours, commute, housing, course load\n\n\nBackground and outcomes\nPrevious GPA, year in school, major, current GPA\n\n\n\nYou can probably think of variables we missed. That is part of deciding what data to collect."
+  },
+  {
+    "objectID": "slides/day2.html#we-anticipated-some-of-your-ideas",
+    "href": "slides/day2.html#we-anticipated-some-of-your-ideas",
+    "title": "DS 115: Exploring Data Science",
+    "section": "We anticipated some of your ideas",
+    "text": "We anticipated some of your ideas\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nprevious_gpa\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10001\nJunior\n3.13\n3.37\n18.9\n8.3\n3.9\n0.86\n\n\n10002\nJunior\n3.05\n3.12\n2.9\n6.7\n5.8\n0.82\n\n\n10003\nJunior\n2.89\n2.81\n6.8\n7.7\n10.5\n0.85\n\n\n10004\nSenior\n3.56\n3.33\n14.2\n7\n8\n0.97\n\n\n10005\nFirst-year\n3.35\n3.46\n18\n6.5\n6.8\n0.9\n\n\n10006\nFirst-year\n3.55\n3.07\n12.5\n4.9\n10.3\n0.92\n\n\n10007\nJunior\n4\n2.81\n10.2\n7.3\n4.5\n0.71\n\n\n10008\nSophomore\n2.8\n2.69\n15.9\n7.7\n1.9\n0.85\n\n\n\n\nThis is a synthetic dataset of 750 fictional students.\n\n\nTell students explicitly that the data are synthetic. The relationships are designed to be plausible enough for today’s conceptual exercise, not to make claims about real BYU students."
+  },
+  {
+    "objectID": "slides/day2.html#the-most-important-idea-today",
+    "href": "slides/day2.html#the-most-important-idea-today",
+    "title": "DS 115: Exploring Data Science",
+    "section": "The most important idea today",
+    "text": "The most important idea today\n\nEvery row represents something.\n\n\nThat something is what we use to answer questions."
+  },
+  {
+    "objectID": "slides/day2.html#in-this-dataset",
+    "href": "slides/day2.html#in-this-dataset",
+    "title": "DS 115: Exploring Data Science",
+    "section": "In this dataset",
+    "text": "In this dataset\n\n\nRows\nOne row represents one student.\n\n\nColumns\nColumns tell us what we know about each student.\n\n\n\nRows tell us who or what we observed. Columns tell us what we measured."
+  },
+  {
+    "objectID": "slides/day2.html#what-can-one-row-answer",
+    "href": "slides/day2.html#what-can-one-row-answer",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What can one row answer?",
+    "text": "What can one row answer?\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nprevious_gpa\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10001\nJunior\n3.13\n3.37\n18.9\n8.3\n3.9\n0.86\n\n\n\n\nWhat questions can this row answer?\n\n\nQuestions about this student."
+  },
+  {
+    "objectID": "slides/day2.html#what-can-many-rows-answer",
+    "href": "slides/day2.html#what-can-many-rows-answer",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What can many rows answer?",
+    "text": "What can many rows answer?\n\n\n\n\n\nflowchart LR\n  A[One student] --&gt; B[Many students]\n  B --&gt; C[Summarize]\n  C --&gt; D[Answer questions about a group]\n\n\n\n\n\n\n\nWe can aggregate individual observations to answer group-level questions."
+  },
+  {
+    "objectID": "slides/day2.html#summaries-answer-questions",
+    "href": "slides/day2.html#summaries-answer-questions",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Summaries answer questions",
+    "text": "Summaries answer questions\n\n\n\nquestion\nanswer\n\n\n\n\nHow many students are in the dataset?\n750\n\n\nWhat is the average GPA?\n2.86\n\n\nWhat is the median GPA?\n2.84\n\n\nWhat proportion attend at least 90% of class meetings?\n0.43\n\n\nWhat proportion work more than 20 hours/week?\n0.12\n\n\nWhat is the average sleep per night?\n6.72\n\n\n\n\nA summary statistic is useful because it turns many rows into an answer to a question.\n\n\nDo not turn this into a formal lesson on summary statistics. Frame count, mean, median, and proportion as tools that answer different questions about a collection of rows."
+  },
+  {
+    "objectID": "slides/day2.html#aggregating-changes-what-a-row-represents",
+    "href": "slides/day2.html#aggregating-changes-what-a-row-represents",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Aggregating changes what a row represents",
+    "text": "Aggregating changes what a row represents\n\n\n\nyear\nstudents\navg_sleep\navg_study\navg_gpa\n\n\n\n\nFirst-year\n212\n6.52\n13.23\n2.8\n\n\nSophomore\n181\n6.68\n12.3\n2.86\n\n\nJunior\n188\n6.84\n12.31\n2.87\n\n\nSenior\n169\n6.89\n11.73\n2.93\n\n\n\n\nRaw data: one row = student.\nSummary: one row = class year."
+  },
+  {
+    "objectID": "slides/day2.html#same-original-data-different-questions",
+    "href": "slides/day2.html#same-original-data-different-questions",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Same original data, different questions",
+    "text": "Same original data, different questions\n\n\nStudent-level rows\nWho seems likely to earn a higher GPA?\n\n\nGroup-level rows\nHow do class years compare on average?\n\n\n\nChanging the unit represented by a row changes the questions the data can answer."
+  },
+  {
+    "objectID": "slides/day2.html#what-does-one-row-represent",
+    "href": "slides/day2.html#what-does-one-row-represent",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What does one row represent?",
+    "text": "What does one row represent?\n\n\n\nDataset\nWhat might one row represent?\n\n\n\n\nStudent success survey\n?\n\n\nCourse grade records\n?\n\n\nStudent sleep diary\n?\n\n\nCampus dining transactions\n?\n\n\n\n\nPossible answers: student, student-course enrollment, student-day, transaction. For the course grade example, use the ambiguity to make the point that we must know how the dataset was constructed."
+  },
+  {
+    "objectID": "slides/day2.html#a-dataset-does-not-know-everything",
+    "href": "slides/day2.html#a-dataset-does-not-know-everything",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A dataset does not know everything",
+    "text": "A dataset does not know everything\n\nWhat one row represents determines what the dataset knows."
+  },
+  {
+    "objectID": "slides/day2.html#but-which-rows-did-we-observe",
+    "href": "slides/day2.html#but-which-rows-did-we-observe",
+    "title": "DS 115: Exploring Data Science",
+    "section": "But which rows did we observe?",
+    "text": "But which rows did we observe?\n\nSuppose our dataset has 750 students. What does that let us say?\n\n\nThe answer depends on where those 750 students came from."
+  },
+  {
+    "objectID": "slides/day2.html#same-750-rows-different-situations",
+    "href": "slides/day2.html#same-750-rows-different-situations",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Same 750 rows, different situations",
+    "text": "Same 750 rows, different situations\n\n\nSituation 1\nThese are all students in a particular course this semester.\n\n\nSituation 2\nThese are a random sample of BYU students.\n\n\nSituation 3\nThese are students who chose to answer a link posted on Instagram.\n\n\n\nSame number of rows. Very different claims."
+  },
+  {
+    "objectID": "slides/day2.html#sample-and-population",
+    "href": "slides/day2.html#sample-and-population",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Sample and population",
+    "text": "Sample and population\n\n\n\n\n\nflowchart TD\n  Q[Question we want to answer] --&gt; P[Population we care about]\n  P --&gt; S[Sample we actually observe]\n  S --&gt; D[Rows in our dataset]\n  D --&gt; C[Claims we can responsibly make]\n\n\n\n\n\n\n\nLots of rows do not automatically support broad claims."
+  },
+  {
+    "objectID": "slides/day2.html#which-claim-is-justified",
+    "href": "slides/day2.html#which-claim-is-justified",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Which claim is justified?",
+    "text": "Which claim is justified?\nOur 750 observed students average 2.86 GPA.\n\nThese 750 students averaged 2.86 GPA.\nBYU students average 2.86 GPA.\nCollege students average 2.86 GPA.\n\n\nHave students vote. The first claim is directly descriptive of the rows observed. Broader claims require assumptions about how the sample relates to the population."
+  },
+  {
+    "objectID": "slides/day2.html#we-can-compare-groups-too",
+    "href": "slides/day2.html#we-can-compare-groups-too",
+    "title": "DS 115: Exploring Data Science",
+    "section": "We can compare groups too",
+    "text": "We can compare groups too\n\n\n\nsleep_group\nstudents\navg_gpa\nmedian_gpa\n\n\n\n\n7+ hours\n294\n2.9\n2.88\n\n\n&lt; 7 hours\n456\n2.84\n2.81\n\n\n\n\nWhat does this comparison suggest?\n\n\nAnd what does it not prove?"
+  },
+  {
+    "objectID": "slides/day2.html#a-first-visualization",
+    "href": "slides/day2.html#a-first-visualization",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A first visualization",
+    "text": "A first visualization\n\n\n\n\n\n\nA pattern is not automatically an explanation."
+  },
+  {
+    "objectID": "slides/day2.html#another-view",
+    "href": "slides/day2.html#another-view",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Another view",
+    "text": "Another view\n\n\n\n\n\n\nThere is a pattern, but not a perfect one."
+  },
+  {
+    "objectID": "slides/day2.html#we-have-already-asked-different-kinds-of-questions",
+    "href": "slides/day2.html#we-have-already-asked-different-kinds-of-questions",
+    "title": "DS 115: Exploring Data Science",
+    "section": "We have already asked different kinds of questions",
+    "text": "We have already asked different kinds of questions\n\n\nDescribe\nWhat happened in the rows we observed?\n\n\nCompare\nHow do groups or variables differ?\n\n\nPredict\nWhat might happen for a new observation?\n\n\n\nDescription and prediction use the same data in different ways."
+  },
+  {
+    "objectID": "slides/day2.html#can-we-predict-a-new-students-gpa",
+    "href": "slides/day2.html#can-we-predict-a-new-students-gpa",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Can we predict a new student’s GPA?",
+    "text": "Can we predict a new student’s GPA?\n\n\n\nvariable\nvalue\n\n\n\n\nprevious_gpa\n3.45\n\n\nstudy_hours_per_week\n15.0\n\n\nsleep_hours_per_night\n7.2\n\n\nwork_hours_per_week\n8.0\n\n\nattendance_rate\n0.95\n\n\ncredits\n15\n\n\nphone_hours_per_day\n3.8\n\n\nyear\nSophomore\n\n\nhousing\nOff campus\n\n\n\n\nBefore seeing a model, what GPA would you predict?\n\n\nGive students a moment to make a human prediction. You can collect a few guesses or have everyone write one down."
+  },
+  {
+    "objectID": "slides/day2.html#a-simple-predictive-model",
+    "href": "slides/day2.html#a-simple-predictive-model",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A simple predictive model",
+    "text": "A simple predictive model\n\n\n\n\n\nflowchart LR\n  X[What we know about&lt;br/&gt;a student] --&gt; M[Model]\n  M --&gt; Y[Predicted GPA]\n\n\n\n\n\n\n\nThe model learns a pattern from students we already observed, then applies that pattern to a new student."
+  },
+  {
+    "objectID": "slides/day2.html#one-way-a-model-can-combine-information",
+    "href": "slides/day2.html#one-way-a-model-can-combine-information",
+    "title": "DS 115: Exploring Data Science",
+    "section": "One way a model can combine information",
+    "text": "One way a model can combine information\n[ =b_0+b_1(Previous GPA)+b_2(Study)+b_3(Attendance)+ ]\n\nEach piece of information about a student gets a weight (\\(b_1, b_2, b_3, \\ldots\\)).\nThe model learns those weights from the students we already observed.\n\n\nHow should the model decide how much weight to give each piece of information?\n\n\nWe are not learning regression today. We are noticing that prediction creates a mathematical problem."
+  },
+  {
+    "objectID": "slides/day2.html#the-models-prediction",
+    "href": "slides/day2.html#the-models-prediction",
+    "title": "DS 115: Exploring Data Science",
+    "section": "The model’s prediction",
+    "text": "The model’s prediction\n\n3.13 GPA\n\n\nA useful estimate, not a certainty."
+  },
+  {
+    "objectID": "slides/day2.html#prediction-is-useful-but-imperfect",
+    "href": "slides/day2.html#prediction-is-useful-but-imperfect",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Prediction is useful, but imperfect",
+    "text": "Prediction is useful, but imperfect\n\n\n\n\n\n\nEach point is a student the model did not train on. Points away from the diagonal are prediction errors."
+  },
+  {
+    "objectID": "slides/day2.html#should-we-trust-it",
+    "href": "slides/day2.html#should-we-trust-it",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Should we trust it?",
+    "text": "Should we trust it?\n\nWhen would this prediction be useful, and when would you be cautious?\n\n\nAnother student similar to the students in our data?\nA middle-school student?\nA student at a very different institution?\nA high-stakes decision about someone’s opportunity?\n\n\nPrediction is not certainty, and prediction is not automatically explanation."
+  },
+  {
+    "objectID": "slides/day2.html#real-data-also-fights-back",
+    "href": "slides/day2.html#real-data-also-fights-back",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Real data also fights back",
+    "text": "Real data also fights back\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nmajor\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10042\nJunior\nUndeclared\n2.6\n14.6\n6.4\n9\n0.72\n\n\n10279\nSenior\nExercise Science\n2.7\n12.4\nnan\n4.9\n0.88\n\n\n10527\nSophomore\nPsychology\n2.85\ntwelve\n6.3\n18.1\n0.97\n\n\n10437\nJunior\nUndeclared\n2.06\n13.4\n-3\n10.1\n0.75\n\n\n10459\nSenior\nBiology\n7.8\n11.8\n6.9\n6.7\n0.91\n\n\n10341\nSophomore\nEnglish\n2.61\n15.5\n5.7\n8.9\n95\n\n\n10020\njr\nBusiness\n3.27\n11.8\n7\n6.1\n1\n\n\n10632\nJUNIOR\nPsychology\n3.38\n9.8\n7\n15.5\n0.84\n\n\n10429\nSophomore\nbio\n3.18\n21.1\n6.4\n15\n0.89\n\n\n10536\nSenior\nComputer Science\n2.47\n9.4\n6.6\n\n0.79\n\n\n10598\nFirst-year\nComputer Science\n3.33\n19.6\n6.9\n4.4\n0.82\n\n\n10598\nSenior\nEnglish\n2.72\n11.6\n8.2\n21.6\n0.79\n\n\n\n\nWhat would make you nervous about summarizing or modeling these rows?\n\n\nWe will learn how to work with messy data later. For now, notice that useful data rarely arrive perfectly prepared."
+  },
+  {
+    "objectID": "slides/day2.html#think-back-over-what-we-just-did",
+    "href": "slides/day2.html#think-back-over-what-we-just-did",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Think back over what we just did",
+    "text": "Think back over what we just did\n\nWhat kinds of expertise did we need to answer one seemingly simple question?\n\n\nDo not name the disciplines yet. Reconstruct them from the problems we encountered.\n\n\nHave students call these out before revealing the next slide. This is the payoff. The interdisciplinarity should feel earned by the exercise rather than stated as a definition."
+  },
+  {
+    "objectID": "slides/day2.html#what-did-we-need",
+    "href": "slides/day2.html#what-did-we-need",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What did we need?",
+    "text": "What did we need?\n\n\nWhat should we measure?\nWe needed knowledge of students, learning, and the setting.\n\n\nHow do we handle 750 rows?\nWe needed tools for storing, transforming, and computing with data.\n\n\nWhat do the rows let us claim?\nWe needed reasoning about samples, variation, and uncertainty.\n\n\n\n\nHow do variables combine?\nWe needed a mathematical way to express and learn relationships.\n\n\nHow do we show patterns?\nWe needed visualization and communication.\n\n\nWhat should we do with the result?\nWe needed context, judgment, and attention to consequences."
+  },
+  {
+    "objectID": "slides/day2.html#that-is-why-data-science-is-broad",
+    "href": "slides/day2.html#that-is-why-data-science-is-broad",
+    "title": "DS 115: Exploring Data Science",
+    "section": "That is why data science is broad",
+    "text": "That is why data science is broad\n\n\n\n\n\nflowchart TD\n  Q[Real questions] --&gt; DK[Domain knowledge]\n  Q --&gt; CS[Computing]\n  Q --&gt; ST[Statistics]\n  Q --&gt; MA[Mathematics]\n  Q --&gt; CO[Communication]\n  Q --&gt; HJ[Human judgment]\n  DK --&gt; DS[Data science]\n  CS --&gt; DS\n  ST --&gt; DS\n  MA --&gt; DS\n  CO --&gt; DS\n  HJ --&gt; DS\n\n\n\n\n\n\n\nData science is interdisciplinary because real questions create different kinds of problems."
+  },
+  {
+    "objectID": "slides/day2.html#today-was-the-whole-course-in-miniature",
+    "href": "slides/day2.html#today-was-the-whole-course-in-miniature",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Today was the whole course in miniature",
+    "text": "Today was the whole course in miniature\n\n\n\n\n\nflowchart LR\n  Q[Question] --&gt; O[Observe]\n  O --&gt; R[Represent]\n  R --&gt; S[Summarize]\n  S --&gt; G[Generalize]\n  G --&gt; P[Predict]\n  P --&gt; E[Evaluate]\n  E --&gt; C[Communicate]\n  C --&gt; D[Decide]\n\n\n\n\n\n\n\nWe will spend the semester getting better at each part."
+  },
+  {
+    "objectID": "slides/day2.html#exit-question",
+    "href": "slides/day2.html#exit-question",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Exit question",
+    "text": "Exit question\n\nFor any dataset you encounter, ask:\n\n\nWhat does one row represent, and what larger group are we trying to learn about?\n\n\nHave students answer for today’s dataset, then ask them to imagine a dataset from a topic they care about and answer again."
+  },
+  {
+    "objectID": "slides/day2.html#but-this-is-what-we-usually-get",
+    "href": "slides/day2.html#but-this-is-what-we-usually-get",
+    "title": "DS 115: Exploring Data Science",
+    "section": "But this is what we usually get",
+    "text": "But this is what we usually get\n\nThat clean table is what we wish we always got. Here is what data often look like in practice.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nmajor\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10042\nJunior\nUndeclared\n2.6\n14.6\n6.4\n9\n0.72\n\n\n10279\nSenior\nExercise Science\n2.7\n12.4\nnan\n4.9\n0.88\n\n\n10527\nSophomore\nPsychology\n2.85\ntwelve\n6.3\n18.1\n0.97\n\n\n10437\nJunior\nUndeclared\n2.06\n13.4\n-3\n10.1\n0.75\n\n\n10459\nSenior\nBiology\n7.8\n11.8\n6.9\n6.7\n0.91\n\n\n10341\nSophomore\nEnglish\n2.61\n15.5\n5.7\n8.9\n95\n\n\n10020\njr\nBusiness\n3.27\n11.8\n7\n6.1\n1\n\n\n10632\nJUNIOR\nPsychology\n3.38\n9.8\n7\n15.5\n0.84\n\n\n10429\nSophomore\nbio\n3.18\n21.1\n6.4\n15\n0.89\n\n\n10536\nSenior\nComputer Science\n2.47\n9.4\n6.6\n\n0.79\n\n\n10598\nFirst-year\nComputer Science\n3.33\n19.6\n6.9\n4.4\n0.82\n\n\n10598\nSenior\nEnglish\n2.72\n11.6\n8.2\n21.6\n0.79\n\n\n\n\nWhat would make you nervous about summarizing or modeling these rows?\n\n\nWe will learn how to clean messy data later. For now, notice that useful data rarely arrive perfectly prepared.\n\n\nThe contrast with the previous slide is the point. Students do not need to fix anything here; they just need to see that real analysis starts with data that are far from ideal."
+  },
+  {
+    "objectID": "slides/day2.html#from-describing-to-predicting",
+    "href": "slides/day2.html#from-describing-to-predicting",
+    "title": "DS 115: Exploring Data Science",
+    "section": "From describing to predicting",
+    "text": "From describing to predicting\n\nSo far we have looked backward: what happened?\n\n\nWhat if we want to look forward: what will happen?\n\n\nPrediction uses the same data, but asks a different question."
+  },
+  {
+    "objectID": "slides/day3.html#same-title-different-jobs",
+    "href": "slides/day3.html#same-title-different-jobs",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Same title, different jobs",
+    "text": "Same title, different jobs\n\nEmployers can use the same title for jobs with very different centers of gravity."
+  },
+  {
+    "objectID": "slides/day3.html#america-first-credit-union",
+    "href": "slides/day3.html#america-first-credit-union",
+    "title": "DS 115: Exploring Data Science",
+    "section": "America First Credit Union",
+    "text": "America First Credit Union\n\n\nRead the posting. What kind of work seems most central?\n\n\nActual title: Data Scientist\n\n\n\nWhat You Would Do\nThis position supports operational areas of the organization by using internal and external data to generate business insights, better understand member needs, and improve tactical and strategic decision-making.\nYou would:\n\nCollaborate with business teams to extract analytical, behavioral, and predictive insights from data.\nApply statistical, programming, and analytical methods to business questions.\nDesign, develop, and maintain analytical and machine-learning models that will be put into operation.\nWork across the full analytical lifecycle, including piloting models, A/B testing, data design, model deployment, and monitoring.\nExplore internal and external data sources to identify useful patterns that were previously unknown to the business.\nDevelop models for problems such as customer churn, future value, and recommendation systems.\nBuild reporting tools around analytical models to measure their outcomes and business impact.\nRun simulations, analyze trends, identify potential concerns, and perform statistical and financial analyses.\nExplain analytical models and results to business users through presentations and training.\n\nTechnical Skills\n\nPython and R\nSQL\nLinux\nRelational databases, dimensional modeling, and data warehouses\nMachine-learning methods such as linear regression, random forests, and support vector machines\nData mining and statistical analysis\nDashboard design and reporting\nModel deployment and operationalization\n\nOther Important Skills\n\nStrong presentation and communication skills\nAbility to explain technical models to nontechnical users\nAbility to understand business needs and translate them into analytical solutions\nFinancial-services knowledge is helpful\n\nEducation & Experience\n\n3+ years developing and implementing analytical solutions\nMaster’s degree in a related field, or bachelor’s degree with equivalent experience"
+  },
+  {
+    "objectID": "slides/day3.html#waystar",
+    "href": "slides/day3.html#waystar",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Waystar",
+    "text": "Waystar\n\n\nSame title or different title? What clues shape your guess?\n\n\nActual title: Data Scientist\n\n\n\nWhat You Would Do\nThis role focuses on solving technical and data-driven problems in healthcare using computer science, mathematics, predictive modeling, statistics, and machine learning.\nYou would:\n\nWork with Product Management, Application Engineering, R&D, Account Management, and operational teams.\nDesign and experiment with machine-learning and analytical systems for healthcare applications.\nUse large and diverse datasets to generate actionable insights and improve products and client services.\nTranslate real-world healthcare problems into mathematical and computational frameworks.\nExplore data and develop hypotheses based on business and product goals.\nDevelop, test, and validate predictive models and machine-learning algorithms.\nScale analytical approaches to large datasets.\nEvaluate model performance using holdout sets, cross-validation, and related methods.\nWork with engineering teams to gather and process data and incorporate analytical features into products.\nCommunicate findings to product, service, and business managers.\nProduce quantitative evidence to guide feature planning.\n\nTechnical Skills\n\nPython and/or R\nSQL and relational databases\nAt least one general-purpose programming language such as C# or Java\nClassification, regression, clustering, dimension reduction, and multivariate methods\nMachine-learning model evaluation\nWorking with large datasets\nUnderstanding how algorithms scale computationally\n\nOther Important Skills\n\nStrong analytical and problem-solving ability\nStrong written and verbal communication\nPresentation skills\nComfort working in ambiguous, rapidly changing areas\nHealthcare or medical-informatics knowledge is helpful\n\nEducation\n\nMaster’s degree or higher in computer science, statistics, mathematics, or a related field preferred"
+  },
+  {
+    "objectID": "slides/day3.html#scribd",
+    "href": "slides/day3.html#scribd",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Scribd",
+    "text": "Scribd\n\n\nSame title or different title? What seems different from the previous two?\n\n\nActual title: Data Scientist II\n\n\n\nAbout the Team\nThis role is part of an applied research team that uses machine learning, natural language processing, and generative AI to build products used at large scale.\nThe team’s work includes:\n\nContent enrichment\nRecommendation systems\nSearch\nTranslation\nRepresentation learning\nText, image, and audio applications\n\nThe systems operate across hundreds of millions of documents, millions of users, and billions of user interactions.\nWhat You Would Do\nYou would help design, build, and deploy machine-learning and AI systems.\nYou would:\n\nDevelop content-classification solutions using methods ranging from traditional natural-language processing to large language models and generative AI.\nInvestigate approaches to challenging problems at large scale.\nBuild and deploy machine-learning models into production systems.\nWork with machine-learning engineers, data specialists, and product teams.\nChoose approaches ranging from classical machine-learning models to neural networks and third-party language-model APIs.\nProcess very large datasets using Python, SQL, Spark, and related tools.\nBuild machine-learning pipelines and work with distributed data-processing systems.\nCommunicate project approaches and results to stakeholders.\nWrite clear technical documentation.\n\nTechnical Skills\n\nPython\nSQL or PySpark\nScikit-learn and NumPy\nPyTorch and neural networks\nApache Spark, Databricks, or similar tools\nMachine-learning pipelines\nProduction deployment of machine-learning models\nNatural-language processing, search, information retrieval, deep learning, and generative models\n\nEducation & Experience\n\n3+ years developing machine-learning models, working with large-scale systems, and deploying models to production\nBachelor’s or master’s degree in a quantitatively focused discipline"
+  },
+  {
+    "objectID": "slides/day3.html#same-title.-different-centers.",
+    "href": "slides/day3.html#same-title.-different-centers.",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Same title. Different centers.",
+    "text": "Same title. Different centers.\n\nAll three were Data Scientist roles.\n\n\nThe title gave us a clue, but the responsibilities told us much more."
+  },
+  {
+    "objectID": "slides/day3.html#guess-the-job",
+    "href": "slides/day3.html#guess-the-job",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Guess the job",
+    "text": "Guess the job\n\nNow hide the title. Read the work. What would you call this job?"
+  },
+  {
+    "objectID": "slides/day3.html#stio",
+    "href": "slides/day3.html#stio",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Stio",
+    "text": "Stio\n\n\nWhat title would you give this position?\n\n\nActual title: Data Analyst\n\n\n\nWhat You Would Do\nThis role works across data infrastructure, analysis, business intelligence, and direct partnership with teams such as Finance, Merchandising, Marketing, Operations, Inventory Planning, and B2B.\nYou would:\n\nWork directly with business teams to turn ambiguous questions into analyses, dashboards, and data products.\nOwn projects from defining the problem through building, validating, and communicating results.\nBuild and maintain data models that transform raw source-system data into trustworthy datasets.\nDevelop dashboards and reports used for day-to-day decision-making.\nDefine business metrics and help resolve disagreements about what particular measures mean.\nInvestigate messy or ambiguous data problems by talking with system owners, examining edge cases, and reconciling conflicting definitions.\nHelp build and maintain the organization’s data infrastructure.\nReview AI-generated SQL, Python, and modeling code and identify outputs that are technically valid but conceptually wrong.\nCreate useful documentation and improve data governance.\nFavor useful, actionable analysis over unnecessary technical complexity.\n\nTechnical Skills\n\nAdvanced SQL\ndbt\nCloud data warehouses such as Snowflake, BigQuery, Databricks, Redshift, or Microsoft Fabric\nGit and GitHub\nBI tools such as Power BI, Tableau, or Looker\nData modeling, testing, and documentation\nPython and/or R are helpful\nFamiliarity with AI-assisted coding tools is valuable\n\nOther Important Skills\n\nAbility to translate ambiguous business questions into concrete analytical problems\nStrong judgment about whether data and metrics represent what they claim to represent\nAbility to communicate findings verbally, visually, and in writing\nAbility to build trusting relationships with nontechnical stakeholders\nComfort working on a small team and owning work end-to-end\n\nExperience\n\n3+ years of professional experience in analytics or a related role\nRetail, apparel, e-commerce, or similar industry experience is helpful"
+  },
+  {
+    "objectID": "slides/day3.html#uccu",
+    "href": "slides/day3.html#uccu",
+    "title": "DS 115: Exploring Data Science",
+    "section": "UCCU",
+    "text": "UCCU\n\n\nWhat title would you give this position?\n\n\nActual title: Data Engineer\n\n\n\nWhat You Would Do\nThis role owns the design, development, and optimization of the data infrastructure that supports analytics, reporting, and machine-learning work across the credit union.\nYou would:\n\nBuild and maintain ETL/ELT pipelines that combine data from banking systems, lending platforms, digital channels, and outside vendors.\nDesign and manage data warehouses and data lakes.\nDesign schemas and optimize data storage and query performance.\nCreate automated data-quality checks, validation rules, and alerts for pipeline problems.\nDevelop scalable data models that support analytics and reporting.\nWork with analysts, compliance teams, and business stakeholders to define data requirements and deliver trusted datasets.\nOrchestrate and schedule recurring data workflows.\nBuild and maintain cloud-based data infrastructure.\nImplement data-security controls, encryption, access management, and audit logging.\nEnsure data systems satisfy financial-industry privacy and regulatory requirements.\nIntroduce software-engineering practices such as version control, automated testing, documentation, and CI/CD into data workflows.\nSupport data migrations during system upgrades, platform changes, or organizational transitions.\nProvide technical guidance and code reviews to less experienced team members.\n\nTechnical Skills\n\nAdvanced SQL\nPython\nETL/ELT development\ndbt, Matillion, or similar tools\nSnowflake\nAWS, Azure, GCP, or similar cloud platforms\nRelational and columnar databases\nData warehouses and data lakes\nDimensional data modeling and schema design\nData-quality monitoring and observability\nVersion control and CI/CD\nData lineage and documentation\nSecurity, access controls, and audit logging\n\nOther Important Skills\n\nAbility to design reliable and scalable systems\nStrong attention to data quality and trustworthiness\nAbility to work with technical and nontechnical stakeholders\nUnderstanding of privacy, security, and regulatory requirements\nAbility to translate business needs into technical data infrastructure\n\nEducation & Experience\n\nBachelor’s degree in a related technical field, or equivalent professional experience\n3 to 5 years of experience building data infrastructure or working in a closely related area\nExperience in banking, credit unions, fintech, or another regulated industry is helpful"
+  },
+  {
+    "objectID": "slides/day3.html#workday",
+    "href": "slides/day3.html#workday",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Workday",
+    "text": "Workday\n\n\nWhat title would you give this position?\n\n\nActual title: Analytics Engineer\n\n\n\nWhat You Would Do\nThis role builds and owns the data foundation used by teams responsible for partner sales, services, and innovation. The goal is to turn data from many systems into a consistent, trustworthy model that can support analytics and decision-making across the organization.\nYou would:\n\nDesign and maintain dimensional data models in Snowflake.\nCombine information from CRM systems, partner platforms, marketplaces, certification systems, services platforms, and internal systems.\nBuild and optimize ELT pipelines.\nCreate a shared data model that allows different business teams to answer questions using consistent definitions.\nBuild and govern semantic models and datasets used for reporting and analysis.\nDefine metrics and ensure that important business measures are calculated consistently.\nTranslate business rules into version-controlled and testable transformation code.\nEstablish standards for naming, documentation, data lineage, ownership, access, and quality.\nBuild data-quality monitoring and alerting.\nDevelop reconciliation and validation tools for operating reviews, audits, and reporting.\nImprove warehouse performance through query tuning, clustering, incremental models, and workload management.\nTurn ambiguous requests into durable data models rather than one-time manual analyses.\nMentor other team members in SQL, modeling, and code-review practices.\n\nThe majority of the work is spent in SQL, the data warehouse, and the semantic layer rather than building presentations or conducting one-off analyses.\nTechnical Skills\n\nAdvanced SQL\nSnowflake\nDimensional data modeling\nStar and snowflake schemas\nFact and dimension design\nSlowly changing dimensions\nELT development\ndbt or similar transformation frameworks\nSemantic data models\nBI tools such as Sigma\nPython for pipelines, APIs, automation, and validation\nData governance, lineage, and quality monitoring\nQuery optimization and warehouse performance\nVersion-controlled transformation code\n\nOther Important Skills\n\nAbility to translate ambiguous business requirements into reusable data structures\nStrong judgment about how metrics and business concepts should be defined\nAbility to serve multiple stakeholder groups that may use the same terms differently\nStrong written communication and documentation\n\nEducation & Experience\n\n5+ years of experience in analytics, revenue operations, data infrastructure, or related work\n5+ years of advanced SQL experience\n3+ years building data models in a cloud data warehouse\nBachelor’s degree in a quantitative, technical, or business field, or equivalent practical experience"
+  },
+  {
+    "objectID": "slides/day3.html#intermountain-health",
+    "href": "slides/day3.html#intermountain-health",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Intermountain Health",
+    "text": "Intermountain Health\n\n\nWhat title would you give this position?\n\n\nActual title: MLOps Engineer\n\n\n\nWhat You Would Do\nThis role focuses on taking machine-learning and artificial-intelligence models and making them reliable, scalable, and usable in real healthcare operations.\nYou would:\n\nWork closely with quantitative specialists, data engineers, software engineers, and application developers.\nBuild systems and platforms that allow machine-learning models to move from development into production.\nDevelop frameworks for model governance, testing, automation, and continuous integration and delivery.\nBuild and maintain tools such as model registries, feature stores, and model-monitoring systems.\nAutomate model retraining, maintenance, deployment, and monitoring.\nOptimize models and systems for reliability, scalability, and performance.\nDevelop machine-learning systems and pipelines that integrate predictive applications into healthcare operations.\nHelp ensure deployed models follow Responsible AI practices.\nLead complex projects from initial idea through integration into operational workflows.\nPartner with technical and business stakeholders to determine how machine-learning systems should be designed and implemented.\n\nTechnical Skills\n\nPython, R, Java, Scala, or similar programming languages\nLinux and Bash scripting\nCI/CD and DevOps practices\nDocker\nKubernetes\nGit\nAPIs, functions, libraries, and software packages\nModel registries, feature stores, and model monitoring\nSQL and manipulation of large or complex datasets\nSpark, Hadoop, Hive, NoSQL systems, and related big-data tools\nCloud platforms such as AWS and Azure\nDatabricks\nResponsible AI monitoring and governance\n\nOther Important Skills\n\nAbility to collaborate across data, software, engineering, and business teams\nAbility to communicate technical ideas verbally, visually, and in writing\nExperience leading complex technical projects\nAbility to build partnerships across an organization\nAbility to evaluate new machine-learning technologies\n\nEducation & Experience\n\nSignificant experience developing and operating machine-learning systems and pipelines\nExperience leading platforms for deploying and monitoring models\nDegree in a quantitative, computational, or engineering field is preferred\nHealthcare or insurance experience is helpful"
+  },
+  {
+    "objectID": "slides/day3.html#affirm",
+    "href": "slides/day3.html#affirm",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Affirm",
+    "text": "Affirm\n\n\nWhat title would you give this position?\n\n\nActual title: ML Engineer II\n\n\n\nWhat You Would Do\nThis role builds machine-learning and AI systems that automate customer-service operations such as disputes, returns, fraud, chargebacks, and refunds.\nYou would:\n\nDevelop AI systems that automate decisions involving disputes and chargebacks.\nBuild models that automate refunds and other customer-service processes.\nCreate pipelines that use large language models to extract structured information from documents and other unstructured data.\nPrototype new modeling approaches and run experiments to evaluate them.\nMove successful approaches from prototype into production systems.\nMeasure and monitor models after deployment.\nAdd appropriate controls for risk-sensitive automated decisions.\nWork across Engineering, Operations, Product, and machine-learning platform teams.\nDefine requirements, evaluate technical tradeoffs, and communicate results to both technical and nontechnical audiences.\n\nTechnical Skills\n\nStrong Python\nProduction-quality software development\nClassification models for structured/tabular data\nGradient-boosted decision trees such as LightGBM, XGBoost, or CatBoost\nLarge-language-model APIs\nPrompt engineering\nStructured information extraction\nLangChain, LangGraph, or similar frameworks\nPDF, image, and text processing\nTraining, experimentation, and model monitoring tools such as Kubeflow, Airflow, or MLflow\nAI-assisted software-development tools\nWorking with large existing codebases\nTesting, debugging, and code review\n\nOther Important Skills\n\nAbility to take a business problem and turn it into a working software solution\nAbility to write clear, maintainable, and well-tested code\nComfort navigating and debugging complex software systems\nStrong ownership of projects and personal learning\nAbility to work effectively with technical and nontechnical teams\n\nEducation & Experience\n\n2+ years of professional experience building machine-learning systems\nBachelor’s degree in a related field or equivalent practical experience"
+  },
+  {
+    "objectID": "slides/day3.html#slalom",
+    "href": "slides/day3.html#slalom",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Slalom",
+    "text": "Slalom\n\n\nWhat title would you give this position?\n\n\nActual title: AI/ML Engineer\n\n\n\nWhat You Would Do\nThis is a consulting-oriented role focused on designing and delivering AI and machine-learning solutions for clients with real business problems.\nYou would:\n\nDesign, build, and deploy generative-AI and machine-learning systems.\nDevelop applications using large language models, retrieval-augmented generation, agents, prompt engineering, tool calling, workflow automation, and model fine-tuning.\nApply machine learning and deep learning to business problems.\nHelp design and deliver solutions involving computer vision, natural-language processing, and recommendation systems.\nEvaluate AI systems using measures such as accuracy, groundedness, safety, latency, cost, and model drift.\nMove AI and machine-learning systems into production and address reliability and deployment challenges.\nWork directly with clients and stakeholders to understand problems and communicate possible solutions.\nPresent technical approaches and results to audiences with different levels of technical expertise.\nStay current with rapidly changing AI and machine-learning technologies.\nContribute to internal learning, mentoring, and knowledge sharing.\n\nTechnical Skills\n\nPython\nMachine learning and deep learning\nGenerative AI and large language models\nRetrieval-augmented generation\nEmbeddings and vector search\nAI agents\nPrompt engineering\nFine-tuning and model adaptation\nAI evaluation and observability\nProduction deployment of AI and machine-learning systems\nAWS, GCP, or Azure\nML workflow tools\nDatabricks and Snowflake are helpful\n\nOther Important Skills\n\nStrong consulting and client-facing communication\nAbility to explain complex technical ideas to diverse stakeholders\nAbility to connect technical capabilities to real business problems\nCuriosity about emerging technologies\nAbility to advise others about tradeoffs, best practices, and limitations\nExperience presenting and delivering solutions, not just building them\n\nEducation & Experience\n\n6+ years implementing machine-learning models or algorithms in production\n2 to 4 years of consulting or professional-services experience\nExperience with generative-AI systems and major cloud platforms"
+  },
+  {
+    "objectID": "slides/day3.html#so-what-should-we-read-in-a-job-posting",
+    "href": "slides/day3.html#so-what-should-we-read-in-a-job-posting",
+    "title": "DS 115: Exploring Data Science",
+    "section": "So what should we read in a job posting?",
+    "text": "So what should we read in a job posting?\n\nThe title is a clue. The work is the evidence.\n\n\nLook for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise."
   }
 ]

@@ -1,0 +1,525 @@
+---
+title: "DS 115: Exploring Data Science"
+subtitle: "Day 2 | From Observations to Answers"
+author: "Department of Statistics | Brigham Young University"
+date: ""
+---
+
+## What helps a college student succeed? {.question-slide}
+
+::: {.prompt}
+**What would you want to know about a student if you were trying to understand academic success?**
+:::
+
+::: {.supporting}
+Think of one student. What would you measure about them?
+:::
+
+::: {.notes}
+Let students suggest variables before showing the dataset. Do not worry about whether every suggestion is practical. The point is that variables should arise from questions, not from spreadsheets.
+:::
+
+## What would you measure?
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**Habits**
+
+Sleep, study time, attendance, exercise, phone use
+::::
+
+:::: {.ds-card .fragment}
+**Context**
+
+Work hours, commute, housing, course load
+::::
+
+:::: {.ds-card .fragment}
+**Background and outcomes**
+
+Previous GPA, year in school, major, current GPA
+::::
+
+:::::
+
+::: {.supporting .fragment}
+You can probably think of variables we missed. That is part of deciding what data to collect.
+:::
+
+## We anticipated some of your ideas {.demo-slide}
+
+{{< include day2_assets/snippets/student_preview.md >}}
+
+::: {.supporting}
+This is a synthetic dataset of 750 fictional students.
+:::
+
+::: {.notes}
+Tell students explicitly that the data are synthetic. The relationships are designed to be plausible enough for today's conceptual exercise, not to make claims about real BYU students.
+:::
+
+## But this is what we usually get {.demo-slide}
+
+::: {.supporting}
+That clean table is what we *wish* we always got. Here is what data often look like in practice.
+:::
+
+{{< include day2_assets/snippets/messy_preview.md >}}
+
+::: {.prompt .fragment}
+What would make you nervous about summarizing or modeling these rows?
+:::
+
+::: {.supporting .fragment}
+We will learn how to clean messy data later. For now, notice that useful data rarely arrive perfectly prepared.
+:::
+
+::: {.notes}
+The contrast with the previous slide is the point. Students do not need to fix anything here; they just need to see that real analysis starts with data that are far from ideal.
+:::
+
+## The most important idea today {.takeaway-slide .hide-title .center-vert}
+
+::: {.r-fit-text}
+**Every row represents something.**
+:::
+
+::: {.big-idea .fragment}
+That something is what we use to answer questions.
+:::
+
+## In this dataset
+
+:::: {.compare}
+
+::: {.ds-card}
+**Rows**
+
+One row represents **one student**.
+:::
+
+::: {.ds-card}
+**Columns**
+
+Columns tell us what we know about each student.
+:::
+
+::::
+
+::: {.statement .fragment}
+Rows tell us **who or what** we observed. Columns tell us **what we measured**.
+:::
+
+## What can one row answer? {.demo-slide}
+
+{{< include day2_assets/snippets/one_student.md >}}
+
+::: {.prompt .fragment}
+What questions can this row answer?
+:::
+
+::: {.supporting .fragment}
+Questions about **this student**.
+:::
+
+## What can many rows answer?
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 12
+flowchart LR
+  A[One student] --> B[Many students]
+  B --> C[Summarize]
+  C --> D[Answer questions about a group]
+````
+
+::: {.statement .fragment}
+We can aggregate individual observations to answer group-level questions.
+:::
+
+## Summaries answer questions {.demo-slide}
+
+{{< include day2_assets/snippets/summary_answers.md >}}
+
+::: {.key-idea}
+A summary statistic is useful because it turns many rows into an answer to a question.
+:::
+
+::: {.notes}
+Do not turn this into a formal lesson on summary statistics. Frame count, mean, median, and proportion as tools that answer different questions about a collection of rows.
+:::
+
+## Aggregating changes what a row represents {.demo-slide}
+
+{{< include day2_assets/snippets/aggregation_by_year.md >}}
+
+::: {.statement .fragment}
+Raw data: one row = **student**.  
+Summary: one row = **class year**.
+:::
+
+## Same original data, different questions
+
+:::: {.compare}
+
+::: {.ds-card}
+**Student-level rows**
+
+Who seems likely to earn a higher GPA?
+:::
+
+::: {.ds-card}
+**Group-level rows**
+
+How do class years compare on average?
+:::
+
+::::
+
+::: {.key-idea .fragment}
+Changing the unit represented by a row changes the questions the data can answer.
+:::
+
+## What does one row represent? {.question-slide}
+
+| Dataset | What might one row represent? |
+|---|---|
+| Student success survey | ? |
+| Course grade records | ? |
+| Student sleep diary | ? |
+| Campus dining transactions | ? |
+
+::: {.notes}
+Possible answers: student, student-course enrollment, student-day, transaction. For the course grade example, use the ambiguity to make the point that we must know how the dataset was constructed.
+:::
+
+## A dataset does not know everything {.takeaway-slide .hide-title .center-vert}
+
+::: {.r-fit-text}
+**What one row represents determines what the dataset knows.**
+:::
+
+## But which rows did we observe? {.question-slide}
+
+::: {.prompt}
+Suppose our dataset has **750 students**. What does that let us say?
+:::
+
+::: {.supporting .fragment}
+The answer depends on where those 750 students came from.
+:::
+
+## Same 750 rows, different situations
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**Situation 1**
+
+These are **all** students in a particular course this semester.
+::::
+
+:::: {.ds-card .fragment}
+**Situation 2**
+
+These are a **random sample** of BYU students.
+::::
+
+:::: {.ds-card .fragment}
+**Situation 3**
+
+These are students who chose to answer a link posted on Instagram.
+::::
+
+:::::
+
+::: {.statement .fragment}
+Same number of rows. Very different claims.
+:::
+
+## Sample and population
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 10
+flowchart TD
+  Q[Question we want to answer] --> P[Population we care about]
+  P --> S[Sample we actually observe]
+  S --> D[Rows in our dataset]
+  D --> C[Claims we can responsibly make]
+````
+
+::: {.key-idea .fragment}
+Lots of rows do not automatically support broad claims.
+:::
+
+## Which claim is justified? {.question-slide}
+
+{{< include day2_assets/snippets/sample_claims.md >}}
+
+::: {.notes}
+Have students vote. The first claim is directly descriptive of the rows observed. Broader claims require assumptions about how the sample relates to the population.
+:::
+
+## We can compare groups too {.demo-slide}
+
+{{< include day2_assets/snippets/gpa_by_sleep_group.md >}}
+
+::: {.prompt .fragment}
+What does this comparison suggest?
+:::
+
+::: {.supporting .fragment}
+And what does it **not** prove?
+:::
+
+## A first visualization {.demo-slide}
+
+![](day2_assets/figures/gpa_by_sleep_group.png){fig-align="center" width="72%"}
+
+::: {.key-idea .fragment}
+A pattern is not automatically an explanation.
+:::
+
+## Another view {.demo-slide}
+
+![](day2_assets/figures/study_vs_gpa.png){fig-align="center" width="78%"}
+
+::: {.statement .fragment}
+There is a pattern, but not a perfect one.
+:::
+
+## From describing to predicting {.takeaway-slide .hide-title .center-vert}
+
+::: {.r-fit-text}
+**So far we have looked backward: what happened?**
+:::
+
+::: {.big-idea .fragment}
+What if we want to look forward: what *will* happen?
+:::
+
+::: {.supporting .fragment}
+Prediction uses the same data, but asks a different question.
+:::
+
+## We have already asked different kinds of questions
+
+::::: {.three-up}
+
+:::: {.ds-card}
+**Describe**
+
+What happened in the rows we observed?
+::::
+
+:::: {.ds-card}
+**Compare**
+
+How do groups or variables differ?
+::::
+
+:::: {.ds-card}
+**Predict**
+
+What might happen for a new observation?
+::::
+
+:::::
+
+::: {.supporting}
+Description and prediction use the same data in different ways.
+:::
+
+## Can we predict a new student's GPA? {.question-slide}
+
+{{< include day2_assets/snippets/maya_profile.md >}}
+
+::: {.prompt .fragment}
+Before seeing a model, what GPA would **you** predict?
+:::
+
+::: {.notes}
+Give students a moment to make a human prediction. You can collect a few guesses or have everyone write one down.
+:::
+
+## A simple predictive model
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 11
+flowchart LR
+  X[What we know about<br/>a student] --> M[Model]
+  M --> Y[Predicted GPA]
+````
+
+::: {.statement .fragment}
+The model learns a pattern from students we already observed, then applies that pattern to a new student.
+:::
+
+## One way a model can combine information {.demo-slide}
+
+\[
+\widehat{GPA}=b_0+b_1(Previous\ GPA)+b_2(Study)+b_3(Attendance)+\cdots
+\]
+
+::: {.supporting}
+Each piece of information about a student gets a **weight** ($b_1, b_2, b_3, \ldots$).  
+The model learns those weights from the students we already observed.
+:::
+
+::: {.prompt .fragment}
+How should the model decide how much weight to give each piece of information?
+:::
+
+::: {.supporting .fragment}
+We are not learning regression today. We are noticing that prediction creates a mathematical problem.
+:::
+
+## The model's prediction {.takeaway-slide .hide-title .center-vert}
+
+{{< include day2_assets/snippets/maya_prediction.md >}}
+
+## Prediction is useful, but imperfect {.demo-slide}
+
+![](day2_assets/figures/actual_vs_predicted_gpa.png){fig-align="center" width="68%"}
+
+::: {.supporting}
+Each point is a student the model did not train on. Points away from the diagonal are prediction errors.
+:::
+
+## Should we trust it? {.question-slide}
+
+::: {.prompt}
+When would this prediction be useful, and when would you be cautious?
+:::
+
+::: {.incremental}
+- Another student similar to the students in our data?
+- A middle-school student?
+- A student at a very different institution?
+- A high-stakes decision about someone's opportunity?
+:::
+
+::: {.key-idea .fragment}
+Prediction is not certainty, and prediction is not automatically explanation.
+:::
+
+## Think back over what we just did {.question-slide}
+
+::: {.prompt}
+**What kinds of expertise did we need to answer one seemingly simple question?**
+:::
+
+::: {.supporting}
+Do not name the disciplines yet. Reconstruct them from the problems we encountered.
+:::
+
+::: {.notes}
+Have students call these out before revealing the next slide. This is the payoff. The interdisciplinarity should feel earned by the exercise rather than stated as a definition.
+:::
+
+## What did we need?
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**What should we measure?**
+
+We needed knowledge of students, learning, and the setting.
+::::
+
+:::: {.ds-card .fragment}
+**How do we handle 750 rows?**
+
+We needed tools for storing, transforming, and computing with data.
+::::
+
+:::: {.ds-card .fragment}
+**What do the rows let us claim?**
+
+We needed reasoning about samples, variation, and uncertainty.
+::::
+
+:::::
+
+::::: {.three-up}
+
+:::: {.ds-card .fragment}
+**How do variables combine?**
+
+We needed a mathematical way to express and learn relationships.
+::::
+
+:::: {.ds-card .fragment}
+**How do we show patterns?**
+
+We needed visualization and communication.
+::::
+
+:::: {.ds-card .fragment}
+**What should we do with the result?**
+
+We needed context, judgment, and attention to consequences.
+::::
+
+:::::
+
+## That is why data science is broad {.takeaway-slide}
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 12
+flowchart TD
+  Q[Real questions] --> DK[Domain knowledge]
+  Q --> CS[Computing]
+  Q --> ST[Statistics]
+  Q --> MA[Mathematics]
+  Q --> CO[Communication]
+  Q --> HJ[Human judgment]
+  DK --> DS[Data science]
+  CS --> DS
+  ST --> DS
+  MA --> DS
+  CO --> DS
+  HJ --> DS
+````
+
+::: {.big-idea .center}
+Data science is interdisciplinary because **real questions create different kinds of problems**.
+:::
+
+## Today was the whole course in miniature
+
+````{mermaid}
+%%| fig-responsive: false
+%%| fig-width: 13
+flowchart LR
+  Q[Question] --> O[Observe]
+  O --> R[Represent]
+  R --> S[Summarize]
+  S --> G[Generalize]
+  G --> P[Predict]
+  P --> E[Evaluate]
+  E --> C[Communicate]
+  C --> D[Decide]
+````
+
+::: {.statement .fragment}
+We will spend the semester getting better at each part.
+:::
+
+## Exit question {.question-slide}
+
+::: {.prompt}
+For any dataset you encounter, ask:
+:::
+
+::: {.big-idea}
+**What does one row represent, and what larger group are we trying to learn about?**
+:::
+
+::: {.notes}
+Have students answer for today's dataset, then ask them to imagine a dataset from a topic they care about and answer again.
+:::

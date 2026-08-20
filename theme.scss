@@ -334,6 +334,11 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
   color: $course-white;
 }
 
+.reveal .slide.section-card .statement,
+.reveal .slide.takeaway-slide .statement {
+  color: $course-white;
+}
+
 /* ============================================================
    Comparison / cards
    ============================================================ */
@@ -498,4 +503,156 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
 
 .reveal table tr:nth-child(even) {
   background: $course-soft-gray;
+}
+
+/* ============================================================
+   Job posting slides
+   Company title on top, instruction and reveal in a header row,
+   scrollable posting fills the remaining space.
+   ============================================================ */
+
+.reveal .slide.job-post-slide,
+.reveal section.job-post-slide {
+  display: flex !important;
+  flex-direction: column;
+  height: 100% !important;
+}
+
+.reveal .slide.job-post-slide > h2,
+.reveal section.job-post-slide > h2 {
+  flex: 0 0 auto;
+  margin-bottom: 0.22em;
+}
+
+.reveal .job-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  flex: 0 0 auto;
+  margin: -0.1em 0 0.45em 0.1em;
+}
+
+.reveal .job-instruction {
+  color: $course-muted;
+  font-size: 0.68em;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.reveal .job-answer {
+  margin: 0;
+  padding: 0.34em 0.72em;
+  border-radius: 999px;
+  background: $course-tan-light;
+  border: 1px solid $course-tan;
+  color: $course-navy;
+  font-size: 0.68em;
+  font-weight: 750;
+  line-height: 1.1;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.reveal .job-posting {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0.75em 1em 0.9em 1em;
+  border: 1px solid $course-border;
+  border-top: 0.24rem solid $course-royal;
+  border-radius: 0.65rem;
+  background: $course-white;
+  box-shadow: 0 2px 10px rgba(0, 46, 93, 0.08);
+  font-size: 0.58em;
+  line-height: 1.28;
+}
+
+.reveal .job-posting p {
+  margin: 0 0 0.55em 0;
+}
+
+.reveal .job-posting ul {
+  margin-top: 0.25em;
+  margin-bottom: 0.7em;
+  margin-left: 1.1em;
+}
+
+.reveal .job-posting li {
+  margin-bottom: 0.24em;
+}
+
+.reveal .job-posting strong {
+  color: $course-navy;
+  font-weight: 800;
+}
+
+.reveal .job-posting::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+.reveal .job-posting::-webkit-scrollbar-track {
+  background: $course-soft-gray;
+  border-radius: 999px;
+}
+
+.reveal .job-posting::-webkit-scrollbar-thumb {
+  background: $course-royal;
+  border-radius: 999px;
+}
+
+@media print {
+  .reveal .slide.job-post-slide,
+  .reveal section.job-post-slide {
+    display: block !important;
+    height: auto !important;
+  }
+  .reveal .job-meta {
+    display: block;
+  }
+  .reveal .job-answer {
+    display: inline-block;
+    margin-top: 0.25em;
+  }
+  .reveal .job-posting {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* ============================================================
+   Final job-posting slide ordering override
+   Keeps company title above the meta row and the scroll box.
+   This intentionally uses order + !important so it wins even if
+   older job-slide rules were left earlier in the file.
+   ============================================================ */
+
+.reveal .slide.job-post-slide,
+.reveal section.job-post-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.reveal .slide.job-post-slide > h2,
+.reveal section.job-post-slide > h2 {
+  order: 1 !important;
+  flex: 0 0 auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.22em !important;
+}
+
+.reveal .slide.job-post-slide > .job-meta,
+.reveal section.job-post-slide > .job-meta {
+  order: 2 !important;
+  flex: 0 0 auto !important;
+}
+
+.reveal .slide.job-post-slide > .job-posting,
+.reveal section.job-post-slide > .job-posting {
+  order: 3 !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
 }

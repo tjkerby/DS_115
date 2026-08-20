@@ -1,0 +1,586 @@
+## Same title, different jobs {.section-card}
+
+::: {.big-idea}
+Employers can use the same title for jobs with very different centers of gravity.
+:::
+
+## America First Credit Union {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+Read the posting. What kind of work seems most central?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Data Scientist**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This position supports operational areas of the organization by using internal and external data to generate business insights, better understand member needs, and improve tactical and strategic decision-making.
+
+You would:
+
+- Collaborate with business teams to extract analytical, behavioral, and predictive insights from data.
+- Apply statistical, programming, and analytical methods to business questions.
+- Design, develop, and maintain analytical and machine-learning models that will be put into operation.
+- Work across the full analytical lifecycle, including piloting models, A/B testing, data design, model deployment, and monitoring.
+- Explore internal and external data sources to identify useful patterns that were previously unknown to the business.
+- Develop models for problems such as customer churn, future value, and recommendation systems.
+- Build reporting tools around analytical models to measure their outcomes and business impact.
+- Run simulations, analyze trends, identify potential concerns, and perform statistical and financial analyses.
+- Explain analytical models and results to business users through presentations and training.
+
+**Technical Skills**
+
+- Python and R
+- SQL
+- Linux
+- Relational databases, dimensional modeling, and data warehouses
+- Machine-learning methods such as linear regression, random forests, and support vector machines
+- Data mining and statistical analysis
+- Dashboard design and reporting
+- Model deployment and operationalization
+
+**Other Important Skills**
+
+- Strong presentation and communication skills
+- Ability to explain technical models to nontechnical users
+- Ability to understand business needs and translate them into analytical solutions
+- Financial-services knowledge is helpful
+
+**Education & Experience**
+
+- 3+ years developing and implementing analytical solutions
+- Master's degree in a related field, or bachelor's degree with equivalent experience
+:::
+
+## Waystar {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+Same title or different title? What clues shape your guess?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Data Scientist**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role focuses on solving technical and data-driven problems in healthcare using computer science, mathematics, predictive modeling, statistics, and machine learning.
+
+You would:
+
+- Work with Product Management, Application Engineering, R&D, Account Management, and operational teams.
+- Design and experiment with machine-learning and analytical systems for healthcare applications.
+- Use large and diverse datasets to generate actionable insights and improve products and client services.
+- Translate real-world healthcare problems into mathematical and computational frameworks.
+- Explore data and develop hypotheses based on business and product goals.
+- Develop, test, and validate predictive models and machine-learning algorithms.
+- Scale analytical approaches to large datasets.
+- Evaluate model performance using holdout sets, cross-validation, and related methods.
+- Work with engineering teams to gather and process data and incorporate analytical features into products.
+- Communicate findings to product, service, and business managers.
+- Produce quantitative evidence to guide feature planning.
+
+**Technical Skills**
+
+- Python and/or R
+- SQL and relational databases
+- At least one general-purpose programming language such as C# or Java
+- Classification, regression, clustering, dimension reduction, and multivariate methods
+- Machine-learning model evaluation
+- Working with large datasets
+- Understanding how algorithms scale computationally
+
+**Other Important Skills**
+
+- Strong analytical and problem-solving ability
+- Strong written and verbal communication
+- Presentation skills
+- Comfort working in ambiguous, rapidly changing areas
+- Healthcare or medical-informatics knowledge is helpful
+
+**Education**
+
+- Master's degree or higher in computer science, statistics, mathematics, or a related field preferred
+:::
+
+## Scribd {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+Same title or different title? What seems different from the previous two?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Data Scientist II**
+:::
+
+:::
+
+::: {.job-posting}
+**About the Team**
+
+This role is part of an applied research team that uses machine learning, natural language processing, and generative AI to build products used at large scale.
+
+The team's work includes:
+
+- Content enrichment
+- Recommendation systems
+- Search
+- Translation
+- Representation learning
+- Text, image, and audio applications
+
+The systems operate across hundreds of millions of documents, millions of users, and billions of user interactions.
+
+**What You Would Do**
+
+You would help design, build, and deploy machine-learning and AI systems.
+
+You would:
+
+- Develop content-classification solutions using methods ranging from traditional natural-language processing to large language models and generative AI.
+- Investigate approaches to challenging problems at large scale.
+- Build and deploy machine-learning models into production systems.
+- Work with machine-learning engineers, data specialists, and product teams.
+- Choose approaches ranging from classical machine-learning models to neural networks and third-party language-model APIs.
+- Process very large datasets using Python, SQL, Spark, and related tools.
+- Build machine-learning pipelines and work with distributed data-processing systems.
+- Communicate project approaches and results to stakeholders.
+- Write clear technical documentation.
+
+**Technical Skills**
+
+- Python
+- SQL or PySpark
+- Scikit-learn and NumPy
+- PyTorch and neural networks
+- Apache Spark, Databricks, or similar tools
+- Machine-learning pipelines
+- Production deployment of machine-learning models
+- Natural-language processing, search, information retrieval, deep learning, and generative models
+
+**Education & Experience**
+
+- 3+ years developing machine-learning models, working with large-scale systems, and deploying models to production
+- Bachelor's or master's degree in a quantitatively focused discipline
+:::
+
+## Same title. Different centers. {.takeaway-slide}
+
+::: {.big-idea}
+All three were **Data Scientist** roles.
+:::
+
+::: {.statement .fragment}
+The title gave us a clue, but the responsibilities told us much more.
+:::
+
+## Guess the job {.section-card}
+
+::: {.big-idea}
+Now hide the title. Read the work. What would you call this job?
+:::
+
+## Stio {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Data Analyst**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role works across data infrastructure, analysis, business intelligence, and direct partnership with teams such as Finance, Merchandising, Marketing, Operations, Inventory Planning, and B2B.
+
+You would:
+
+- Work directly with business teams to turn ambiguous questions into analyses, dashboards, and data products.
+- Own projects from defining the problem through building, validating, and communicating results.
+- Build and maintain data models that transform raw source-system data into trustworthy datasets.
+- Develop dashboards and reports used for day-to-day decision-making.
+- Define business metrics and help resolve disagreements about what particular measures mean.
+- Investigate messy or ambiguous data problems by talking with system owners, examining edge cases, and reconciling conflicting definitions.
+- Help build and maintain the organization's data infrastructure.
+- Review AI-generated SQL, Python, and modeling code and identify outputs that are technically valid but conceptually wrong.
+- Create useful documentation and improve data governance.
+- Favor useful, actionable analysis over unnecessary technical complexity.
+
+**Technical Skills**
+
+- Advanced SQL
+- dbt
+- Cloud data warehouses such as Snowflake, BigQuery, Databricks, Redshift, or Microsoft Fabric
+- Git and GitHub
+- BI tools such as Power BI, Tableau, or Looker
+- Data modeling, testing, and documentation
+- Python and/or R are helpful
+- Familiarity with AI-assisted coding tools is valuable
+
+**Other Important Skills**
+
+- Ability to translate ambiguous business questions into concrete analytical problems
+- Strong judgment about whether data and metrics represent what they claim to represent
+- Ability to communicate findings verbally, visually, and in writing
+- Ability to build trusting relationships with nontechnical stakeholders
+- Comfort working on a small team and owning work end-to-end
+
+**Experience**
+
+- 3+ years of professional experience in analytics or a related role
+- Retail, apparel, e-commerce, or similar industry experience is helpful
+:::
+
+## UCCU {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Data Engineer**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role owns the design, development, and optimization of the data infrastructure that supports analytics, reporting, and machine-learning work across the credit union.
+
+You would:
+
+- Build and maintain ETL/ELT pipelines that combine data from banking systems, lending platforms, digital channels, and outside vendors.
+- Design and manage data warehouses and data lakes.
+- Design schemas and optimize data storage and query performance.
+- Create automated data-quality checks, validation rules, and alerts for pipeline problems.
+- Develop scalable data models that support analytics and reporting.
+- Work with analysts, compliance teams, and business stakeholders to define data requirements and deliver trusted datasets.
+- Orchestrate and schedule recurring data workflows.
+- Build and maintain cloud-based data infrastructure.
+- Implement data-security controls, encryption, access management, and audit logging.
+- Ensure data systems satisfy financial-industry privacy and regulatory requirements.
+- Introduce software-engineering practices such as version control, automated testing, documentation, and CI/CD into data workflows.
+- Support data migrations during system upgrades, platform changes, or organizational transitions.
+- Provide technical guidance and code reviews to less experienced team members.
+
+**Technical Skills**
+
+- Advanced SQL
+- Python
+- ETL/ELT development
+- dbt, Matillion, or similar tools
+- Snowflake
+- AWS, Azure, GCP, or similar cloud platforms
+- Relational and columnar databases
+- Data warehouses and data lakes
+- Dimensional data modeling and schema design
+- Data-quality monitoring and observability
+- Version control and CI/CD
+- Data lineage and documentation
+- Security, access controls, and audit logging
+
+**Other Important Skills**
+
+- Ability to design reliable and scalable systems
+- Strong attention to data quality and trustworthiness
+- Ability to work with technical and nontechnical stakeholders
+- Understanding of privacy, security, and regulatory requirements
+- Ability to translate business needs into technical data infrastructure
+
+**Education & Experience**
+
+- Bachelor's degree in a related technical field, or equivalent professional experience
+- 3 to 5 years of experience building data infrastructure or working in a closely related area
+- Experience in banking, credit unions, fintech, or another regulated industry is helpful
+:::
+
+## Workday {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **Analytics Engineer**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role builds and owns the data foundation used by teams responsible for partner sales, services, and innovation. The goal is to turn data from many systems into a consistent, trustworthy model that can support analytics and decision-making across the organization.
+
+You would:
+
+- Design and maintain dimensional data models in Snowflake.
+- Combine information from CRM systems, partner platforms, marketplaces, certification systems, services platforms, and internal systems.
+- Build and optimize ELT pipelines.
+- Create a shared data model that allows different business teams to answer questions using consistent definitions.
+- Build and govern semantic models and datasets used for reporting and analysis.
+- Define metrics and ensure that important business measures are calculated consistently.
+- Translate business rules into version-controlled and testable transformation code.
+- Establish standards for naming, documentation, data lineage, ownership, access, and quality.
+- Build data-quality monitoring and alerting.
+- Develop reconciliation and validation tools for operating reviews, audits, and reporting.
+- Improve warehouse performance through query tuning, clustering, incremental models, and workload management.
+- Turn ambiguous requests into durable data models rather than one-time manual analyses.
+- Mentor other team members in SQL, modeling, and code-review practices.
+
+The majority of the work is spent in SQL, the data warehouse, and the semantic layer rather than building presentations or conducting one-off analyses.
+
+**Technical Skills**
+
+- Advanced SQL
+- Snowflake
+- Dimensional data modeling
+- Star and snowflake schemas
+- Fact and dimension design
+- Slowly changing dimensions
+- ELT development
+- dbt or similar transformation frameworks
+- Semantic data models
+- BI tools such as Sigma
+- Python for pipelines, APIs, automation, and validation
+- Data governance, lineage, and quality monitoring
+- Query optimization and warehouse performance
+- Version-controlled transformation code
+
+**Other Important Skills**
+
+- Ability to translate ambiguous business requirements into reusable data structures
+- Strong judgment about how metrics and business concepts should be defined
+- Ability to serve multiple stakeholder groups that may use the same terms differently
+- Strong written communication and documentation
+
+**Education & Experience**
+
+- 5+ years of experience in analytics, revenue operations, data infrastructure, or related work
+- 5+ years of advanced SQL experience
+- 3+ years building data models in a cloud data warehouse
+- Bachelor's degree in a quantitative, technical, or business field, or equivalent practical experience
+:::
+
+## Intermountain Health {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **MLOps Engineer**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role focuses on taking machine-learning and artificial-intelligence models and making them reliable, scalable, and usable in real healthcare operations.
+
+You would:
+
+- Work closely with quantitative specialists, data engineers, software engineers, and application developers.
+- Build systems and platforms that allow machine-learning models to move from development into production.
+- Develop frameworks for model governance, testing, automation, and continuous integration and delivery.
+- Build and maintain tools such as model registries, feature stores, and model-monitoring systems.
+- Automate model retraining, maintenance, deployment, and monitoring.
+- Optimize models and systems for reliability, scalability, and performance.
+- Develop machine-learning systems and pipelines that integrate predictive applications into healthcare operations.
+- Help ensure deployed models follow Responsible AI practices.
+- Lead complex projects from initial idea through integration into operational workflows.
+- Partner with technical and business stakeholders to determine how machine-learning systems should be designed and implemented.
+
+**Technical Skills**
+
+- Python, R, Java, Scala, or similar programming languages
+- Linux and Bash scripting
+- CI/CD and DevOps practices
+- Docker
+- Kubernetes
+- Git
+- APIs, functions, libraries, and software packages
+- Model registries, feature stores, and model monitoring
+- SQL and manipulation of large or complex datasets
+- Spark, Hadoop, Hive, NoSQL systems, and related big-data tools
+- Cloud platforms such as AWS and Azure
+- Databricks
+- Responsible AI monitoring and governance
+
+**Other Important Skills**
+
+- Ability to collaborate across data, software, engineering, and business teams
+- Ability to communicate technical ideas verbally, visually, and in writing
+- Experience leading complex technical projects
+- Ability to build partnerships across an organization
+- Ability to evaluate new machine-learning technologies
+
+**Education & Experience**
+
+- Significant experience developing and operating machine-learning systems and pipelines
+- Experience leading platforms for deploying and monitoring models
+- Degree in a quantitative, computational, or engineering field is preferred
+- Healthcare or insurance experience is helpful
+:::
+
+## Affirm {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **ML Engineer II**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This role builds machine-learning and AI systems that automate customer-service operations such as disputes, returns, fraud, chargebacks, and refunds.
+
+You would:
+
+- Develop AI systems that automate decisions involving disputes and chargebacks.
+- Build models that automate refunds and other customer-service processes.
+- Create pipelines that use large language models to extract structured information from documents and other unstructured data.
+- Prototype new modeling approaches and run experiments to evaluate them.
+- Move successful approaches from prototype into production systems.
+- Measure and monitor models after deployment.
+- Add appropriate controls for risk-sensitive automated decisions.
+- Work across Engineering, Operations, Product, and machine-learning platform teams.
+- Define requirements, evaluate technical tradeoffs, and communicate results to both technical and nontechnical audiences.
+
+**Technical Skills**
+
+- Strong Python
+- Production-quality software development
+- Classification models for structured/tabular data
+- Gradient-boosted decision trees such as LightGBM, XGBoost, or CatBoost
+- Large-language-model APIs
+- Prompt engineering
+- Structured information extraction
+- LangChain, LangGraph, or similar frameworks
+- PDF, image, and text processing
+- Training, experimentation, and model monitoring tools such as Kubeflow, Airflow, or MLflow
+- AI-assisted software-development tools
+- Working with large existing codebases
+- Testing, debugging, and code review
+
+**Other Important Skills**
+
+- Ability to take a business problem and turn it into a working software solution
+- Ability to write clear, maintainable, and well-tested code
+- Comfort navigating and debugging complex software systems
+- Strong ownership of projects and personal learning
+- Ability to work effectively with technical and nontechnical teams
+
+**Education & Experience**
+
+- 2+ years of professional experience building machine-learning systems
+- Bachelor's degree in a related field or equivalent practical experience
+:::
+
+## Slalom {.job-post-slide .nostretch}
+
+::: {.job-meta}
+
+::: {.job-instruction}
+What title would you give this position?
+:::
+
+::: {.job-answer .fragment}
+Actual title: **AI/ML Engineer**
+:::
+
+:::
+
+::: {.job-posting}
+**What You Would Do**
+
+This is a consulting-oriented role focused on designing and delivering AI and machine-learning solutions for clients with real business problems.
+
+You would:
+
+- Design, build, and deploy generative-AI and machine-learning systems.
+- Develop applications using large language models, retrieval-augmented generation, agents, prompt engineering, tool calling, workflow automation, and model fine-tuning.
+- Apply machine learning and deep learning to business problems.
+- Help design and deliver solutions involving computer vision, natural-language processing, and recommendation systems.
+- Evaluate AI systems using measures such as accuracy, groundedness, safety, latency, cost, and model drift.
+- Move AI and machine-learning systems into production and address reliability and deployment challenges.
+- Work directly with clients and stakeholders to understand problems and communicate possible solutions.
+- Present technical approaches and results to audiences with different levels of technical expertise.
+- Stay current with rapidly changing AI and machine-learning technologies.
+- Contribute to internal learning, mentoring, and knowledge sharing.
+
+**Technical Skills**
+
+- Python
+- Machine learning and deep learning
+- Generative AI and large language models
+- Retrieval-augmented generation
+- Embeddings and vector search
+- AI agents
+- Prompt engineering
+- Fine-tuning and model adaptation
+- AI evaluation and observability
+- Production deployment of AI and machine-learning systems
+- AWS, GCP, or Azure
+- ML workflow tools
+- Databricks and Snowflake are helpful
+
+**Other Important Skills**
+
+- Strong consulting and client-facing communication
+- Ability to explain complex technical ideas to diverse stakeholders
+- Ability to connect technical capabilities to real business problems
+- Curiosity about emerging technologies
+- Ability to advise others about tradeoffs, best practices, and limitations
+- Experience presenting and delivering solutions, not just building them
+
+**Education & Experience**
+
+- 6+ years implementing machine-learning models or algorithms in production
+- 2 to 4 years of consulting or professional-services experience
+- Experience with generative-AI systems and major cloud platforms
+:::
+
+## So what should we read in a job posting? {.takeaway-slide}
+
+::: {.big-idea}
+The title is a clue. The work is the evidence.
+:::
+
+::: {.statement .fragment}
+Look for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise.
+:::
