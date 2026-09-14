@@ -1,6 +1,6 @@
 ---
 title: "DS 115: Exploring Data Science"
-subtitle: "Day 1 | What is Data Science, and why is it so broad?"
+subtitle: "Day 1 | What is Data Science"
 author: "Department of Statistics | Brigham Young University"
 date: ""
 ---
