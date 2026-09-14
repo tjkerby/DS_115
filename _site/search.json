@@ -151,7 +151,7 @@
     "href": "slides/day1.html#data-science-is-a-process",
     "title": "DS 115: Exploring Data Science",
     "section": "Data science is a process",
-    "text": "Data science is a process\n\n\n\n\n\nflowchart LR\n  A[Ask a meaningful question] --&gt; B[Get and prepare data]\n  B --&gt; C[Explore and visualize]\n  C --&gt; D[Model or reason from data]\n  D --&gt; E[Communicate what we learned]\n  E --&gt; F[Make or inform a decision]\n  F --&gt; A\n\n\n\n\n\n\n\nThe process loops. Real data science rarely looks perfectly linear.\n\n\nThe old Day 1 materials already used a cycle of asking questions, acquiring and preparing data, exploring and visualizing, modeling, and communicating findings. Extend it to decisions and iteration. Point out that the loop can go backward at any point."
+    "text": "Data science is a process\n\n\n\n\n\nflowchart LR\n  A[Ask] --&gt; B[Prepare]\n  B --&gt; C[Explore]\n  C --&gt; D[Model]\n  D --&gt; E[Communicate]\n  E --&gt; F[Decide]\n  F --&gt; A\n\n\n\n\n\n\n\nData science is iterative. You rarely know the right question, data, or method at the beginning.\n\n\nThis is the first major mental model of the course, so keep it sparse. Narrate the details: Ask a meaningful question, get and prepare data, explore and visualize, model or reason from data, communicate what we learned, make or inform a decision. Point out that the loop can go backward at any point. The shortened node labels keep the diagram clean; the full descriptions are spoken, not read."
   },
   {
     "objectID": "slides/day1.html#but-what-happens-inside-that-process",
@@ -165,35 +165,35 @@
     "href": "slides/day1.html#getting-data-ready",
     "title": "DS 115: Exploring Data Science",
     "section": "Getting data ready",
-    "text": "Getting data ready\n\n\nData engineering\nBuild systems that move and transform data so it can be used reliably.\n\n\nData management\nStore, organize, query, and maintain data so people can find and use it.\n\n\nData cleaning\nDeal with missing, inconsistent, duplicated, or otherwise messy data.\n\n\nThe goal is not to memorize vocabulary. Ask: What might go wrong before anyone ever gets to a model? Give a simple example such as customer records stored in five systems with different IDs."
+    "text": "Getting data ready\n\nYou have 20 million patient records. What has to happen before anyone can analyze them?\n\n\nThink for a moment. What could go wrong?\n\n\n\nData engineering\nMove and transform the data so it can be used reliably.\n\n\nData management\nStore, organize, query, and maintain the data so people can find and use it.\n\n\nData cleaning\nDeal with missing, inconsistent, duplicated, or otherwise messy data.\n\n\n\nPresent the scenario first. Let students think and share. Then reveal the vocabulary. The goal is not to memorize terms but to make them memorable through a concrete problem. Give a simple example such as customer records stored in five systems with different IDs."
   },
   {
     "objectID": "slides/day1.html#making-data-visible",
     "href": "slides/day1.html#making-data-visible",
     "title": "DS 115: Exploring Data Science",
     "section": "Making data visible",
-    "text": "Making data visible\n\n\nExploration\nLook at data to discover what is happening and what questions are worth asking.\n\n\nVisualization\nUse visual representations to reveal patterns, comparisons, trends, and anomalies.\n\n\nDashboards\nTurn recurring questions into tools that people can monitor and use repeatedly.\n\n\n\nDistinguish exploratory visualization from a recurring dashboard. You can say: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters."
+    "text": "Making data visible\n\nYou have clean data. How do you begin to understand what it tells you?\n\n\n\nExploration\nLook at data to discover what is happening and what questions are worth asking.\n\n\nVisualization\nUse visual representations to reveal patterns, comparisons, trends, and anomalies.\n\n\nDashboards\nTurn recurring questions into tools that people can monitor and use repeatedly.\n\n\n\nAgain, start with the scenario question. Let students respond. Then reveal. Distinguish exploratory visualization from a recurring dashboard: exploration helps us learn; a dashboard helps a team repeatedly monitor something that matters."
   },
   {
     "objectID": "slides/day1.html#learning-from-data",
     "href": "slides/day1.html#learning-from-data",
     "title": "DS 115: Exploring Data Science",
     "section": "Learning from data",
-    "text": "Learning from data\n\n\nStatistical modeling\nRepresent relationships while accounting for uncertainty.\n\n\nMachine learning\nLearn useful patterns from examples to support prediction or other tasks.\n\n\nExperimentation\nDesign comparisons that help us learn what causes what, not just what is associated.\n\n\n\nAvoid teaching the technical details. The purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn."
+    "text": "Learning from data\n\nYou have explored the data. Now you want to learn something from it. What are your options?\n\n\n\nStatistical modeling\nRepresent relationships while accounting for uncertainty.\n\nWhat kind of question might this help you answer?\n\n\n\nMachine learning\nLearn useful patterns from examples to support prediction or other tasks.\n\nHow is that similar to modeling? How might it be different?\n\n\n\nExperimentation\nDesign comparisons that help us learn what causes what, not just what is associated.\n\nNotice that data science isn’t just about building predictive models.\n\n\n\n\nReveal one card at a time. After each card appears, ask the supporting question and let students respond before advancing. This turns three facts to memorize into three things to reason about. Avoid teaching the technical details — the purpose is to show that modeling is a family of approaches and that experiments are another way data scientists learn."
   },
   {
     "objectID": "slides/day1.html#turning-analysis-into-action",
     "href": "slides/day1.html#turning-analysis-into-action",
     "title": "DS 115: Exploring Data Science",
     "section": "Turning analysis into action",
-    "text": "Turning analysis into action\n\n\nInterpretation\nWhat does the analysis actually mean?\nWhat should we believe, and how confident should we be?\n\n\nCommunication\nHow do we help another person understand what matters?\nWhat should they do with the result?\n\n\n\nA technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next.\n\n\nEmphasize that communication and judgment are part of the work, not an afterthought."
+    "text": "Turning analysis into action\n\n\nInterpretation\nWhat does this result actually mean?\n\n\nCommunication\nCan someone else understand what matters?\n\n\n\nGood data science doesn’t end with an analysis.\n\n\nReveal the two cards first. Ask: “What happens if the analysis is correct but no one understands it?” Then reveal the giant statement. Emphasize that communication and judgment are part of the work, not an afterthought. A technically correct analysis can still fail if people misunderstand it, do not trust it, or do not know what to do next."
   },
   {
     "objectID": "slides/day1.html#data-science-needs-context",
     "href": "slides/day1.html#data-science-needs-context",
     "title": "DS 115: Exploring Data Science",
     "section": "Data science needs context",
-    "text": "Data science needs context\n\n\nHealth\nWhich patients need additional attention?\n\n\nTechnology\nWhat should a product recommend next?\n\n\nScience\nWhat does the data tell us about a physical system?\n\n\n\nThe same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains.\n\n\nThe point is not to catalog industries. It is to show that domain knowledge changes the questions, the data, and the consequences of decisions."
+    "text": "Data science needs context\n\n\nHealth\n\nQuestion\n\nWhich patients need additional attention?\n\n\nTechnology\n\nQuestion\n\nWhat should a product recommend next?\n\n\nScience\n\nQuestion\n\nWhat does the data tell us about a physical system?\n\n\n\nSame broad toolkit → very different problems.\n\n\nThe point is not to catalog industries. The important insight is that the methods can stay similar while the questions, data, stakes, and domain knowledge change dramatically. The same data-science ideas can be used in finance, sports, education, government, nonprofits, and many other domains."
   },
   {
     "objectID": "slides/day1.html#the-same-tools-can-serve-very-different-goals",
@@ -221,7 +221,7 @@
     "href": "slides/day1.html#what-part",
     "title": "DS 115: Exploring Data Science",
     "section": "“What part?”",
-    "text": "“What part?”\nMedicine is a broad field with many specialties.\nYou might say:\nPediatrics. Surgery. Virology. Epidemiology.\n\nKnowing that someone studies medicine tells you something important, but not enough to know what they actually study or do."
+    "text": "“What part?”\n\nWhat part?\n\nPediatrics. Surgery. Virology. Epidemiology.\n\nKnowing that someone studies medicine tells you something important, but not enough to know what they actually study or do.\n\n\nReveal “What part?” as the natural response. Then show the examples. Pause to let the analogy land before moving on."
   },
   {
     "objectID": "slides/day1.html#data-science-works-the-same-way",
@@ -235,7 +235,7 @@
     "href": "slides/day1.html#where-might-you-fit",
     "title": "DS 115: Exploring Data Science",
     "section": "Where might you fit?",
-    "text": "Where might you fit?\n\n\nBuild\nBuild computational systems and tools.\n\n\nUnderstand\nUse data to explain patterns and uncertainty.\n\n\nPredict\nBuild models that anticipate what may happen next.\n\n\n\n\nDiscover\nFind patterns in complex or unfamiliar data.\n\n\nCommunicate\nMake evidence understandable and useful.\n\n\nApply\nUse data to solve problems in a domain you care about.\n\n\n\nTell students this is not a major-selection quiz. Ask them to choose two areas that sound interesting right now. They are making an initial hypothesis about themselves, not making a commitment."
+    "text": "Where might you fit?\n\nBased on what you’ve seen, what kinds of problems sound interesting?\n\n\nPick two areas that sound interesting right now. This is not a major-selection quiz — you’re making an initial hypothesis about yourself.\n\n\n\nBuild\nBuild computational systems and tools.\n\n\nUnderstand\nUse data to explain patterns and uncertainty.\n\n\nPredict\nBuild models that anticipate what may happen next.\n\n\n\n\nDiscover\nFind patterns in complex or unfamiliar data.\n\n\nCommunicate\nMake evidence understandable and useful.\n\n\nApply\nUse data to solve problems in a domain you care about.\n\n\n\nAsk students to choose two areas that sound interesting. They are making an initial hypothesis about themselves, not making a commitment. The framing “based on what you’ve seen” ties this back to the scenarios and roles from earlier slides."
   },
   {
     "objectID": "slides/day1.html#one-course-seven-questions",
@@ -249,7 +249,7 @@
     "href": "slides/day1.html#exit-ticket",
     "title": "DS 115: Exploring Data Science",
     "section": "Exit ticket",
-    "text": "Exit ticket\n\n1. What part of Data Science currently sounds most interesting to you?\n\n\n2. What is one thing about Data Science you want to understand better?\n\n\nYou do not need to choose a major today.\n\n\nCollect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later."
+    "text": "Exit ticket\n\n1. What part of Data Science currently sounds most interesting to you?\n\n\n2. What is one thing about Data Science you want to understand better?\n\n\n3. What would help you answer that second question?\n\n\nYou do not need to choose a major today.\n\n\nKeep the first two questions essentially unchanged. The third question starts subtly teaching the mindset of exploration and evidence gathering. Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later."
   },
   {
     "objectID": "README_DAY2_INTEGRATION.html",
@@ -607,5 +607,33 @@
     "title": "DS 115: Exploring Data Science",
     "section": "So what should we read in a job posting?",
     "text": "So what should we read in a job posting?\n\nThe title is a clue. The work is the evidence.\n\n\nLook for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise."
+  },
+  {
+    "objectID": "slides/day1.html#there-is-no-single-data-scientist",
+    "href": "slides/day1.html#there-is-no-single-data-scientist",
+    "title": "DS 115: Exploring Data Science",
+    "section": "There is no single “data scientist”",
+    "text": "There is no single “data scientist”\n\n\nThe modeler\nStudies uncertainty and relationships.\n\n\nThe builder\nBuilds systems and tools that use data.\n\n\nThe investigator\nUses data to understand a scientific or social question.\n\n\n\nAll three can reasonably call what they do data science.\n\n\nThis replaces the old abstract Mermaid summary slide. The point is to show that data science is not one job but a family of very different roles. This sets up the medicine analogy: just as medicine has many specialties, data science has many orientations."
+  },
+  {
+    "objectID": "slides/day1.html#im-interested-in-studying-medicine.",
+    "href": "slides/day1.html#im-interested-in-studying-medicine.",
+    "title": "DS 115: Exploring Data Science",
+    "section": "“I’m interested in studying medicine.”",
+    "text": "“I’m interested in studying medicine.”\n\n“I’m interested in studying medicine.”\n\n\nJust show the quote. Ask the class: “What would your next question be?” Let students answer. Likely answers include specialty, type of medicine, or what aspect interests them. Do not rush to the next slide."
+  },
+  {
+    "objectID": "slides/day1.html#im-interested-in-data-science.",
+    "href": "slides/day1.html#im-interested-in-data-science.",
+    "title": "DS 115: Exploring Data Science",
+    "section": "“I’m interested in Data Science.”",
+    "text": "“I’m interested in Data Science.”\n\n“I’m interested in Data Science.”\n\n\nWhat part?\n\n\nThis is the conceptual centerpiece of Day 1. Let the pause between showing the quote and revealing “What part?” be longer than feels comfortable. The goal is to make the students feel why broadness is not a problem — it is a defining feature of the field."
+  },
+  {
+    "objectID": "slides/day1.html#where-this-course-is-going",
+    "href": "slides/day1.html#where-this-course-is-going",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Where this course is going",
+    "text": "Where this course is going\n\n\n\n\n\nflowchart LR\n  A[Understand&lt;br/&gt;the field] --&gt; B[Experience it]\n  B --&gt; C[Explore careers]\n  C --&gt; D[Choose a&lt;br/&gt;pathway]\n  D --&gt; E[Build your&lt;br/&gt;BYU experience]\n  E --&gt; F[Explore&lt;br/&gt;the future]\n  F --&gt; G[Decide what&lt;br/&gt;to explore next]\n\n\n\n\n\n\n\nThis replaces the seven numbered questions with a visual course journey. Briefly preview the arc: Day 1 builds the map. Day 2 lets students experience the work. Day 3 tests the breadth claim using real job descriptions and launches the informational-interview assignment. Day 4 moves from the field to BYU’s academic pathways. This visual could become a recurring element throughout the course, with the current day highlighted."
   }
 ]
