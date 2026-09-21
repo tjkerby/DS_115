@@ -9,7 +9,7 @@
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>DS 115: Exploring Data Science – summary_answers</title>
+  <title>DS 115: Exploring Data Science – aggregation_by_year</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-e573ffaf9081fb550ad0a73c86d54185.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-c67d35669ebb29d3e8ac13a55aa9a659.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -133,34 +133,41 @@
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th style="text-align: left;">question</th>
-<th style="text-align: right;">answer</th>
+<th style="text-align: left;">year</th>
+<th style="text-align: right;">students</th>
+<th style="text-align: right;">avg_sleep</th>
+<th style="text-align: right;">avg_study</th>
+<th style="text-align: right;">avg_gpa</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">How many students are in the dataset?</td>
-<td style="text-align: right;">750</td>
+<td style="text-align: left;">First-year</td>
+<td style="text-align: right;">212</td>
+<td style="text-align: right;">6.52</td>
+<td style="text-align: right;">13.23</td>
+<td style="text-align: right;">2.8</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">What is the average GPA?</td>
-<td style="text-align: right;">2.85</td>
+<td style="text-align: left;">Sophomore</td>
+<td style="text-align: right;">181</td>
+<td style="text-align: right;">6.68</td>
+<td style="text-align: right;">12.3</td>
+<td style="text-align: right;">2.86</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">What is the median GPA?</td>
-<td style="text-align: right;">2.83</td>
+<td style="text-align: left;">Junior</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">6.84</td>
+<td style="text-align: right;">12.31</td>
+<td style="text-align: right;">2.87</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">What proportion attend at least 90% of class meetings?</td>
-<td style="text-align: right;">0.37</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">What proportion work more than 20 hours/week?</td>
-<td style="text-align: right;">0.12</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">What is the average sleep per night?</td>
-<td style="text-align: right;">6.74</td>
+<td style="text-align: left;">Senior</td>
+<td style="text-align: right;">169</td>
+<td style="text-align: right;">6.89</td>
+<td style="text-align: right;">11.73</td>
+<td style="text-align: right;">2.93</td>
 </tr>
 </tbody>
 </table>
@@ -458,7 +465,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/tjkerby\.github\.io\/DS_115\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

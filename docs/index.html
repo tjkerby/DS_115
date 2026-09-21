@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>readme_day2_integration – DS 115: Exploring Data Science</title>
+<title>DS 115: Exploring Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -114,37 +79,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DS 115: Exploring Data Science</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="ds-115-day-2-integration" class="level1">
-<h1>DS 115 Day 2 integration</h1>
-<p>Copy these files into the root of the DS 115 Quarto repository.</p>
-<section id="what-changes" class="level2">
-<h2 class="anchored" data-anchor-id="what-changes">What changes</h2>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="slide-decks" class="level2">
+<h2 class="anchored" data-anchor-id="slide-decks">Slide decks</h2>
 <ul>
-<li>Adds <code>slides/day2.qmd</code>.</li>
-<li>Adds <code>slides/day2_assets/</code> with synthetic data, figures, generated Markdown snippets, and the Python regeneration script.</li>
-<li>Adds the Day 2 link to <code>index.qmd</code>.</li>
-<li>Adds <code>requirements-day2.txt</code> for optional asset regeneration.</li>
+<li><a href="slides/day1.html">Day 1 — What is Data Science, and why is it so broad?</a></li>
+<li><a href="slides/day2.html">Day 2 - From Observations to Answers</a></li>
+<li><a href="slides/day3.html">Day 3 — Same title, different jobs</a></li>
 </ul>
-</section>
-<section id="what-does-not-change" class="level2">
-<h2 class="anchored" data-anchor-id="what-does-not-change">What does not change</h2>
-<p>Day 2 inherits the existing settings from <code>slides/_metadata.yml</code> and the existing course design from <code>theme.scss</code>. No changes to <code>_quarto.yml</code>, <code>slides/_metadata.yml</code>, or <code>theme.scss</code> are required.</p>
-</section>
-<section id="publishing" class="level2">
-<h2 class="anchored" data-anchor-id="publishing">Publishing</h2>
-<p>The slide deck is static at Quarto render time. Python is not required to build the website because the tables and figures are committed as generated assets.</p>
-<p>To regenerate the Day 2 data and assets after editing the simulation:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements-day2.txt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> slides/day2_assets/day2_student_success_data.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Then render or preview the Quarto website as usual.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -220,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/tjkerby\.github\.io\/DS_115\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
