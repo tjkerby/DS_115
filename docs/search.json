@@ -91,18 +91,25 @@
     "text": "So what should we read in a job posting?\n\nThe title is a clue. The work is the evidence.\n\n\nLook for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise."
   },
   {
+    "objectID": "slides/day2.html#where-we-left-off",
+    "href": "slides/day2.html#where-we-left-off",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Where we left off",
+    "text": "Where we left off\n\nWhat do you remember from Day 1?\n\n\nTake thirty seconds and jot down one or two ideas before we look back together.\n\n\nData science uses data to understand, explain, predict, and make decisions about the world.\nIt is an iterative process: ask, prepare, explore, model, communicate, decide.\nIt is a broad field, so the natural follow-up to “I’m interested in data science” is “What part?”\n\n\nToday we will experience that work firsthand: one question, one dataset, from observations to answers.\n\n\nKeep this to two or three minutes. Let students retrieve from memory first, then reveal the three reminders. If the Day 1 exit tickets surfaced a common misconception, address it here. The final line previews the arc of today’s deck."
+  },
+  {
     "objectID": "slides/day2.html#what-helps-a-college-student-succeed",
     "href": "slides/day2.html#what-helps-a-college-student-succeed",
     "title": "DS 115: Exploring Data Science",
     "section": "What helps a college student succeed?",
-    "text": "What helps a college student succeed?\n\nWhat would you want to know about a student if you were trying to understand academic success?\n\n\nThink of one student. What would you measure about them?\n\n\nLet students suggest variables before showing the dataset. Do not worry about whether every suggestion is practical. The point is that variables should arise from questions, not from spreadsheets."
+    "text": "What helps a college student succeed?\n\nWhat would you want to know about a student if you were trying to understand academic success?\n\n\nThink — brainstorm on your own for a minute. Picture one student you know: what would you measure?\n\n\nPair — compare lists with a neighbor. What did they think of that you did not?\n\n\nShare — we will gather ideas from around the room.\n\n\nRun this as a genuine think-pair-share: about one minute to think, two to pair, then collect ideas on the board before advancing. Do not screen suggestions for practicality yet. The point is that variables should arise from questions, not from spreadsheets. The next slide organizes their ideas into habits, context, and background and outcomes; ideas outside those groups are a bonus, not a problem."
   },
   {
     "objectID": "slides/day2.html#what-would-you-measure",
     "href": "slides/day2.html#what-would-you-measure",
     "title": "DS 115: Exploring Data Science",
     "section": "What would you measure?",
-    "text": "What would you measure?\n\n\nHabits\nSleep, study time, attendance, exercise, phone use\n\n\nContext\nWork hours, commute, housing, course load\n\n\nBackground and outcomes\nPrevious GPA, year in school, major, current GPA\n\n\n\nYou can probably think of variables we missed. That is part of deciding what data to collect."
+    "text": "What would you measure?\n\n\nHabits\nSleep, study time, attendance, exercise, phone use\n\n\nContext\nWork hours, commute, housing, course load\n\n\nBackground and outcomes\nPrevious GPA, year in school, major, current GPA\n(our proxy outcome today)\n\n\n\nYou can probably think of variables we missed. That is part of deciding what data to collect.\n\n\nUse this slide to organize what students named, not to replace their ideas. If students name other variables, acknowledge that those could also be useful."
   },
   {
     "objectID": "slides/day2.html#we-anticipated-some-of-your-ideas",
@@ -137,7 +144,7 @@
     "href": "slides/day2.html#what-can-one-row-answer",
     "title": "DS 115: Exploring Data Science",
     "section": "What can one row answer?",
-    "text": "What can one row answer?\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nprevious_gpa\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10001\nJunior\n3.13\n3.37\n18.9\n8.3\n3.9\n0.86\n\n\n\n\nWhat questions can this row answer?\n\n\nQuestions about this student."
+    "text": "What can one row answer?\n\n\nQuestions about this student\nHow much did this student sleep?\nHow often did this student attend class?\n\n\nQuestions it cannot answer alone\nHow much do students usually sleep?\nDo students with higher attendance tend to earn higher GPAs?\n\n\n\nIndividual observations are useful, but many data science questions require many observations."
   },
   {
     "objectID": "slides/day2.html#what-can-many-rows-answer",
@@ -210,6 +217,13 @@
     "text": "Which claim is justified?\nOur 750 observed students average 2.86 GPA.\n\nThese 750 students averaged 2.86 GPA.\nBYU students average 2.86 GPA.\nCollege students average 2.86 GPA.\n\n\nHave students vote. The first claim is directly descriptive of the rows observed. Broader claims require assumptions about how the sample relates to the population."
   },
   {
+    "objectID": "slides/day2.html#the-same-logic-applies-to-prediction",
+    "href": "slides/day2.html#the-same-logic-applies-to-prediction",
+    "title": "DS 115: Exploring Data Science",
+    "section": "The same logic applies to prediction",
+    "text": "The same logic applies to prediction\n\nLater today we will use patterns in these rows to predict an individual student’s GPA.\n\n\nFor another student similar to the students in our data? More reasonable.\nFor a new BYU student? It depends on how well our 750 represent BYU students.\nFor college students anywhere? Now we are going far beyond our rows.\n\n\nA prediction is usually most trustworthy for new observations that resemble the data used to build the model.\n\n\nThis extends the previous vote from describing to predicting before any model appears. Use this to start building intuition for generalization without making the statement too absolute."
+  },
+  {
     "objectID": "slides/day2.html#we-can-compare-groups-too",
     "href": "slides/day2.html#we-can-compare-groups-too",
     "title": "DS 115: Exploring Data Science",
@@ -221,14 +235,21 @@
     "href": "slides/day2.html#a-first-visualization",
     "title": "DS 115: Exploring Data Science",
     "section": "A first visualization",
-    "text": "A first visualization\n\n\n\n\n\n\nA pattern is not automatically an explanation."
+    "text": "A first visualization\n\n\n\n\n\n\nA pattern is not automatically an explanation.\n\n\nUse this as the first association versus causation moment. The data may show a difference between groups, but that does not prove sleep caused the difference."
   },
   {
     "objectID": "slides/day2.html#another-view",
     "href": "slides/day2.html#another-view",
     "title": "DS 115: Exploring Data Science",
     "section": "Another view",
-    "text": "Another view\n\n\n\n\n\n\nThere is a pattern, but not a perfect one."
+    "text": "Another view\n\n\n\n\n\n\nIf you had to predict GPA for a student who studies 12 hours per week, where would you guess?\n\n\nThere is a pattern, but not a perfect one.\n\n\nThis plot should bridge naturally into prediction. Let students reason from the scatterplot before talking about models."
+  },
+  {
+    "objectID": "slides/day2.html#tying-it-together",
+    "href": "slides/day2.html#tying-it-together",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Tying it together",
+    "text": "Tying it together\n\n\nSummarize\nTurn many rows into answers about a group.\n\n\nMatch patterns\nNotice how variables move together.\n\n\nPredict\nApply a pattern to a student we have not observed.\n\n\n\nThis is what it means for a model to generalize: it learns from the rows we observed, then applies that learning beyond them."
   },
   {
     "objectID": "slides/day2.html#from-describing-to-predicting",
@@ -277,28 +298,28 @@
     "href": "slides/day2.html#prediction-is-useful-but-imperfect",
     "title": "DS 115: Exploring Data Science",
     "section": "Prediction is useful, but imperfect",
-    "text": "Prediction is useful, but imperfect\n\n\n\n\n\n\nEach point is a student the model did not train on. Points away from the diagonal are prediction errors."
+    "text": "Prediction is useful, but imperfect\n\n\n\n\n\n\nWhat would a perfect model look like on this graph?\n\n\nEach point is a student the model did not train on. Points away from the diagonal are prediction errors."
   },
   {
     "objectID": "slides/day2.html#should-we-trust-it",
     "href": "slides/day2.html#should-we-trust-it",
     "title": "DS 115: Exploring Data Science",
     "section": "Should we trust it?",
-    "text": "Should we trust it?\n\nWhen would this prediction be useful, and when would you be cautious?\n\n\nAnother student similar to the students in our data?\nA middle-school student?\nA student at a very different institution?\nA high-stakes decision about someone’s opportunity?\n\n\nPrediction is not certainty, and prediction is not automatically explanation."
+    "text": "Should we trust it?\n\nWhen would this prediction be useful, and when would you be cautious?\n\n\n\nDoes the model apply?\nA similar student?\nA student at a different institution?\nA middle-school student?\n\n\nShould we act on it?\nGiving study advice?\nFlagging students for support?\nMaking a high-stakes decision?\n\n\n\nPrediction is not certainty, and prediction is not automatically explanation."
   },
   {
     "objectID": "slides/day2.html#think-back-over-what-we-just-did",
     "href": "slides/day2.html#think-back-over-what-we-just-did",
     "title": "DS 115: Exploring Data Science",
     "section": "Think back over what we just did",
-    "text": "Think back over what we just did\n\nWhat kinds of expertise did we need to answer one seemingly simple question?\n\n\nDo not name the disciplines yet. Reconstruct them from the problems we encountered.\n\n\nHave students call these out before revealing the next slide. This is the payoff. The interdisciplinarity should feel earned by the exercise rather than stated as a definition."
+    "text": "Think back over what we just did\n\nWhat kinds of expertise did we need to answer one seemingly simple question?\n\n\nDo not name the disciplines yet. Reconstruct them from the problems we encountered.\n\n\nHave students call these out before revealing the next slide. This is the payoff. Write their answers on the board and then map those answers to the disciplines on the following slide."
   },
   {
     "objectID": "slides/day2.html#what-did-we-need",
     "href": "slides/day2.html#what-did-we-need",
     "title": "DS 115: Exploring Data Science",
     "section": "What did we need?",
-    "text": "What did we need?\n\n\nWhat should we measure?\nWe needed knowledge of students, learning, and the setting.\n\n\nHow do we handle 750 rows?\nWe needed tools for storing, transforming, and computing with data.\n\n\nWhat do the rows let us claim?\nWe needed reasoning about samples, variation, and uncertainty.\n\n\n\n\nHow do variables combine?\nWe needed a mathematical way to express and learn relationships.\n\n\nHow do we show patterns?\nWe needed visualization and communication.\n\n\nWhat should we do with the result?\nWe needed context, judgment, and attention to consequences."
+    "text": "What did we need?\n\n\nHow should we define success?\nWe needed judgment about what outcome matters and what proxy is reasonable.\n\n\nHow do we handle 750 rows?\nWe needed tools for storing, transforming, and computing with data.\n\n\nWhat do the rows let us claim?\nWe needed reasoning about samples, variation, and uncertainty.\n\n\n\n\nHow do variables combine?\nWe needed a mathematical way to express and learn relationships.\n\n\nHow do we show patterns?\nWe needed visualization and communication.\n\n\nWhat should we do with the result?\nWe needed context, judgment, and attention to consequences."
   },
   {
     "objectID": "slides/day2.html#that-is-why-data-science-is-broad",
@@ -312,7 +333,7 @@
     "href": "slides/day2.html#today-was-the-whole-course-in-miniature",
     "title": "DS 115: Exploring Data Science",
     "section": "Today was the whole course in miniature",
-    "text": "Today was the whole course in miniature\n\n\n\n\n\nflowchart LR\n  Q[Question] --&gt; O[Observe]\n  O --&gt; R[Represent]\n  R --&gt; S[Summarize]\n  S --&gt; G[Generalize]\n  G --&gt; P[Predict]\n  P --&gt; E[Evaluate]\n  E --&gt; C[Communicate]\n  C --&gt; D[Decide]\n\n\n\n\n\n\n\nWe will spend the semester getting better at each part."
+    "text": "Today was the whole course in miniature\n\n\n\n\n\nflowchart LR\n  Q[Question] --&gt; O[Observe]\n  O --&gt; R[Represent]\n  R --&gt; S[Summarize]\n  S --&gt; G[Generalize]\n  G --&gt; P[Predict]\n  P --&gt; E[Evaluate]\n  E --&gt; C[Communicate]\n  C --&gt; D[Decide]\n\n\n\n\n\n\n\nWe will spend the semester getting better at each part.\n\n\nDifferent stages create different problems. That is why data science draws on many disciplines."
   },
   {
     "objectID": "slides/day2.html#exit-question",
@@ -481,5 +502,75 @@
     "title": "DS 115: Exploring Data Science",
     "section": "Exit ticket",
     "text": "Exit ticket\n\n1. What part of Data Science currently sounds most interesting to you?\n\n\n2. What is one thing about Data Science you want to understand better?\n\n\n3. What would help you answer that second question?\n\n\nYou do not need to choose a major today.\n\n\nKeep the first two questions essentially unchanged. The third question starts subtly teaching the mindset of exploration and evidence gathering. Collect these responses if useful for shaping Day 2 examples and understanding student interests. The second question can also surface misconceptions that should be addressed later."
+  },
+  {
+    "objectID": "slides/day2.html#todays-question",
+    "href": "slides/day2.html#todays-question",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Today’s question",
+    "text": "Today’s question\n\nWhat helps a college student succeed?\n\n\nTo answer that, we first need to decide what to observe.\n\n\nThis slide turns the whole day into a single investigation. Keep the framing short and let the next slide become the real student interaction."
+  },
+  {
+    "objectID": "slides/day2.html#what-would-you-want-to-know",
+    "href": "slides/day2.html#what-would-you-want-to-know",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What would you want to know?",
+    "text": "What would you want to know?\n\nWhat would you want to know about a student if GPA were our proxy for academic success?\n\n\nThink: brainstorm on your own for a minute. Picture one student you know: what would you measure?\n\n\nPair: compare lists with a neighbor. What did they think of that you did not?\n\n\nShare: we will gather ideas from around the room.\n\n\nRun this as a genuine think-pair-share: about one minute to think, two to pair, then collect ideas on the board before advancing. Do not screen suggestions for practicality yet. The point is that variables should arise from questions, not from spreadsheets."
+  },
+  {
+    "objectID": "slides/day2.html#one-row-one-student",
+    "href": "slides/day2.html#one-row-one-student",
+    "title": "DS 115: Exploring Data Science",
+    "section": "One row = one student",
+    "text": "One row = one student\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nprevious_gpa\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10001\nJunior\n3.13\n3.37\n18.9\n8.3\n3.9\n0.86\n\n\n\n\nWhat questions can this row answer?\n\n\nRows tell us who or what we observed. Columns tell us what we measured.\n\n\nThis combines the original rows/columns explanation with the one-student example. Ask students to name questions this one row can answer before revealing the statement."
+  },
+  {
+    "objectID": "slides/day2.html#before-we-aggregate",
+    "href": "slides/day2.html#before-we-aggregate",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Before we aggregate",
+    "text": "Before we aggregate\n\nSuppose we group students by class year and calculate average sleep, average study time, and average GPA.\n\n\nWhat would one row represent now?\n\n\nThis slide makes the aggregation transition participatory. Let students answer before showing the aggregated table. The goal is for them to discover that row meaning can change."
+  },
+  {
+    "objectID": "slides/day2.html#describe-the-rows-or-generalize-beyond-them",
+    "href": "slides/day2.html#describe-the-rows-or-generalize-beyond-them",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Describe the rows or generalize beyond them?",
+    "text": "Describe the rows or generalize beyond them?\n\n\nDescriptive claim\nAmong these 750 students, average sleep was 6.7 hours.\n\n\nGeneral claim\nBYU students average 6.7 hours of sleep.\n\n\n\nDescribing the rows is different from making a claim about a larger population.\n\n\nThis slide sharpens the sample/population distinction. The first claim is about the observed rows. The second requires assumptions about how the 750 students relate to BYU students more broadly."
+  },
+  {
+    "objectID": "slides/day2.html#three-ways-to-use-the-same-data",
+    "href": "slides/day2.html#three-ways-to-use-the-same-data",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Three ways to use the same data",
+    "text": "Three ways to use the same data\n\n\nDescribe\nWhat happened in the rows we observed?\n\n\nCompare\nHow do groups or variables differ?\n\n\nPredict\nWhat might happen for a new observation?\n\n\n\nPrediction uses the same data, but asks a different question."
+  },
+  {
+    "objectID": "slides/day2.html#how-can-several-variables-become-one-prediction",
+    "href": "slides/day2.html#how-can-several-variables-become-one-prediction",
+    "title": "DS 115: Exploring Data Science",
+    "section": "How can several variables become one prediction?",
+    "text": "How can several variables become one prediction?\n[ =b_0+b_1(Previous GPA)+b_2(Study)+b_3(Attendance)+ ]\n\nMathematics gives us a way to represent relationships.\n\n\nStatistics helps us learn those relationships from noisy data.\n\n\nComputing lets us do this for many rows and many variables.\n\n\nWhere should the weights (\\(b_1, b_2, b_3, \\ldots\\)) come from?\n\n\nWe are not learning regression today. We are noticing that prediction creates several different kinds of problems."
+  },
+  {
+    "objectID": "slides/day2.html#a-quick-reality-check",
+    "href": "slides/day2.html#a-quick-reality-check",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A quick reality check",
+    "text": "A quick reality check\n\nEverything so far used a clean dataset. Real data often look more like this.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nstudent_id\nyear\nmajor\ncurrent_gpa\nstudy_hours_per_week\nsleep_hours_per_night\nwork_hours_per_week\nattendance_rate\n\n\n\n\n10042\nJunior\nUndeclared\n2.6\n14.6\n6.4\n9\n0.72\n\n\n10279\nSenior\nExercise Science\n2.7\n12.4\nnan\n4.9\n0.88\n\n\n10527\nSophomore\nPsychology\n2.85\ntwelve\n6.3\n18.1\n0.97\n\n\n10437\nJunior\nUndeclared\n2.06\n13.4\n-3\n10.1\n0.75\n\n\n10459\nSenior\nBiology\n7.8\n11.8\n6.9\n6.7\n0.91\n\n\n10341\nSophomore\nEnglish\n2.61\n15.5\n5.7\n8.9\n95\n\n\n10020\njr\nBusiness\n3.27\n11.8\n7\n6.1\n1\n\n\n10632\nJUNIOR\nPsychology\n3.38\n9.8\n7\n15.5\n0.84\n\n\n10429\nSophomore\nbio\n3.18\n21.1\n6.4\n15\n0.89\n\n\n10536\nSenior\nComputer Science\n2.47\n9.4\n6.6\n\n0.79\n\n\n10598\nFirst-year\nComputer Science\n3.33\n19.6\n6.9\n4.4\n0.82\n\n\n10598\nSenior\nEnglish\n2.72\n11.6\n8.2\n21.6\n0.79\n\n\n\n\nWhat would make you nervous about summarizing or modeling these rows?\n\n\nWe will learn how to clean messy data later. For now, notice that useful data rarely arrive perfectly prepared.\n\n\nThis moved later so it does not interrupt the row/variable foundation. Keep it brief. The goal is to preview the need for data cleaning, not teach cleaning today."
+  },
+  {
+    "objectID": "slides/day2.html#what-do-we-mean-by-success",
+    "href": "slides/day2.html#what-do-we-mean-by-success",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What do we mean by success?",
+    "text": "What do we mean by success?\n\nBefore we collect data, we have to define the outcome we care about.\n\n\n\nAcademic progress\nGPA, credits completed, persistence, graduation\n\n\nLife after college\nPlacement, graduate school, salary, career fit\n\n\nHuman flourishing\nHappiness, belonging, purpose, health, family life\n\n\n\nHow we define success shapes what data we collect and what answers we can give.\n\n\nThis is a quick but important pause. The goal is not to settle the true definition of student success. The goal is to help students see that data science starts with a human choice about what counts as the outcome."
+  },
+  {
+    "objectID": "slides/day2.html#today-gpa-is-our-proxy",
+    "href": "slides/day2.html#today-gpa-is-our-proxy",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Today, GPA is our proxy",
+    "text": "Today, GPA is our proxy\n\nFor today’s exercise, we will use current GPA as a measurable stand-in for academic success.\n\n\nA proxy is useful when the thing we care about is broad, complicated, or hard to measure directly.\n\n\nBut a proxy is not the same as the full idea. GPA is one piece of student success, not the whole picture.\n\n\nUse this slide to avoid implying that GPA equals student success. It is a convenient outcome for today’s synthetic dataset because students recognize it and it can be modeled numerically. Emphasize that different definitions of success would require different data, different summaries, and possibly different models."
   }
 ]

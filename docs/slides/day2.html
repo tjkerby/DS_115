@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-c67d35669ebb29d3e8ac13a55aa9a659.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-54921776df6b189cb2500b6f1f41ed2f.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -144,16 +144,135 @@ Department of Statistics | Brigham Young University
 </div>
 
 </section>
-<section id="what-helps-a-college-student-succeed" class="slide level2 question-slide">
-<h2>What helps a college student succeed?</h2>
+<section id="where-we-left-off" class="slide level2 question-slide">
+<h2>Where we left off</h2>
 <div class="prompt">
-<p><strong>What would you want to know about a student if you were trying to understand academic success?</strong></p>
+<p><strong>What do you remember from Day 1?</strong></p>
 </div>
 <div class="supporting">
-<p>Think of one student. What would you measure about them?</p>
+<p>Take thirty seconds and jot down one or two ideas before we look back together.</p>
+</div>
+<ul>
+<li class="fragment">Data science uses data to <strong>understand, explain, predict, and make decisions</strong> about the world.</li>
+<li class="fragment">It is an <strong>iterative process</strong>: ask, prepare, explore, model, communicate, decide.</li>
+<li class="fragment">It is a <strong>broad field</strong>, so the natural follow-up to “I’m interested in data science” is <strong>“What part?”</strong></li>
+</ul>
+<div class="supporting fragment">
+<p>Today we will experience that work firsthand: one question, one dataset, from observations to answers.</p>
 </div>
 <aside class="notes">
-<p>Let students suggest variables before showing the dataset. Do not worry about whether every suggestion is practical. The point is that variables should arise from questions, not from spreadsheets.</p>
+<p>Keep this to two or three minutes. Let students retrieve from memory first, then reveal the three reminders. If the Day 1 exit tickets surfaced a common misconception, address it here. The final line previews the arc of today’s deck.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="todays-question" class="slide level2 takeaway-slide hide-title center-vert">
+<h2>Today’s question</h2>
+<div class="r-fit-text">
+<p><strong>What helps a college student succeed?</strong></p>
+</div>
+<div class="big-idea fragment">
+<p>To answer that, we first need to decide what to observe.</p>
+</div>
+<aside class="notes">
+<p>This slide turns the whole day into a single investigation. Keep the framing short and let the next slide become the real student interaction.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-do-we-mean-by-success" class="slide level2 question-slide">
+<h2>What do we mean by success?</h2>
+<div class="prompt">
+<p><strong>Before we collect data, we have to define the outcome we care about.</strong></p>
+</div>
+<div class="three-up">
+<div class="ds-card fragment">
+<p><strong>Academic progress</strong></p>
+<p>GPA, credits completed, persistence, graduation</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Life after college</strong></p>
+<p>Placement, graduate school, salary, career fit</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Human flourishing</strong></p>
+<p>Happiness, belonging, purpose, health, family life</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>How we define success shapes what data we collect and what answers we can give.</p>
+</div>
+<aside class="notes">
+<p>This is a quick but important pause. The goal is not to settle the true definition of student success. The goal is to help students see that data science starts with a human choice about what counts as the outcome.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="today-gpa-is-our-proxy" class="slide level2 takeaway-slide">
+<h2>Today, GPA is our proxy</h2>
+<div class="big-idea">
+<p>For today’s exercise, we will use <strong>current GPA</strong> as a measurable stand-in for academic success.</p>
+</div>
+<div class="statement fragment">
+<p>A <strong>proxy</strong> is useful when the thing we care about is broad, complicated, or hard to measure directly.</p>
+</div>
+<div class="supporting fragment">
+<p>But a proxy is not the same as the full idea. GPA is one piece of student success, not the whole picture.</p>
+</div>
+<aside class="notes">
+<p>Use this slide to avoid implying that GPA equals student success. It is a convenient outcome for today’s synthetic dataset because students recognize it and it can be modeled numerically. Emphasize that different definitions of success would require different data, different summaries, and possibly different models.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-would-you-want-to-know" class="slide level2 question-slide">
+<h2>What would you want to know?</h2>
+<div class="prompt">
+<p><strong>What would you want to know about a student if GPA were our proxy for academic success?</strong></p>
+</div>
+<div class="supporting fragment">
+<p><strong>Think:</strong> brainstorm on your own for a minute. Picture one student you know: what would you measure?</p>
+</div>
+<div class="supporting fragment">
+<p><strong>Pair:</strong> compare lists with a neighbor. What did they think of that you did not?</p>
+</div>
+<div class="supporting fragment">
+<p><strong>Share:</strong> we will gather ideas from around the room.</p>
+</div>
+<aside class="notes">
+<p>Run this as a genuine think-pair-share: about one minute to think, two to pair, then collect ideas on the board before advancing. Do not screen suggestions for practicality yet. The point is that variables should arise from questions, not from spreadsheets.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -180,11 +299,25 @@ Department of Statistics | Brigham Young University
 <div class="ds-card fragment">
 <p><strong>Background and outcomes</strong></p>
 <p>Previous GPA, year in school, major, current GPA</p>
+<p><em>(our proxy outcome today)</em></p>
 </div>
 </div>
 <div class="supporting fragment">
 <p>You can probably think of variables we missed. That is part of deciding what data to collect.</p>
 </div>
+<aside class="notes">
+<p>Use this slide to organize what students named, not to replace their ideas. If students name other variables, acknowledge that those could also be useful.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="we-anticipated-some-of-your-ideas" class="slide level2 demo-slide">
 <h2>We anticipated some of your ideas</h2>
@@ -311,10 +444,686 @@ Department of Statistics | Brigham Young University
           display:block!important;
       }</style></aside>
 </section>
-<section id="but-this-is-what-we-usually-get" class="slide level2 demo-slide">
-<h2>But this is what we usually get</h2>
+<section id="the-most-important-idea-today" class="slide level2 takeaway-slide hide-title center-vert">
+<h2>The most important idea today</h2>
+<div class="r-fit-text">
+<p><strong>Every row represents something.</strong></p>
+</div>
+<div class="big-idea fragment">
+<p>That something is what we use to answer questions.</p>
+</div>
+</section>
+<section id="one-row-one-student" class="slide level2 demo-slide">
+<h2>One row = one student</h2>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 16%">
+<col style="width: 17%">
+<col style="width: 15%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">student_id</th>
+<th style="text-align: left;">year</th>
+<th style="text-align: right;">previous_gpa</th>
+<th style="text-align: right;">current_gpa</th>
+<th style="text-align: right;">study_hours_per_week</th>
+<th style="text-align: right;">sleep_hours_per_night</th>
+<th style="text-align: right;">work_hours_per_week</th>
+<th style="text-align: right;">attendance_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10001</td>
+<td style="text-align: left;">Junior</td>
+<td style="text-align: right;">3.13</td>
+<td style="text-align: right;">3.37</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">0.86</td>
+</tr>
+</tbody>
+</table>
+<div class="prompt fragment">
+<p>What questions can this row answer?</p>
+</div>
+<div class="statement fragment">
+<p>Rows tell us <strong>who or what</strong> we observed. Columns tell us <strong>what we measured</strong>.</p>
+</div>
+<aside class="notes">
+<p>This combines the original rows/columns explanation with the one-student example. Ask students to name questions this one row can answer before revealing the statement.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-can-one-row-answer" class="slide level2 question-slide">
+<h2>What can one row answer?</h2>
+<div class="compare">
+<div class="ds-card fragment">
+<p><strong>Questions about this student</strong></p>
+<p>How much did this student sleep?</p>
+<p>How often did this student attend class?</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Questions it cannot answer alone</strong></p>
+<p>How much do students usually sleep?</p>
+<p>Do students with higher attendance tend to earn higher GPAs?</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Individual observations are useful, but many data science questions require many observations.</p>
+</div>
+</section>
+<section id="what-can-many-rows-answer" class="slide level2">
+<h2>What can many rows answer?</h2>
+<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="12" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[One student] --&gt; B[Many students]
+  B --&gt; C[Summarize]
+  C --&gt; D[Answer questions about a group]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="statement fragment">
+<p>We can aggregate individual observations to answer group-level questions.</p>
+</div>
+</section>
+<section id="summaries-answer-questions" class="slide level2 demo-slide">
+<h2>Summaries answer questions</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">question</th>
+<th style="text-align: right;">answer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">How many students are in the dataset?</td>
+<td style="text-align: right;">750</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">What is the average GPA?</td>
+<td style="text-align: right;">2.86</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">What is the median GPA?</td>
+<td style="text-align: right;">2.84</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">What proportion attend at least 90% of class meetings?</td>
+<td style="text-align: right;">0.43</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">What proportion work more than 20 hours/week?</td>
+<td style="text-align: right;">0.12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">What is the average sleep per night?</td>
+<td style="text-align: right;">6.72</td>
+</tr>
+</tbody>
+</table>
+<div class="key-idea">
+<p>A summary statistic is useful because it turns many rows into an answer to a question.</p>
+</div>
+<aside class="notes">
+<p>Do not turn this into a formal lesson on summary statistics. Frame count, mean, median, and proportion as tools that answer different questions about a collection of rows.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="before-we-aggregate" class="slide level2 question-slide">
+<h2>Before we aggregate</h2>
+<div class="prompt">
+<p>Suppose we group students by class year and calculate average sleep, average study time, and average GPA.</p>
+</div>
+<div class="big-idea fragment">
+<p>What would one row represent now?</p>
+</div>
+<aside class="notes">
+<p>This slide makes the aggregation transition participatory. Let students answer before showing the aggregated table. The goal is for them to discover that row meaning can change.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aggregating-changes-what-a-row-represents" class="slide level2 demo-slide">
+<h2>Aggregating changes what a row represents</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">year</th>
+<th style="text-align: right;">students</th>
+<th style="text-align: right;">avg_sleep</th>
+<th style="text-align: right;">avg_study</th>
+<th style="text-align: right;">avg_gpa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">First-year</td>
+<td style="text-align: right;">212</td>
+<td style="text-align: right;">6.52</td>
+<td style="text-align: right;">13.23</td>
+<td style="text-align: right;">2.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sophomore</td>
+<td style="text-align: right;">181</td>
+<td style="text-align: right;">6.68</td>
+<td style="text-align: right;">12.3</td>
+<td style="text-align: right;">2.86</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Junior</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">6.84</td>
+<td style="text-align: right;">12.31</td>
+<td style="text-align: right;">2.87</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Senior</td>
+<td style="text-align: right;">169</td>
+<td style="text-align: right;">6.89</td>
+<td style="text-align: right;">11.73</td>
+<td style="text-align: right;">2.93</td>
+</tr>
+</tbody>
+</table>
+<div class="statement fragment">
+<p>Raw data: one row = <strong>student</strong>.<br>
+Summary: one row = <strong>class year</strong>.</p>
+</div>
+</section>
+<section id="same-original-data-different-questions" class="slide level2">
+<h2>Same original data, different questions</h2>
+<div class="compare">
+<div class="ds-card">
+<p><strong>Student-level rows</strong></p>
+<p>Who seems likely to earn a higher GPA?</p>
+</div>
+<div class="ds-card">
+<p><strong>Group-level rows</strong></p>
+<p>How do class years compare on average?</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Changing the unit represented by a row changes the questions the data can answer.</p>
+</div>
+</section>
+<section id="what-does-one-row-represent" class="slide level2 question-slide">
+<h2>What does one row represent?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>What might one row represent?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Student success survey</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>Course grade records</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td>Student sleep diary</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>Campus dining transactions</td>
+<td>?</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Possible answers: student, student-course enrollment, student-day, transaction. For the course grade example, use the ambiguity to make the point that we must know how the dataset was constructed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-dataset-does-not-know-everything" class="slide level2 takeaway-slide hide-title center-vert">
+<h2>A dataset does not know everything</h2>
+<div class="r-fit-text">
+<p><strong>What one row represents determines what the dataset knows.</strong></p>
+</div>
+</section>
+<section id="but-which-rows-did-we-observe" class="slide level2 question-slide">
+<h2>But which rows did we observe?</h2>
+<div class="prompt">
+<p>Suppose our dataset has <strong>750 students</strong>. What does that let us say?</p>
+</div>
+<div class="supporting fragment">
+<p>The answer depends on where those 750 students came from.</p>
+</div>
+</section>
+<section id="same-750-rows-different-situations" class="slide level2">
+<h2>Same 750 rows, different situations</h2>
+<div class="three-up">
+<div class="ds-card fragment">
+<p><strong>Situation 1</strong></p>
+<p>These are <strong>all</strong> students in a particular course this semester.</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Situation 2</strong></p>
+<p>These are a <strong>random sample</strong> of BYU students.</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Situation 3</strong></p>
+<p>These are students who chose to answer a link posted on Instagram.</p>
+</div>
+</div>
+<div class="statement fragment">
+<p>Same number of rows. Very different claims.</p>
+</div>
+</section>
+<section id="describe-the-rows-or-generalize-beyond-them" class="slide level2">
+<h2>Describe the rows or generalize beyond them?</h2>
+<div class="compare">
+<div class="ds-card fragment">
+<p><strong>Descriptive claim</strong></p>
+<p>Among these 750 students, average sleep was 6.7 hours.</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>General claim</strong></p>
+<p>BYU students average 6.7 hours of sleep.</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Describing the rows is different from making a claim about a larger population.</p>
+</div>
+<aside class="notes">
+<p>This slide sharpens the sample/population distinction. The first claim is about the observed rows. The second requires assumptions about how the 750 students relate to BYU students more broadly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sample-and-population" class="slide level2">
+<h2>Sample and population</h2>
+<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="10" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  Q[Question we want to answer] --&gt; P[Population we care about]
+  P --&gt; S[Sample we actually observe]
+  S --&gt; D[Rows in our dataset]
+  D --&gt; C[Claims we can responsibly make]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Lots of rows do not automatically support broad claims.</p>
+</div>
+</section>
+<section id="which-claim-is-justified" class="slide level2 question-slide">
+<h2>Which claim is justified?</h2>
+<p>Our 750 observed students average <strong>2.86 GPA</strong>.</p>
+<ul>
+<li class="fragment">These 750 students averaged <strong>2.86 GPA</strong>.</li>
+<li class="fragment">BYU students average <strong>2.86 GPA</strong>.</li>
+<li class="fragment">College students average <strong>2.86 GPA</strong>.</li>
+</ul>
+<aside class="notes">
+<p>Have students vote. The first claim is directly descriptive of the rows observed. Broader claims require assumptions about how the sample relates to the population.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-same-logic-applies-to-prediction" class="slide level2 question-slide">
+<h2>The same logic applies to prediction</h2>
+<div class="statement">
+<p>Later today we will use patterns in these rows to <strong>predict an individual student’s GPA</strong>.</p>
+</div>
+<ul>
+<li class="fragment">For another student similar to the students in our data? More reasonable.</li>
+<li class="fragment">For a new BYU student? It depends on how well our 750 represent BYU students.</li>
+<li class="fragment">For college students anywhere? Now we are going far beyond our rows.</li>
+</ul>
+<div class="key-idea fragment">
+<p>A prediction is usually most trustworthy for new observations that resemble the data used to build the model.</p>
+</div>
+<aside class="notes">
+<p>This extends the previous vote from describing to predicting before any model appears. Use this to start building intuition for generalization without making the statement too absolute.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="we-can-compare-groups-too" class="slide level2 demo-slide">
+<h2>We can compare groups too</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">sleep_group</th>
+<th style="text-align: right;">students</th>
+<th style="text-align: right;">avg_gpa</th>
+<th style="text-align: right;">median_gpa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">7+ hours</td>
+<td style="text-align: right;">294</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">2.88</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&lt; 7 hours</td>
+<td style="text-align: right;">456</td>
+<td style="text-align: right;">2.84</td>
+<td style="text-align: right;">2.81</td>
+</tr>
+</tbody>
+</table>
+<div class="prompt fragment">
+<p>What does this comparison suggest?</p>
+</div>
+<div class="supporting fragment">
+<p>And what does it <strong>not</strong> prove?</p>
+</div>
+</section>
+<section id="a-first-visualization" class="slide level2 demo-slide">
+<h2>A first visualization</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day2_assets/figures/gpa_by_sleep_group.png" class="quarto-figure quarto-figure-center" style="width:72.0%"></p>
+</figure>
+</div>
+<div class="key-idea fragment">
+<p>A pattern is not automatically an explanation.</p>
+</div>
+<aside class="notes">
+<p>Use this as the first association versus causation moment. The data may show a difference between groups, but that does not prove sleep caused the difference.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="another-view" class="slide level2 demo-slide">
+<h2>Another view</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day2_assets/figures/study_vs_gpa.png" class="quarto-figure quarto-figure-center" style="width:78.0%"></p>
+</figure>
+</div>
+<div class="prompt fragment">
+<p>If you had to predict GPA for a student who studies 12 hours per week, where would you guess?</p>
+</div>
+<div class="statement fragment">
+<p>There is a pattern, but not a perfect one.</p>
+</div>
+<aside class="notes">
+<p>This plot should bridge naturally into prediction. Let students reason from the scatterplot before talking about models.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-ways-to-use-the-same-data" class="slide level2">
+<h2>Three ways to use the same data</h2>
+<div class="three-up">
+<div class="ds-card fragment">
+<p><strong>Describe</strong></p>
+<p>What happened in the rows we observed?</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Compare</strong></p>
+<p>How do groups or variables differ?</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Predict</strong></p>
+<p>What might happen for a new observation?</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Prediction uses the same data, but asks a different question.</p>
+</div>
+</section>
+<section id="can-we-predict-a-new-students-gpa" class="slide level2 question-slide">
+<h2>Can we predict a new student’s GPA?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">variable</th>
+<th style="text-align: left;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">previous_gpa</td>
+<td style="text-align: left;">3.45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">study_hours_per_week</td>
+<td style="text-align: left;">15.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sleep_hours_per_night</td>
+<td style="text-align: left;">7.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">work_hours_per_week</td>
+<td style="text-align: left;">8.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">attendance_rate</td>
+<td style="text-align: left;">0.95</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">credits</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">phone_hours_per_day</td>
+<td style="text-align: left;">3.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">year</td>
+<td style="text-align: left;">Sophomore</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">housing</td>
+<td style="text-align: left;">Off campus</td>
+</tr>
+</tbody>
+</table>
+<div class="prompt fragment">
+<p>Before seeing a model, what GPA would <strong>you</strong> predict?</p>
+</div>
+<aside class="notes">
+<p>Give students a moment to make a human prediction. You can collect a few guesses or have everyone write one down.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-simple-predictive-model" class="slide level2">
+<h2>A simple predictive model</h2>
+<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="11" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  X[What we know about&lt;br/&gt;a student] --&gt; M[Model]
+  M --&gt; Y[Predicted GPA]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="statement fragment">
+<p>The model learns a pattern from students we already observed, then applies that pattern to a new student.</p>
+</div>
+</section>
+<section id="how-can-several-variables-become-one-prediction" class="slide level2 demo-slide">
+<h2>How can several variables become one prediction?</h2>
+<p>[ =b_0+b_1(Previous&nbsp;GPA)+b_2(Study)+b_3(Attendance)+ ]</p>
+<div class="supporting fragment">
+<p><strong>Mathematics</strong> gives us a way to represent relationships.</p>
+</div>
+<div class="supporting fragment">
+<p><strong>Statistics</strong> helps us learn those relationships from noisy data.</p>
+</div>
+<div class="supporting fragment">
+<p><strong>Computing</strong> lets us do this for many rows and many variables.</p>
+</div>
+<div class="prompt fragment">
+<p>Where should the weights (<span class="math inline">\(b_1, b_2, b_3, \ldots\)</span>) come from?</p>
+</div>
+<div class="supporting fragment">
+<p>We are not learning regression today. We are noticing that prediction creates several different kinds of problems.</p>
+</div>
+</section>
+<section id="the-models-prediction" class="slide level2 takeaway-slide hide-title center-vert">
+<h2>The model’s prediction</h2>
+<div class="giant center">
+<p>3.13 GPA</p>
+</div>
+<div class="supporting center">
+<p>A useful estimate, not a certainty.</p>
+</div>
+</section>
+<section id="prediction-is-useful-but-imperfect" class="slide level2 demo-slide">
+<h2>Prediction is useful, but imperfect</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day2_assets/figures/actual_vs_predicted_gpa.png" class="quarto-figure quarto-figure-center" style="width:68.0%"></p>
+</figure>
+</div>
+<div class="prompt fragment">
+<p>What would a perfect model look like on this graph?</p>
+</div>
+<div class="supporting fragment">
+<p>Each point is a student the model did not train on. Points away from the diagonal are prediction errors.</p>
+</div>
+</section>
+<section id="should-we-trust-it" class="slide level2 question-slide">
+<h2>Should we trust it?</h2>
+<div class="prompt">
+<p>When would this prediction be useful, and when would you be cautious?</p>
+</div>
+<div class="compare">
+<div class="ds-card fragment">
+<p><strong>Does the model apply?</strong></p>
+<p>A similar student?</p>
+<p>A student at a different institution?</p>
+<p>A middle-school student?</p>
+</div>
+<div class="ds-card fragment">
+<p><strong>Should we act on it?</strong></p>
+<p>Giving study advice?</p>
+<p>Flagging students for support?</p>
+<p>Making a high-stakes decision?</p>
+</div>
+</div>
+<div class="key-idea fragment">
+<p>Prediction is not certainty, and prediction is not automatically explanation.</p>
+</div>
+</section>
+<section id="a-quick-reality-check" class="slide level2 demo-slide">
+<h2>A quick reality check</h2>
 <div class="supporting">
-<p>That clean table is what we <em>wish</em> we always got. Here is what data often look like in practice.</p>
+<p>Everything so far used a clean dataset. Real data often look more like this.</p>
 </div>
 <table class="caption-top">
 <colgroup>
@@ -469,7 +1278,7 @@ Department of Statistics | Brigham Young University
 <p>We will learn how to clean messy data later. For now, notice that useful data rarely arrive perfectly prepared.</p>
 </div>
 <aside class="notes">
-<p>The contrast with the previous slide is the point. Students do not need to fix anything here; they just need to see that real analysis starts with data that are far from ideal.</p>
+<p>This moved later so it does not interrupt the row/variable foundation. Keep it brief. The goal is to preview the need for data cleaning, not teach cleaning today.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -481,556 +1290,6 @@ Department of Statistics | Brigham Young University
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="the-most-important-idea-today" class="slide level2 takeaway-slide hide-title center-vert">
-<h2>The most important idea today</h2>
-<div class="r-fit-text">
-<p><strong>Every row represents something.</strong></p>
-</div>
-<div class="big-idea fragment">
-<p>That something is what we use to answer questions.</p>
-</div>
-</section>
-<section id="in-this-dataset" class="slide level2">
-<h2>In this dataset</h2>
-<div class="compare">
-<div class="ds-card">
-<p><strong>Rows</strong></p>
-<p>One row represents <strong>one student</strong>.</p>
-</div>
-<div class="ds-card">
-<p><strong>Columns</strong></p>
-<p>Columns tell us what we know about each student.</p>
-</div>
-</div>
-<div class="statement fragment">
-<p>Rows tell us <strong>who or what</strong> we observed. Columns tell us <strong>what we measured</strong>.</p>
-</div>
-</section>
-<section id="what-can-one-row-answer" class="slide level2 demo-slide">
-<h2>What can one row answer?</h2>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 5%">
-<col style="width: 11%">
-<col style="width: 10%">
-<col style="width: 16%">
-<col style="width: 17%">
-<col style="width: 15%">
-<col style="width: 13%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">student_id</th>
-<th style="text-align: left;">year</th>
-<th style="text-align: right;">previous_gpa</th>
-<th style="text-align: right;">current_gpa</th>
-<th style="text-align: right;">study_hours_per_week</th>
-<th style="text-align: right;">sleep_hours_per_night</th>
-<th style="text-align: right;">work_hours_per_week</th>
-<th style="text-align: right;">attendance_rate</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">10001</td>
-<td style="text-align: left;">Junior</td>
-<td style="text-align: right;">3.13</td>
-<td style="text-align: right;">3.37</td>
-<td style="text-align: right;">18.9</td>
-<td style="text-align: right;">8.3</td>
-<td style="text-align: right;">3.9</td>
-<td style="text-align: right;">0.86</td>
-</tr>
-</tbody>
-</table>
-<div class="prompt fragment">
-<p>What questions can this row answer?</p>
-</div>
-<div class="supporting fragment">
-<p>Questions about <strong>this student</strong>.</p>
-</div>
-</section>
-<section id="what-can-many-rows-answer" class="slide level2">
-<h2>What can many rows answer?</h2>
-<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="12" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[One student] --&gt; B[Many students]
-  B --&gt; C[Summarize]
-  C --&gt; D[Answer questions about a group]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="statement fragment">
-<p>We can aggregate individual observations to answer group-level questions.</p>
-</div>
-</section>
-<section id="summaries-answer-questions" class="slide level2 demo-slide">
-<h2>Summaries answer questions</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">question</th>
-<th style="text-align: right;">answer</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">How many students are in the dataset?</td>
-<td style="text-align: right;">750</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">What is the average GPA?</td>
-<td style="text-align: right;">2.86</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">What is the median GPA?</td>
-<td style="text-align: right;">2.84</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">What proportion attend at least 90% of class meetings?</td>
-<td style="text-align: right;">0.43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">What proportion work more than 20 hours/week?</td>
-<td style="text-align: right;">0.12</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">What is the average sleep per night?</td>
-<td style="text-align: right;">6.72</td>
-</tr>
-</tbody>
-</table>
-<div class="key-idea">
-<p>A summary statistic is useful because it turns many rows into an answer to a question.</p>
-</div>
-<aside class="notes">
-<p>Do not turn this into a formal lesson on summary statistics. Frame count, mean, median, and proportion as tools that answer different questions about a collection of rows.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="aggregating-changes-what-a-row-represents" class="slide level2 demo-slide">
-<h2>Aggregating changes what a row represents</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">year</th>
-<th style="text-align: right;">students</th>
-<th style="text-align: right;">avg_sleep</th>
-<th style="text-align: right;">avg_study</th>
-<th style="text-align: right;">avg_gpa</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">First-year</td>
-<td style="text-align: right;">212</td>
-<td style="text-align: right;">6.52</td>
-<td style="text-align: right;">13.23</td>
-<td style="text-align: right;">2.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Sophomore</td>
-<td style="text-align: right;">181</td>
-<td style="text-align: right;">6.68</td>
-<td style="text-align: right;">12.3</td>
-<td style="text-align: right;">2.86</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Junior</td>
-<td style="text-align: right;">188</td>
-<td style="text-align: right;">6.84</td>
-<td style="text-align: right;">12.31</td>
-<td style="text-align: right;">2.87</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Senior</td>
-<td style="text-align: right;">169</td>
-<td style="text-align: right;">6.89</td>
-<td style="text-align: right;">11.73</td>
-<td style="text-align: right;">2.93</td>
-</tr>
-</tbody>
-</table>
-<div class="statement fragment">
-<p>Raw data: one row = <strong>student</strong>.<br>
-Summary: one row = <strong>class year</strong>.</p>
-</div>
-</section>
-<section id="same-original-data-different-questions" class="slide level2">
-<h2>Same original data, different questions</h2>
-<div class="compare">
-<div class="ds-card">
-<p><strong>Student-level rows</strong></p>
-<p>Who seems likely to earn a higher GPA?</p>
-</div>
-<div class="ds-card">
-<p><strong>Group-level rows</strong></p>
-<p>How do class years compare on average?</p>
-</div>
-</div>
-<div class="key-idea fragment">
-<p>Changing the unit represented by a row changes the questions the data can answer.</p>
-</div>
-</section>
-<section id="what-does-one-row-represent" class="slide level2 question-slide">
-<h2>What does one row represent?</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Dataset</th>
-<th>What might one row represent?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Student success survey</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>Course grade records</td>
-<td>?</td>
-</tr>
-<tr class="odd">
-<td>Student sleep diary</td>
-<td>?</td>
-</tr>
-<tr class="even">
-<td>Campus dining transactions</td>
-<td>?</td>
-</tr>
-</tbody>
-</table>
-<aside class="notes">
-<p>Possible answers: student, student-course enrollment, student-day, transaction. For the course grade example, use the ambiguity to make the point that we must know how the dataset was constructed.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="a-dataset-does-not-know-everything" class="slide level2 takeaway-slide hide-title center-vert">
-<h2>A dataset does not know everything</h2>
-<div class="r-fit-text">
-<p><strong>What one row represents determines what the dataset knows.</strong></p>
-</div>
-</section>
-<section id="but-which-rows-did-we-observe" class="slide level2 question-slide">
-<h2>But which rows did we observe?</h2>
-<div class="prompt">
-<p>Suppose our dataset has <strong>750 students</strong>. What does that let us say?</p>
-</div>
-<div class="supporting fragment">
-<p>The answer depends on where those 750 students came from.</p>
-</div>
-</section>
-<section id="same-750-rows-different-situations" class="slide level2">
-<h2>Same 750 rows, different situations</h2>
-<div class="three-up">
-<div class="ds-card fragment">
-<p><strong>Situation 1</strong></p>
-<p>These are <strong>all</strong> students in a particular course this semester.</p>
-</div>
-<div class="ds-card fragment">
-<p><strong>Situation 2</strong></p>
-<p>These are a <strong>random sample</strong> of BYU students.</p>
-</div>
-<div class="ds-card fragment">
-<p><strong>Situation 3</strong></p>
-<p>These are students who chose to answer a link posted on Instagram.</p>
-</div>
-</div>
-<div class="statement fragment">
-<p>Same number of rows. Very different claims.</p>
-</div>
-</section>
-<section id="sample-and-population" class="slide level2">
-<h2>Sample and population</h2>
-<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="10" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-  Q[Question we want to answer] --&gt; P[Population we care about]
-  P --&gt; S[Sample we actually observe]
-  S --&gt; D[Rows in our dataset]
-  D --&gt; C[Claims we can responsibly make]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="key-idea fragment">
-<p>Lots of rows do not automatically support broad claims.</p>
-</div>
-</section>
-<section id="which-claim-is-justified" class="slide level2 question-slide">
-<h2>Which claim is justified?</h2>
-<p>Our 750 observed students average <strong>2.86 GPA</strong>.</p>
-<ul>
-<li class="fragment">These 750 students averaged <strong>2.86 GPA</strong>.</li>
-<li class="fragment">BYU students average <strong>2.86 GPA</strong>.</li>
-<li class="fragment">College students average <strong>2.86 GPA</strong>.</li>
-</ul>
-<aside class="notes">
-<p>Have students vote. The first claim is directly descriptive of the rows observed. Broader claims require assumptions about how the sample relates to the population.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="we-can-compare-groups-too" class="slide level2 demo-slide">
-<h2>We can compare groups too</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">sleep_group</th>
-<th style="text-align: right;">students</th>
-<th style="text-align: right;">avg_gpa</th>
-<th style="text-align: right;">median_gpa</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">7+ hours</td>
-<td style="text-align: right;">294</td>
-<td style="text-align: right;">2.9</td>
-<td style="text-align: right;">2.88</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&lt; 7 hours</td>
-<td style="text-align: right;">456</td>
-<td style="text-align: right;">2.84</td>
-<td style="text-align: right;">2.81</td>
-</tr>
-</tbody>
-</table>
-<div class="prompt fragment">
-<p>What does this comparison suggest?</p>
-</div>
-<div class="supporting fragment">
-<p>And what does it <strong>not</strong> prove?</p>
-</div>
-</section>
-<section id="a-first-visualization" class="slide level2 demo-slide">
-<h2>A first visualization</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="day2_assets/figures/gpa_by_sleep_group.png" class="quarto-figure quarto-figure-center" style="width:72.0%"></p>
-</figure>
-</div>
-<div class="key-idea fragment">
-<p>A pattern is not automatically an explanation.</p>
-</div>
-</section>
-<section id="another-view" class="slide level2 demo-slide">
-<h2>Another view</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="day2_assets/figures/study_vs_gpa.png" class="quarto-figure quarto-figure-center" style="width:78.0%"></p>
-</figure>
-</div>
-<div class="statement fragment">
-<p>There is a pattern, but not a perfect one.</p>
-</div>
-</section>
-<section id="from-describing-to-predicting" class="slide level2 takeaway-slide hide-title center-vert">
-<h2>From describing to predicting</h2>
-<div class="r-fit-text">
-<p><strong>So far we have looked backward: what happened?</strong></p>
-</div>
-<div class="big-idea fragment">
-<p>What if we want to look forward: what <em>will</em> happen?</p>
-</div>
-<div class="supporting fragment">
-<p>Prediction uses the same data, but asks a different question.</p>
-</div>
-</section>
-<section id="we-have-already-asked-different-kinds-of-questions" class="slide level2">
-<h2>We have already asked different kinds of questions</h2>
-<div class="three-up">
-<div class="ds-card">
-<p><strong>Describe</strong></p>
-<p>What happened in the rows we observed?</p>
-</div>
-<div class="ds-card">
-<p><strong>Compare</strong></p>
-<p>How do groups or variables differ?</p>
-</div>
-<div class="ds-card">
-<p><strong>Predict</strong></p>
-<p>What might happen for a new observation?</p>
-</div>
-</div>
-<div class="supporting">
-<p>Description and prediction use the same data in different ways.</p>
-</div>
-</section>
-<section id="can-we-predict-a-new-students-gpa" class="slide level2 question-slide">
-<h2>Can we predict a new student’s GPA?</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">variable</th>
-<th style="text-align: left;">value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">previous_gpa</td>
-<td style="text-align: left;">3.45</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">study_hours_per_week</td>
-<td style="text-align: left;">15.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">sleep_hours_per_night</td>
-<td style="text-align: left;">7.2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">work_hours_per_week</td>
-<td style="text-align: left;">8.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">attendance_rate</td>
-<td style="text-align: left;">0.95</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">credits</td>
-<td style="text-align: left;">15</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">phone_hours_per_day</td>
-<td style="text-align: left;">3.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">year</td>
-<td style="text-align: left;">Sophomore</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">housing</td>
-<td style="text-align: left;">Off campus</td>
-</tr>
-</tbody>
-</table>
-<div class="prompt fragment">
-<p>Before seeing a model, what GPA would <strong>you</strong> predict?</p>
-</div>
-<aside class="notes">
-<p>Give students a moment to make a human prediction. You can collect a few guesses or have everyone write one down.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="a-simple-predictive-model" class="slide level2">
-<h2>A simple predictive model</h2>
-<div class="cell" data-reveal="true" data-fig-responsive="false" data-fig-width="11" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  X[What we know about&lt;br/&gt;a student] --&gt; M[Model]
-  M --&gt; Y[Predicted GPA]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="statement fragment">
-<p>The model learns a pattern from students we already observed, then applies that pattern to a new student.</p>
-</div>
-</section>
-<section id="one-way-a-model-can-combine-information" class="slide level2 demo-slide">
-<h2>One way a model can combine information</h2>
-<p>[ =b_0+b_1(Previous&nbsp;GPA)+b_2(Study)+b_3(Attendance)+ ]</p>
-<div class="supporting">
-<p>Each piece of information about a student gets a <strong>weight</strong> (<span class="math inline">\(b_1, b_2, b_3, \ldots\)</span>).<br>
-The model learns those weights from the students we already observed.</p>
-</div>
-<div class="prompt fragment">
-<p>How should the model decide how much weight to give each piece of information?</p>
-</div>
-<div class="supporting fragment">
-<p>We are not learning regression today. We are noticing that prediction creates a mathematical problem.</p>
-</div>
-</section>
-<section id="the-models-prediction" class="slide level2 takeaway-slide hide-title center-vert">
-<h2>The model’s prediction</h2>
-<div class="giant center">
-<p>3.13 GPA</p>
-</div>
-<div class="supporting center">
-<p>A useful estimate, not a certainty.</p>
-</div>
-</section>
-<section id="prediction-is-useful-but-imperfect" class="slide level2 demo-slide">
-<h2>Prediction is useful, but imperfect</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="day2_assets/figures/actual_vs_predicted_gpa.png" class="quarto-figure quarto-figure-center" style="width:68.0%"></p>
-</figure>
-</div>
-<div class="supporting">
-<p>Each point is a student the model did not train on. Points away from the diagonal are prediction errors.</p>
-</div>
-</section>
-<section id="should-we-trust-it" class="slide level2 question-slide">
-<h2>Should we trust it?</h2>
-<div class="prompt">
-<p>When would this prediction be useful, and when would you be cautious?</p>
-</div>
-<ul>
-<li class="fragment">Another student similar to the students in our data?</li>
-<li class="fragment">A middle-school student?</li>
-<li class="fragment">A student at a very different institution?</li>
-<li class="fragment">A high-stakes decision about someone’s opportunity?</li>
-</ul>
-<div class="key-idea fragment">
-<p>Prediction is not certainty, and prediction is not automatically explanation.</p>
-</div>
 </section>
 <section id="think-back-over-what-we-just-did" class="slide level2 question-slide">
 <h2>Think back over what we just did</h2>
@@ -1041,7 +1300,7 @@ The model learns those weights from the students we already observed.</p>
 <p>Do not name the disciplines yet. Reconstruct them from the problems we encountered.</p>
 </div>
 <aside class="notes">
-<p>Have students call these out before revealing the next slide. This is the payoff. The interdisciplinarity should feel earned by the exercise rather than stated as a definition.</p>
+<p>Have students call these out before revealing the next slide. This is the payoff. Write their answers on the board and then map those answers to the disciplines on the following slide.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1058,8 +1317,8 @@ The model learns those weights from the students we already observed.</p>
 <h2>What did we need?</h2>
 <div class="three-up">
 <div class="ds-card fragment">
-<p><strong>What should we measure?</strong></p>
-<p>We needed knowledge of students, learning, and the setting.</p>
+<p><strong>How should we define success?</strong></p>
+<p>We needed judgment about what outcome matters and what proxy is reasonable.</p>
 </div>
 <div class="ds-card fragment">
 <p><strong>How do we handle 750 rows?</strong></p>
@@ -1139,6 +1398,9 @@ The model learns those weights from the students we already observed.</p>
 </div>
 <div class="statement fragment">
 <p>We will spend the semester getting better at each part.</p>
+</div>
+<div class="key-idea fragment">
+<p>Different stages create different problems. That is why data science draws on many disciplines.</p>
 </div>
 </section>
 <section id="exit-question" class="slide level2 question-slide">
