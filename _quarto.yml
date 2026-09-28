@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - .nojekyll
 
 website:
   title: "DS 115: Exploring Data Science"
+  site-url: "https://tjkerby.github.io/DS_115/"

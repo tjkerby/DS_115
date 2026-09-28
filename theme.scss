@@ -339,6 +339,18 @@ $mermaid-fg-color--lightest: lighten($course-muted, 20%) !default;
   color: $course-white;
 }
 
+/* The default navy .giant is invisible on the dark section/takeaway
+   backgrounds (e.g. the Maya prediction slide and Day 1's "What part?"). */
+.reveal .slide.section-card .giant,
+.reveal .slide.takeaway-slide .giant {
+  color: $course-white;
+}
+
+.reveal .slide.section-card .supporting,
+.reveal .slide.takeaway-slide .supporting {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 /* ============================================================
    Comparison / cards
    ============================================================ */

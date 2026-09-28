@@ -105,7 +105,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="slide-decks">Slide decks</h2>
 <ul>
 <li><a href="slides/day1.html">Day 1 — What is Data Science, and why is it so broad?</a></li>
+<<<<<<< HEAD
 <li><a href="slides/updated_day_1.html">Day 1 (updated) — revised instructional design</a></li>
+=======
+>>>>>>> 1b6bc8b67a781f3c0315e461b501e812c63d7d89
 <li><a href="slides/day2.html">Day 2 - From Observations to Answers</a></li>
 <li><a href="slides/day3.html">Day 3 — Same title, different jobs</a></li>
 </ul>
@@ -187,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/tjkerby\.github\.io\/DS_115\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
