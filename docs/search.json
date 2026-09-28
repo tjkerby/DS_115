@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "slides/day3.html#day-3-data-science-in-the-workplace",
+    "href": "slides/day3.html#day-3-data-science-in-the-workplace",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Day 3: Data Science in the Workplace",
+    "text": "Day 3: Data Science in the Workplace\nWhat do employers mean by “data science,” and how can I learn from people doing it?\nDS 115: Exploring Data Science"
+  },
+  {
+    "objectID": "slides/day3.html#todays-investigation",
+    "href": "slides/day3.html#todays-investigation",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Today’s investigation",
+    "text": "Today’s investigation\n\nData science is broad. Today we test that claim using real job postings."
+  },
+  {
+    "objectID": "slides/day3.html#what-we-will-do-today",
+    "href": "slides/day3.html#what-we-will-do-today",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What we will do today",
+    "text": "What we will do today\n\n\n1. Read job postings\nLook past the title and examine the actual work.\n\n\n2. Compare roles\nNotice where titles help and where they mislead.\n\n\n3. Learn from people\nUse informational interviews as career research.\n\n\n\nA job title is a clue. The responsibilities are stronger evidence."
+  },
+  {
+    "objectID": "slides/day3.html#common-titles-rough-tendencies",
+    "href": "slides/day3.html#common-titles-rough-tendencies",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Common titles, rough tendencies",
+    "text": "Common titles, rough tendencies\n\n\nData Analyst\nUnderstand data, build reports, answer business questions, communicate findings.\n\n\nData Scientist\nModeling, statistics, prediction, experimentation, and decision support.\n\n\nData Engineer\nBuild reliable pipelines, warehouses, infrastructure, and trusted data systems.\n\n\nAnalytics Engineer\nTransform raw data into governed, reusable, analysis-ready data models.\n\n\nML Engineer\nBuild machine-learning systems and put models into products.\n\n\nMLOps Engineer\nDeploy, monitor, retrain, govern, and maintain machine-learning systems.\n\n\nStatistician / Biostatistician\nStudy design, inference, uncertainty, and statistical methodology.\n\n\nAI/ML Engineer\nBuild AI and ML applications, often using LLMs, cloud tools, and production systems."
+  },
+  {
+    "objectID": "slides/day3.html#a-warning-before-we-start",
+    "href": "slides/day3.html#a-warning-before-we-start",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A warning before we start",
+    "text": "A warning before we start\n\nThese are tendencies, not definitions.\n\n\nWhich two titles do you think will be hardest to distinguish from a job posting alone?"
+  },
+  {
+    "objectID": "slides/day3.html#how-to-read-each-posting",
+    "href": "slides/day3.html#how-to-read-each-posting",
+    "title": "DS 115: Exploring Data Science",
+    "section": "How to read each posting",
+    "text": "How to read each posting\n\n\n1. Work\nWhat would this person spend time doing?\n\n\n2. Skills\nWhat tools, methods, and habits show up?\n\n\n3. Center of gravity\nIs this mostly analysis, modeling, infrastructure, deployment, research, consulting, or communication?\n\n\n4. Guess\nWhat title would you give this role if the employer hid it?"
+  },
+  {
     "objectID": "slides/day3.html#same-title-different-jobs",
     "href": "slides/day3.html#same-title-different-jobs",
     "title": "DS 115: Exploring Data Science",
@@ -33,6 +75,20 @@
     "title": "DS 115: Exploring Data Science",
     "section": "Same title. Different centers.",
     "text": "Same title. Different centers.\n\nAll three were Data Scientist roles.\n\n\nThe title gave us a clue, but the responsibilities told us much more."
+  },
+  {
+    "objectID": "slides/day3.html#three-jobs-one-title",
+    "href": "slides/day3.html#three-jobs-one-title",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Three jobs, one title",
+    "text": "Three jobs, one title\n\n\n\n\n\n\n\n\nPosting\nCenter of gravity\nWhat stands out?\n\n\n\n\nAmerica First\nBusiness value + modeling\nModels, reporting, member needs, communication\n\n\nWaystar\nHealthcare + predictive modeling\nHealthcare problems, experiments, algorithms, product teams\n\n\nScribd\nAI/ML + applied research\nNLP, LLMs, large-scale systems, production ML\n\n\n\n\nWhat actually makes all three of these data science jobs?"
+  },
+  {
+    "objectID": "slides/day3.html#what-they-still-have-in-common",
+    "href": "slides/day3.html#what-they-still-have-in-common",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What they still have in common",
+    "text": "What they still have in common\n\n\nData\nThey all turn messy information into usable evidence.\n\n\nComputation\nThey all require programming and technical fluency.\n\n\nQuantitative reasoning\nThey all use models, statistics, or evaluation.\n\n\nCommunication\nThey all need results to affect decisions or products.\n\n\n\nSame title does not mean same day-to-day work."
   },
   {
     "objectID": "slides/day3.html#guess-the-job",
@@ -84,11 +140,130 @@
     "text": "Slalom\n\n\nWhat title would you give this position?\n\n\nActual title: AI/ML Engineer\n\n\n\nWhat You Would Do\nThis is a consulting-oriented role focused on designing and delivering AI and machine-learning solutions for clients with real business problems.\nYou would:\n\nDesign, build, and deploy generative-AI and machine-learning systems.\nDevelop applications using large language models, retrieval-augmented generation, agents, prompt engineering, tool calling, workflow automation, and model fine-tuning.\nApply machine learning and deep learning to business problems.\nHelp design and deliver solutions involving computer vision, natural-language processing, and recommendation systems.\nEvaluate AI systems using measures such as accuracy, groundedness, safety, latency, cost, and model drift.\nMove AI and machine-learning systems into production and address reliability and deployment challenges.\nWork directly with clients and stakeholders to understand problems and communicate possible solutions.\nPresent technical approaches and results to audiences with different levels of technical expertise.\nStay current with rapidly changing AI and machine-learning technologies.\nContribute to internal learning, mentoring, and knowledge sharing.\n\nTechnical Skills\n\nPython\nMachine learning and deep learning\nGenerative AI and large language models\nRetrieval-augmented generation\nEmbeddings and vector search\nAI agents\nPrompt engineering\nFine-tuning and model adaptation\nAI evaluation and observability\nProduction deployment of AI and machine-learning systems\nAWS, GCP, or Azure\nML workflow tools\nDatabricks and Snowflake are helpful\n\nOther Important Skills\n\nStrong consulting and client-facing communication\nAbility to explain complex technical ideas to diverse stakeholders\nAbility to connect technical capabilities to real business problems\nCuriosity about emerging technologies\nAbility to advise others about tradeoffs, best practices, and limitations\nExperience presenting and delivering solutions, not just building them\n\nEducation & Experience\n\n6+ years implementing machine-learning models or algorithms in production\n2 to 4 years of consulting or professional-services experience\nExperience with generative-AI systems and major cloud platforms"
   },
   {
-    "objectID": "slides/day3.html#so-what-should-we-read-in-a-job-posting",
-    "href": "slides/day3.html#so-what-should-we-read-in-a-job-posting",
+    "objectID": "slides/day3.html#what-did-the-titles-actually-tell-us",
+    "href": "slides/day3.html#what-did-the-titles-actually-tell-us",
     "title": "DS 115: Exploring Data Science",
-    "section": "So what should we read in a job posting?",
-    "text": "So what should we read in a job posting?\n\nThe title is a clue. The work is the evidence.\n\n\nLook for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise."
+    "section": "What did the titles actually tell us?",
+    "text": "What did the titles actually tell us?\n\n\nJob titles contain information.\n\n\nResponsibilities usually tell us more.\n\n\nThe boundaries between roles overlap.\n\n\nSame title does not guarantee same work. Different title does not guarantee different work."
+  },
+  {
+    "objectID": "slides/day3.html#some-boundaries-are-especially-fuzzy",
+    "href": "slides/day3.html#some-boundaries-are-especially-fuzzy",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Some boundaries are especially fuzzy",
+    "text": "Some boundaries are especially fuzzy\n\n\nData Analyst\n↕\nAnalytics Engineer\n↕\nData Engineer\n\nThink about Stio, Workday, and UCCU.\n\n\n\nData Scientist\n↕\nML Engineer\n↕\nMLOps Engineer\n\nThink about Scribd, Affirm, and Intermountain.\n\n\n\n\nWhere would you draw the boundary? What evidence would you use?"
+  },
+  {
+    "objectID": "slides/day3.html#do-not-turn-postings-into-a-checklist",
+    "href": "slides/day3.html#do-not-turn-postings-into-a-checklist",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Do not turn postings into a checklist",
+    "text": "Do not turn postings into a checklist\n\nYou are not supposed to be qualified for these jobs today.\n\n\nThe goal is to notice what keeps recurring, then build toward those foundations over time."
+  },
+  {
+    "objectID": "slides/day3.html#foundations-travel.-tools-change.",
+    "href": "slides/day3.html#foundations-travel.-tools-change.",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Foundations travel. Tools change.",
+    "text": "Foundations travel. Tools change.\n\n\nFoundations that travel\n\nProgramming\nStatistics and uncertainty\nData reasoning\nProblem decomposition\nCommunication\nDomain curiosity\nLearning how to learn\n\n\n\nTools that may change\n\nSnowflake\ndbt\nSpark\nDatabricks\nKubernetes\nLangChain\nWhatever comes next\n\n\n\n\nA degree should help you build durable foundations, not just memorize today’s tool list."
+  },
+  {
+    "objectID": "slides/day3.html#job-postings-are-useful-but-incomplete",
+    "href": "slides/day3.html#job-postings-are-useful-but-incomplete",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Job postings are useful, but incomplete",
+    "text": "Job postings are useful, but incomplete\n\nA posting tells you what an organization says it wants. It does not fully tell you what the work feels like."
+  },
+  {
+    "objectID": "slides/day3.html#what-do-we-still-not-know",
+    "href": "slides/day3.html#what-do-we-still-not-know",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What do we still not know?",
+    "text": "What do we still not know?\n\n\n\nWhat does a normal week look like?\nWhich skills get used every day?\nWhich requirements are flexible?\nWhat is surprisingly hard?\nWhat is surprisingly enjoyable?\n\n\n\n\nHow did this person get started?\nWhat helped them most in college?\nWhat would they do differently?\nWhat adjacent roles should I know about?\nWhat skills are underrated?\n\n\n\n\nIf the posting cannot answer those questions, someone doing the work often can."
+  },
+  {
+    "objectID": "slides/day3.html#informational-interviews",
+    "href": "slides/day3.html#informational-interviews",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Informational interviews",
+    "text": "Informational interviews\n\nAn informational interview is a short conversation with someone doing work you want to understand."
+  },
+  {
+    "objectID": "slides/day3.html#the-goal",
+    "href": "slides/day3.html#the-goal",
+    "title": "DS 115: Exploring Data Science",
+    "section": "The goal",
+    "text": "The goal\n\nLearn from someone with lived experience in a role, field, company, or career path.\n\n\nThis is career research, not asking for a job."
+  },
+  {
+    "objectID": "slides/day3.html#who-should-you-talk-to",
+    "href": "slides/day3.html#who-should-you-talk-to",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Who should you talk to?",
+    "text": "Who should you talk to?\n\nLook for someone who:\n\nWorks in or near an area you are curious about\nIs perhaps 1 to 7 years into their career\nHas a path you can imagine yourself following\nMight remember the student-to-career transition\nDoes not need to have the exact title you think you want\n\n\n\nA person doing interesting work with an unfamiliar title may be more useful than someone with the exact title you expected."
+  },
+  {
+    "objectID": "slides/day3.html#where-can-you-find-people",
+    "href": "slides/day3.html#where-can-you-find-people",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Where can you find people?",
+    "text": "Where can you find people?\n\n\nWarm connections\nFriends, family, professors, TAs, classmates, club leaders.\n\n\nShared communities\nBYU alumni, student groups, local companies, professional events.\n\n\nThoughtful outreach\nLinkedIn, company pages, conference speakers, people whose work you encounter online.\n\n\n\nWarm connection is easiest. Shared connection is next. Thoughtful cold outreach can still work."
+  },
+  {
+    "objectID": "slides/day3.html#which-message-is-easier-to-say-yes-to",
+    "href": "slides/day3.html#which-message-is-easier-to-say-yes-to",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Which message is easier to say yes to?",
+    "text": "Which message is easier to say yes to?\n\n\nMessage A\nHi, I am interested in data science. Can I pick your brain about your career?\n\n\nMessage B\nHi Maya, I am a BYU student exploring careers in data science. I saw that you work in product analytics at Acme, and I am trying to better understand what that kind of work looks like. Would you be willing to talk for about 20 minutes sometime in the next two weeks? I would especially love to hear how you moved from school into your current role.\n\n\n\nWhy is Message B easier to answer?"
+  },
+  {
+    "objectID": "slides/day3.html#a-simple-outreach-formula",
+    "href": "slides/day3.html#a-simple-outreach-formula",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A simple outreach formula",
+    "text": "A simple outreach formula\n\n\nWho I am\nI am a BYU student exploring…\n\n\nWhy you\nI noticed your work at…\n\n\nWhat I hope to learn\nI am trying to understand…\n\n\nSmall request\nWould you be willing to talk for 20 minutes?"
+  },
+  {
+    "objectID": "slides/day3.html#what-should-you-ask",
+    "href": "slides/day3.html#what-should-you-ask",
+    "title": "DS 115: Exploring Data Science",
+    "section": "What should you ask?",
+    "text": "What should you ask?\n\n\nTheir work\n\nWhat does a typical week look like?\nWhat do you spend more time on than people might expect?\n\n\n\nTheir path\n\nHow did you get from college into this role?\nWhat helped you get your first opportunity?\n\n\n\nTheir skills\n\nWhat skills do you use most often?\nWhat skill is underrated in this line of work?\nHow could a student demonstrate competence in that skill?\n\n\n\nYour exploration\n\nWhat should I explore while I am still in college?\nWhat adjacent roles should I learn about?"
+  },
+  {
+    "objectID": "slides/day3.html#how-informal-mentoring-often-begins",
+    "href": "slides/day3.html#how-informal-mentoring-often-begins",
+    "title": "DS 115: Exploring Data Science",
+    "section": "How informal mentoring often begins",
+    "text": "How informal mentoring often begins\n\nWhen someone gives genuinely good advice, follow it.\n\n\nThen tell them what happened."
+  },
+  {
+    "objectID": "slides/day3.html#listen-act-report-back",
+    "href": "slides/day3.html#listen-act-report-back",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Listen, act, report back",
+    "text": "Listen, act, report back\n\n\nListen\nTake the conversation seriously. Write down specific advice.\n\n\nAct\nTry one thing they recommended: a course, project, tool, club, book, or conversation.\n\n\nReport back\nThank them again and share what you did and what you learned.\n\n\n\nYou demonstrate that you listened, acted, and that their advice had an impact. That is often how an informal mentoring relationship can begin."
+  },
+  {
+    "objectID": "slides/day3.html#a-few-etiquette-rules",
+    "href": "slides/day3.html#a-few-etiquette-rules",
+    "title": "DS 115: Exploring Data Science",
+    "section": "A few etiquette rules",
+    "text": "A few etiquette rules\n\n\nDo\n\nShow up prepared\nRespect the agreed time\nAsk follow-up questions\nListen more than you talk\nSend a thank-you\n\n\n\nAvoid\n\nAsking them to get you a job\nSending a resume unless relevant or requested\nMonopolizing their time\nTreating the conversation as transactional"
+  },
+  {
+    "objectID": "slides/day3.html#before-you-leave-today",
+    "href": "slides/day3.html#before-you-leave-today",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Before you leave today",
+    "text": "Before you leave today\n\n\nPick one area you want to investigate.\nFind three possible people to contact.\nChoose the person you would most like to contact first.\nDraft a message using the outreach formula.\nHave a neighbor read it and give feedback.\n\n\n\nFor the assignment, thoughtful outreach attempts matter. You should not be penalized if no one responds."
+  },
+  {
+    "objectID": "slides/day3.html#day-3-takeaway",
+    "href": "slides/day3.html#day-3-takeaway",
+    "title": "DS 115: Exploring Data Science",
+    "section": "Day 3 takeaway",
+    "text": "Day 3 takeaway\n\nDo not choose a career based only on a title. Investigate the work.\n\n\nJob postings are one source of evidence. People doing the work are another."
   },
   {
     "objectID": "slides/day2.html#where-we-left-off",

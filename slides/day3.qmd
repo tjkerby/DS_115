@@ -1,3 +1,137 @@
+## Day 3: Data Science in the Workplace {.title-slide}
+
+### What do employers mean by "data science," and how can I learn from people doing it?
+
+DS 115: Exploring Data Science
+
+## Today's investigation {.section-card}
+
+::: {.big-idea}
+Data science is broad. Today we test that claim using real job postings.
+:::
+
+## What we will do today
+
+::: {.three-up}
+
+::: {.ds-card}
+**1. Read job postings**
+
+Look past the title and examine the actual work.
+:::
+
+::: {.ds-card}
+**2. Compare roles**
+
+Notice where titles help and where they mislead.
+:::
+
+::: {.ds-card}
+**3. Learn from people**
+
+Use informational interviews as career research.
+:::
+
+:::
+
+::: {.key-idea .fragment}
+A job title is a clue. The responsibilities are stronger evidence.
+:::
+
+## Common titles, rough tendencies
+
+::: {.role-grid}
+
+::: {.role-card}
+**Data Analyst**
+
+Understand data, build reports, answer business questions, communicate findings.
+:::
+
+::: {.role-card}
+**Data Scientist**
+
+Modeling, statistics, prediction, experimentation, and decision support.
+:::
+
+::: {.role-card}
+**Data Engineer**
+
+Build reliable pipelines, warehouses, infrastructure, and trusted data systems.
+:::
+
+::: {.role-card}
+**Analytics Engineer**
+
+Transform raw data into governed, reusable, analysis-ready data models.
+:::
+
+::: {.role-card}
+**ML Engineer**
+
+Build machine-learning systems and put models into products.
+:::
+
+::: {.role-card}
+**MLOps Engineer**
+
+Deploy, monitor, retrain, govern, and maintain machine-learning systems.
+:::
+
+::: {.role-card}
+**Statistician / Biostatistician**
+
+Study design, inference, uncertainty, and statistical methodology.
+:::
+
+::: {.role-card}
+**AI/ML Engineer**
+
+Build AI and ML applications, often using LLMs, cloud tools, and production systems.
+:::
+
+:::
+
+## A warning before we start {.question-slide}
+
+::: {.statement}
+These are tendencies, not definitions.
+:::
+
+::: {.prompt .fragment}
+Which two titles do you think will be hardest to distinguish from a job posting alone?
+:::
+
+## How to read each posting
+
+::: {.reading-frame}
+
+::: {.reading-step}
+**1. Work**
+
+What would this person spend time doing?
+:::
+
+::: {.reading-step}
+**2. Skills**
+
+What tools, methods, and habits show up?
+:::
+
+::: {.reading-step}
+**3. Center of gravity**
+
+Is this mostly analysis, modeling, infrastructure, deployment, research, consulting, or communication?
+:::
+
+::: {.reading-step}
+**4. Guess**
+
+What title would you give this role if the employer hid it?
+:::
+
+:::
+
 ## Same title, different jobs {.section-card}
 
 ::: {.big-idea}
@@ -186,6 +320,53 @@ All three were **Data Scientist** roles.
 
 ::: {.statement .fragment}
 The title gave us a clue, but the responsibilities told us much more.
+:::
+
+
+## Three jobs, one title
+
+| Posting | Center of gravity | What stands out? |
+|---|---|---|
+| America First | Business value + modeling | Models, reporting, member needs, communication |
+| Waystar | Healthcare + predictive modeling | Healthcare problems, experiments, algorithms, product teams |
+| Scribd | AI/ML + applied research | NLP, LLMs, large-scale systems, production ML |
+
+::: {.prompt .fragment}
+What actually makes all three of these data science jobs?
+:::
+
+## What they still have in common
+
+::: {.four-up}
+
+::: {.mini-card}
+**Data**
+
+They all turn messy information into usable evidence.
+:::
+
+::: {.mini-card}
+**Computation**
+
+They all require programming and technical fluency.
+:::
+
+::: {.mini-card}
+**Quantitative reasoning**
+
+They all use models, statistics, or evaluation.
+:::
+
+::: {.mini-card}
+**Communication**
+
+They all need results to affect decisions or products.
+:::
+
+:::
+
+::: {.key-idea .fragment}
+Same title does not mean same day-to-day work.
 :::
 
 ## Guess the job {.section-card}
@@ -575,12 +756,380 @@ You would:
 - Experience with generative-AI systems and major cloud platforms
 :::
 
-## So what should we read in a job posting? {.takeaway-slide}
+
+
+## What did the titles actually tell us?
+
+::: {.reveal-list}
+
+::: {.fragment}
+**Job titles contain information.**
+:::
+
+::: {.fragment}
+**Responsibilities usually tell us more.**
+:::
+
+::: {.fragment}
+**The boundaries between roles overlap.**
+:::
+
+::: {.fragment}
+**Same title does not guarantee same work. Different title does not guarantee different work.**
+:::
+
+:::
+
+## Some boundaries are especially fuzzy
+
+::: {.boundary-grid}
+
+::: {.boundary-card}
+**Data Analyst**
+
+↕
+
+**Analytics Engineer**
+
+↕
+
+**Data Engineer**
+
+::: {.supporting}
+Think about Stio, Workday, and UCCU.
+:::
+:::
+
+::: {.boundary-card}
+**Data Scientist**
+
+↕
+
+**ML Engineer**
+
+↕
+
+**MLOps Engineer**
+
+::: {.supporting}
+Think about Scribd, Affirm, and Intermountain.
+:::
+:::
+
+:::
+
+::: {.prompt .fragment}
+Where would you draw the boundary? What evidence would you use?
+:::
+
+## Do not turn postings into a checklist {.question-slide}
+
+::: {.statement}
+You are not supposed to be qualified for these jobs today.
+:::
+
+::: {.big-idea .fragment}
+The goal is to notice what keeps recurring, then build toward those foundations over time.
+:::
+
+## Foundations travel. Tools change.
+
+::: {.compare}
+
+::: {}
+**Foundations that travel**
+
+- Programming
+- Statistics and uncertainty
+- Data reasoning
+- Problem decomposition
+- Communication
+- Domain curiosity
+- Learning how to learn
+:::
+
+::: {}
+**Tools that may change**
+
+- Snowflake
+- dbt
+- Spark
+- Databricks
+- Kubernetes
+- LangChain
+- Whatever comes next
+:::
+
+:::
+
+::: {.key-idea .fragment}
+A degree should help you build durable foundations, not just memorize today's tool list.
+:::
+
+## Job postings are useful, but incomplete {.section-card}
 
 ::: {.big-idea}
-The title is a clue. The work is the evidence.
+A posting tells you what an organization says it wants. It does not fully tell you what the work feels like.
+:::
+
+## What do we still not know?
+
+::: {.two-column-list}
+
+::: {}
+- What does a normal week look like?
+- Which skills get used every day?
+- Which requirements are flexible?
+- What is surprisingly hard?
+- What is surprisingly enjoyable?
+:::
+
+::: {}
+- How did this person get started?
+- What helped them most in college?
+- What would they do differently?
+- What adjacent roles should I know about?
+- What skills are underrated?
+:::
+
 :::
 
 ::: {.statement .fragment}
-Look for the center of gravity: analysis, modeling, infrastructure, deployment, products, research, consulting, communication, or domain expertise.
+If the posting cannot answer those questions, someone doing the work often can.
+:::
+
+## Informational interviews {.section-card}
+
+::: {.big-idea}
+An informational interview is a short conversation with someone doing work you want to understand.
+:::
+
+## The goal
+
+::: {.statement}
+Learn from someone with lived experience in a role, field, company, or career path.
+:::
+
+::: {.key-idea .fragment}
+This is career research, not asking for a job.
+:::
+
+## Who should you talk to?
+
+::: {.check-box}
+Look for someone who:
+
+- Works in or near an area you are curious about
+- Is perhaps 1 to 7 years into their career
+- Has a path you can imagine yourself following
+- Might remember the student-to-career transition
+- Does not need to have the exact title you think you want
+:::
+
+::: {.prompt .fragment}
+A person doing interesting work with an unfamiliar title may be more useful than someone with the exact title you expected.
+:::
+
+## Where can you find people?
+
+::: {.three-up}
+
+::: {.ds-card}
+**Warm connections**
+
+Friends, family, professors, TAs, classmates, club leaders.
+:::
+
+::: {.ds-card}
+**Shared communities**
+
+BYU alumni, student groups, local companies, professional events.
+:::
+
+::: {.ds-card}
+**Thoughtful outreach**
+
+LinkedIn, company pages, conference speakers, people whose work you encounter online.
+:::
+
+:::
+
+::: {.key-idea .fragment}
+Warm connection is easiest. Shared connection is next. Thoughtful cold outreach can still work.
+:::
+
+## Which message is easier to say yes to?
+
+::: {.compare}
+
+::: {.bad-message}
+**Message A**
+
+Hi, I am interested in data science. Can I pick your brain about your career?
+:::
+
+::: {.good-message}
+**Message B**
+
+Hi Maya, I am a BYU student exploring careers in data science. I saw that you work in product analytics at Acme, and I am trying to better understand what that kind of work looks like. Would you be willing to talk for about 20 minutes sometime in the next two weeks? I would especially love to hear how you moved from school into your current role.
+:::
+
+:::
+
+::: {.prompt .fragment}
+Why is Message B easier to answer?
+:::
+
+## A simple outreach formula
+
+::: {.formula-row}
+
+::: {.formula-card}
+**Who I am**
+
+I am a BYU student exploring...
+:::
+
+::: {.formula-card}
+**Why you**
+
+I noticed your work at...
+:::
+
+::: {.formula-card}
+**What I hope to learn**
+
+I am trying to understand...
+:::
+
+::: {.formula-card}
+**Small request**
+
+Would you be willing to talk for 20 minutes?
+:::
+
+:::
+
+## What should you ask?
+
+::: {.question-grid}
+
+::: {.question-card}
+**Their work**
+
+- What does a typical week look like?
+- What do you spend more time on than people might expect?
+:::
+
+::: {.question-card}
+**Their path**
+
+- How did you get from college into this role?
+- What helped you get your first opportunity?
+:::
+
+::: {.question-card}
+**Their skills**
+
+- What skills do you use most often?
+- What skill is underrated in this line of work?
+- How could a student demonstrate competence in that skill?
+:::
+
+::: {.question-card}
+**Your exploration**
+
+- What should I explore while I am still in college?
+- What adjacent roles should I learn about?
+:::
+
+:::
+
+## How informal mentoring often begins {.takeaway-slide}
+
+::: {.big-idea}
+When someone gives genuinely good advice, follow it.
+:::
+
+::: {.statement .fragment}
+Then tell them what happened.
+:::
+
+## Listen, act, report back
+
+::: {.three-up}
+
+::: {.ds-card}
+**Listen**
+
+Take the conversation seriously. Write down specific advice.
+:::
+
+::: {.ds-card}
+**Act**
+
+Try one thing they recommended: a course, project, tool, club, book, or conversation.
+:::
+
+::: {.ds-card}
+**Report back**
+
+Thank them again and share what you did and what you learned.
+:::
+
+:::
+
+::: {.key-idea .fragment}
+You demonstrate that you listened, acted, and that their advice had an impact. That is often how an informal mentoring relationship can begin.
+:::
+
+## A few etiquette rules
+
+::: {.compare}
+
+::: {}
+**Do**
+
+- Show up prepared
+- Respect the agreed time
+- Ask follow-up questions
+- Listen more than you talk
+- Send a thank-you
+:::
+
+::: {}
+**Avoid**
+
+- Asking them to get you a job
+- Sending a resume unless relevant or requested
+- Monopolizing their time
+- Treating the conversation as transactional
+:::
+
+:::
+
+## Before you leave today
+
+::: {.check-box}
+
+1. Pick one area you want to investigate.
+2. Find three possible people to contact.
+3. Choose the person you would most like to contact first.
+4. Draft a message using the outreach formula.
+5. Have a neighbor read it and give feedback.
+
+:::
+
+::: {.key-idea .fragment}
+For the assignment, thoughtful outreach attempts matter. You should not be penalized if no one responds.
+:::
+
+## Day 3 takeaway {.takeaway-slide}
+
+::: {.big-idea}
+Do not choose a career based only on a title. Investigate the work.
+:::
+
+::: {.statement .fragment}
+Job postings are one source of evidence. People doing the work are another.
 :::
